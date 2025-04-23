@@ -4,7 +4,7 @@ import os
 
 # === CONFIG ===
 BASE_URL = "https://www.robotevents.com/api/v2"
-BEARER_TOKEN = ""  # <-- Replace this with your real token
+BEARER_TOKEN = ""
 
 HEADERS = {
     "Authorization": f"Bearer {BEARER_TOKEN}",
@@ -173,6 +173,9 @@ def main():
         print(f"\nFetching data for Team {team_number} (ID: {team_id})...")
         
         # Include Qualification (2), Quarter-Finals (3), Semi-Finals (4), Finals (5)
+        if os.path.exists(f"{team_number}_matches.csv"):
+            os.remove(f"{team_number}_matches.csv")  # Delete the file if it exists
+
         for i in range(2, 10):
             matches = get_team_matches(team_id, i)
             matches = sorted(matches, key=lambda x: (x['started'] is None, x['started']))
