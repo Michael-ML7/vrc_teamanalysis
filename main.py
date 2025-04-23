@@ -35,10 +35,17 @@ def get_team_id(team_number):
         print(f"Error fetching team ID: {response.status_code}")
         return None
 
+
 def get_team_matches(team_id):
     # Include Qualification (2), Quarter-Finals (3), Semi-Finals (4), Finals (5)
-    url = f"{BASE_URL}/teams/{team_id}/matches?round[]=2&round[]=3&round[]=4&round[]=5"
-    response = requests.get(url, headers=HEADERS)
+    # Include only 24-25 High Stakes season (season id 190)
+    params = {
+        "season[]": 190,
+        "round[]": [2, 3, 4, 5]  # This will properly handle array parameters
+    }
+
+    url = f"{BASE_URL}/teams/{team_id}/matches"
+    response = requests.get(url, params=params, headers=HEADERS)
 
     if response.status_code == 200:
         data = response.json()
@@ -48,15 +55,14 @@ def get_team_matches(team_id):
         return []
 
 
-
 def save_matches_to_csv(matches, team_number):
     filename = f"{team_number}_matches.csv"
     with open(filename, mode='w', newline='', encoding='utf-8') as csv_file:
         fieldnames = [
-            'Event Name', 'Match Name', 'Scheduled Time',
-            'Team Alliance', 'Team Score', 'Opponent Score',
-            'Winning Margin', 'Winning Alliance',
-            'Red Teams', 'Blue Teams'
+            'Event Name', 'Match Name', 'Start Time',
+            'Team Score', 'Opponent Score',
+            'Winning Margin', 'Verdict', 'Team Alliance', 'Winning Alliance',
+            'Red Team 1', 'Red Team 2', 'Blue Team 1', 'Blue Team 2'
         ]
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
         writer.writeheader()
@@ -65,24 +71,11 @@ def save_matches_to_csv(matches, team_number):
             # Extract relevant match information
             event_name = match.get('event', {}).get('name', 'Unknown')
             match_name = match.get('name', 'Unknown')
-            print(match_name)
 
             # Handle missing scheduled time
-            scheduled_time = match.get('scheduled', None)
-            if not scheduled_time:
-                scheduled_time = 'TBD'  # Set to 'TBD' if the scheduled time is not available
-
-            # Skip matches that don't meet date criteria unless it's a final match (scheduled_time == 'TBD')
-            if scheduled_time != 'TBD':
-                year = scheduled_time[0:4]
-                month = scheduled_time[5:7]
-                if year < "2024":
-                    continue
-                if year == "2024" and month <= "05":
-                    continue
-
-            if "2023-2024" in event_name:
-                continue  # Skip events from the 2023-2024 season
+            start_time = match.get('started', None)
+            if not start_time:
+                start_time = 'TBD'  # Set to 'TBD' if the start time is not available
 
             alliances = match.get('alliances', [])
             result = match.get('result', {})
@@ -138,22 +131,32 @@ def save_matches_to_csv(matches, team_number):
                     winning_alliance = "red"
 
             # Debugging: Print out the match details for inspection
-            # print(f"Event: {event_name}, Match: {match_name}, Scheduled: {scheduled_time}")
+            # print(match_name)
+            # print(f"Event: {event_name}, Match: {match_name}, Start: {start_time}")
             # print(f"Red Teams: {red_teams}, Blue Teams: {blue_teams}")
             # print(f"Red Score: {red_score}, Blue Score: {blue_score}")
+            
+            verdict = 'D'
+            if winning_alliance == team_alliance:
+                verdict = 'W'
+            else:
+                verdict = 'L'
 
             # Write the match details to the CSV
             writer.writerow({
                 'Event Name': event_name,
                 'Match Name': match_name,
-                'Scheduled Time': scheduled_time,
-                'Team Alliance': team_alliance or 'Unknown',
+                'Start Time': start_time,
                 'Team Score': team_score,
                 'Opponent Score': opponent_score,
                 'Winning Margin': margin,
+                'Verdict': verdict,
+                'Team Alliance': team_alliance or 'Unknown',
                 'Winning Alliance': winning_alliance,
-                'Red Teams': ', '.join(red_teams),
-                'Blue Teams': ', '.join(blue_teams)
+                'Red Team 1': red_teams[0],
+                'Red Team 2': red_teams[1],
+                'Blue Team 1': blue_teams[0],
+                'Blue Team 2': blue_teams[1]
             })
 
     print(f"\n✅ Match results saved to {os.path.abspath(filename)}")
@@ -171,8 +174,7 @@ def main():
         matches = get_team_matches(team_id)
 
         if matches:
-            # print(matches)
-            # save_matches_to_csv(matches, team_number)
+            save_matches_to_csv(matches, team_number)
         else:
             print("No match data found.")
     else:
