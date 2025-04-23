@@ -2,7 +2,7 @@ import requests
 import csv
 import os
 
-# === CONFIGURATION ===
+# === CONFIG ===
 BASE_URL = "https://www.robotevents.com/api/v2"
 BEARER_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiZjg2YWZmYzZmNTMwZjg2NTIwMzljMmZjYTZkZjRiM2VjNmY3YTI2YzkwYzdmN2I3OWRiNzNhNWVkZTBkZmE1OTM0OGJlZmFhNTM1Yzg2MDUiLCJpYXQiOjE3NDUzNzkwMTguMzc2MDgsIm5iZiI6MTc0NTM3OTAxOC4zNzYwODE5LCJleHAiOjI2OTIwNjM4MTguMzcxNjA5Miwic3ViIjoiMTQ1ODYyIiwic2NvcGVzIjpbXX0.mb3L8qbIPapkvciF1waSk6qRTUH9FEOBuO3x-tJk0mUM5N4DD8URUTmnTPTV7FBPTMjYRp7lpE-7Lq_AdhORxJ2_bQKSHOJLHPanNKdvIptmqGID_omuGIP5V5R58TtCT1zX-lez24kUfFo-beEZVFklTMiCv8haOps-dmL7AK3itYM6KcE65f2UZ20TrDJ_xEo3eiTI8eONRp9_sjtcgiIpW5Xv-khELNV0KA39Gd_d5wn3CiRAzuSSyggbFzoQtFjw9S1jsaj7KxQmfPdCfa76HFVSmz67Y4-NDbI_mp4W7k3CsXKl0q-Owz0q_MI9vzSAQto1OwowRsYDFfJctgDjzXiutAGcHvGPVmPCpEuid9l9QzYobCyokCiVxmbdtshXcoAZtsWXpqsnp1atnJWaHVQjdzJSfx2Munsf_6fppsfCsf4sERUoXSrCmAWiLvc6bYHSwngKnYl8T4fGwdSud9eTcrLHu_yNjw1iU7_aMFHIQwcJWzj9A-dZfBgdrJrionY4v2U6b2Yr0t_6vsCerNx7eqI81S1lF6yWyHh4SqQk8s8gSu2BLRrtRd-wya7qXs6mPzoyk-Oju4QYcdPhzjZALFwsRyRqk7AcGgnzmsJnW0HaKxd6RGyv6hVNoz_E8txKquNXY4nRRvr6u0FjFYqEQ_d_uY1kvt8VwSk"  # <-- Replace this with your real token
 
@@ -41,7 +41,7 @@ def get_team_matches(team_id):
     # Include only 24-25 High Stakes season (season id 190)
     params = {
         "season[]": 190,
-        "round[]": [2, 3, 4, 5]  # This will properly handle array parameters
+        "round[]": [2, 3, 4, 5]
     }
 
     url = f"{BASE_URL}/teams/{team_id}/matches"
@@ -116,7 +116,6 @@ def save_matches_to_csv(matches, team_number):
                     opponent_score = red_score
                 else:
                     team_score = opponent_score = margin = 'Unknown'
-
                 # Calculate the winning margin
                 margin = team_score - opponent_score
 
@@ -160,7 +159,6 @@ def save_matches_to_csv(matches, team_number):
             })
 
     print(f"\n✅ Match results saved to {os.path.abspath(filename)}")
-
 
 
 # === MAIN ===
