@@ -79,7 +79,9 @@ def save_matches_to_csv(matches, team_number):
             # Handle missing scheduled time
             start_time = match.get('started', None)
             if not start_time:
-                start_time = 'TBD'  # Set to 'TBD' if the start time is not available
+                start_time = match.get('scheduled', None) # If started does not exist then use scheduled time (approxmiately the same doesnt matter)
+                if not start_time:
+                    start_time = 'TBD'  # Set to 'TBD' if the start time is not available
 
             alliances = match.get('alliances', [])
             result = match.get('result', {})
@@ -161,6 +163,7 @@ def save_matches_to_csv(matches, team_number):
                 'Blue Team 1': blue_teams[0],
                 'Blue Team 2': blue_teams[1]
             })
+    print(f"\n✅ Match results saved to {team_number}_matches.csv")
 
 
 # === MAIN ===
@@ -176,15 +179,19 @@ def main():
         if os.path.exists(f"{team_number}_matches.csv"):
             os.remove(f"{team_number}_matches.csv")  # Delete the file if it exists
 
-        for i in range(2, 10):
-            matches = get_team_matches(team_id, i)
-            matches = sorted(matches, key=lambda x: (x['started'] is None, x['started']))
+        matches = get_team_matches(team_id, 2)
+        for i in range(3,10):
+            matches += get_team_matches(team_id, i)
+        
+        for match in matches:
+            if match.get('started') is None:
+                match['started'] = match.get('scheduled')
+        matches = sorted(matches, key=lambda x: (x['started'] is None, x['started']))
 
-            if matches:
-                save_matches_to_csv(matches, team_number)
-            else:
-                print(f"\n✅ Match results saved to {team_number}_matches.csv")
-                break
+        if matches:
+            save_matches_to_csv(matches, team_number)
+        else:
+            print("No matches found for team {team_number}")
     else:
         print("Failed to retrieve team ID.")
 
