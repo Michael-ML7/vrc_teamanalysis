@@ -80,12 +80,17 @@ def get_event_type(event_id):
             event_id2type[event_id] = data.get('level')
     return event_id2type.get(event_id, 'Unknown')
 
-def save_matches_to_csv(matches, team_number):
+def save_matches_to_csv(matches, awards, team_number):
+    for match in matches:
+            if match.get('started') is None:
+                match['started'] = match.get('scheduled')
+    matches = sorted(matches, key=lambda x: (x['started'] is None, x['started']))
+    
     filename = f"{team_number}_matches.csv"
 
     with open(filename, mode='w', newline='', encoding='utf-8') as csv_file:
         fieldnames = [
-            'Event Name', 'Event Type', 'Match Name', 'Start Time',
+            'Event Name', 'Event Type', 'Qualification', 'Match Name', 'Start Time',
             'Team Score', 'Opponent Score',
             'Winning Margin', 'Normalised Winning Margin', 'Verdict', 'Team Alliance', 'Winning Alliance',
             'Red Team 1', 'Red Team 2', 'Blue Team 1', 'Blue Team 2'
@@ -100,6 +105,13 @@ def save_matches_to_csv(matches, team_number):
             event_name = event_name.replace(",", "") # removing the commas from the event name just for easier data analysis on Google Sheets
             event_type = get_event_type(match.get('event', {}).get('id', -1))
             match_name = match.get('name', 'Unknown')
+            # Get qualification info from awards, fk the time complexity
+            qualification = 'None'
+            for award in awards:
+                if award.get('event', {}).get('name', '').replace(",", "") == event_name:
+                    qualifications_list = award.get('qualifications', [])
+                    qualification = qualifications_list[0] if qualifications_list else 'None'
+                    break
 
             # Handle missing scheduled time
             start_time = match.get('started', None)
@@ -181,6 +193,7 @@ def save_matches_to_csv(matches, team_number):
             writer.writerow({
                 'Event Name': event_name,
                 'Event Type': event_type,
+                'Qualification': qualification,
                 'Match Name': match_name,
                 'Start Time': start_time,
                 'Team Score': team_score,
@@ -195,7 +208,7 @@ def save_matches_to_csv(matches, team_number):
                 'Blue Team 1': blue_teams[0],
                 'Blue Team 2': blue_teams[1]
             })
-    print(f"\n✅ Match results saved to {team_number}_matches.csv")
+    print(f"✅ Match results saved to {team_number}_matches.csv")
 
 
 def save_awards_to_csv(awards, team_number):
@@ -223,7 +236,7 @@ def save_awards_to_csv(awards, team_number):
                 'Title': title,
                 'Qualifications': ";".join(qualifications)
             })
-    print(f"\n✅ Match results saved to {team_number}_awards.csv")
+    print(f"✅ Match results saved to {team_number}_awards.csv")
 
 # === MAIN ===
 
@@ -233,24 +246,20 @@ def main():
 
     if team_id:
         print(f"\nFetching data for Team {team_number} (ID: {team_id})...")
+
+        # Fetch data
+        awards = get_team_awards(team_id)
+        matches = get_team_matches(team_id, 2)
+        for i in range(3,10):
+            matches += get_team_matches(team_id, i) # apparently it doesnt work when i try to get them at all once
         
         # Process team match data
         # Include Qualification (2), Quarter-Finals (3), Semi-Finals (4), Finals (5)
         print("⚙ Match data")
         if os.path.exists(f"{team_number}_matches.csv"):
             os.remove(f"{team_number}_matches.csv")
-
-        matches = get_team_matches(team_id, 2)
-        for i in range(3,10):
-            matches += get_team_matches(team_id, i)
-        
-        for match in matches:
-            if match.get('started') is None:
-                match['started'] = match.get('scheduled')
-        matches = sorted(matches, key=lambda x: (x['started'] is None, x['started']))
-
         if matches:
-            save_matches_to_csv(matches, team_number)
+            save_matches_to_csv(matches, awards, team_number)
         else:
             print("No matches found for team {team_number}")
 
@@ -258,9 +267,10 @@ def main():
         print("⚙ Match data")
         if os.path.exists(f"{team_number}_awards.csv"):
             os.remove(f"{team_number}_awards.csv")
-        awards = get_team_awards(team_id)
         if awards:
             save_awards_to_csv(awards, team_number)
+        else:
+            print("No award found for team {team_number}")
     else:
         print("Failed to retrieve team ID.")
 
