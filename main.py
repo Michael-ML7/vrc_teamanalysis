@@ -53,6 +53,16 @@ def get_team_matches(team_id, rounds):
         print(f"Error fetching matches: {response.status_code}")
         return []
 
+event_id2type = {}
+def get_event_type(event_id):
+    if event_id2type.get(event_id) == None:
+        url = f"{BASE_URL}/events/{event_id}"
+        response = requests.get(url, headers=HEADERS)
+
+        if response.status_code == 200:
+            data = response.json()
+            event_id2type[event_id] = data.get('level')
+    return event_id2type.get(event_id, 'Unknown')
 
 def save_matches_to_csv(matches, team_number):
     filename = f"{team_number}_matches.csv"
@@ -60,7 +70,7 @@ def save_matches_to_csv(matches, team_number):
 
     with open(filename, mode='a', newline='', encoding='utf-8') as csv_file:
         fieldnames = [
-            'Event Name', 'Match Name', 'Start Time',
+            'Event Name', 'Event Type', 'Match Name', 'Start Time',
             'Team Score', 'Opponent Score',
             'Winning Margin', 'Verdict', 'Team Alliance', 'Winning Alliance',
             'Red Team 1', 'Red Team 2', 'Blue Team 1', 'Blue Team 2'
@@ -74,6 +84,7 @@ def save_matches_to_csv(matches, team_number):
             # Extract relevant match information
             event_name = match.get('event', {}).get('name', 'Unknown')
             event_name = event_name.replace(",", "") # removing the commas from the event name just for easier data analysis on Google Sheets
+            event_type = get_event_type(match.get('event', {}).get('id', -1))
             match_name = match.get('name', 'Unknown')
 
             # Handle missing scheduled time
@@ -150,6 +161,7 @@ def save_matches_to_csv(matches, team_number):
             # Write the match details to the CSV
             writer.writerow({
                 'Event Name': event_name,
+                'Event Type': event_type,
                 'Match Name': match_name,
                 'Start Time': start_time,
                 'Team Score': team_score,
