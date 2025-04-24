@@ -11,7 +11,6 @@ HEADERS = {
     "Accept": "application/json"
 }
 
-
 # === FUNCTIONS ===
 
 def get_team_id(team_number):
@@ -80,15 +79,18 @@ def get_event_type(event_id):
             event_id2type[event_id] = data.get('level')
     return event_id2type.get(event_id, 'Unknown')
 
-def save_matches_to_csv(matches, awards, team_number):
+
+def save_matches_to_csv_and_md(matches, awards, team_number):
     for match in matches:
             if match.get('started') is None:
                 match['started'] = match.get('scheduled')
     matches = sorted(matches, key=lambda x: (x['started'] is None, x['started']))
     
-    filename = f"{team_number}_matches.csv"
+    filename_csv = f"{team_number}_matches.csv"
+    filename_md = f"{team_number}_matches.md"
 
-    with open(filename, mode='w', newline='', encoding='utf-8') as csv_file:
+    # Writing to CSV
+    with open(filename_csv, mode='w', newline='', encoding='utf-8') as csv_file:
         fieldnames = [
             'Event Name', 'Event Type', 'Qualification', 'Match Name', 'Start Time',
             'Team Score', 'Opponent Score',
@@ -96,147 +98,151 @@ def save_matches_to_csv(matches, awards, team_number):
             'Red Team 1', 'Red Team 2', 'Blue Team 1', 'Blue Team 2'
         ]
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-        
         writer.writeheader()
 
-        for match in matches:
-            # Extract relevant match information
-            event_name = match.get('event', {}).get('name', 'Unknown')
-            event_name = event_name.replace(",", "") # removing the commas from the event name just for easier data analysis on Google Sheets
-            event_type = get_event_type(match.get('event', {}).get('id', -1))
-            match_name = match.get('name', 'Unknown')
-            # Get qualification info from awards, fk the time complexity
-            qualification = 'None'
-            for award in awards:
-                if award.get('event', {}).get('name', '').replace(",", "") == event_name:
-                    qualifications_list = award.get('qualifications', [])
-                    qualification = qualifications_list[0] if qualifications_list else 'None'
-                    break
+        # Writing to Markdown
+        with open(filename_md, mode='w', encoding='utf-8') as md_file:
+            md_file.write(f"# Match Results for Team {team_number}\n\n")
+            md_file.write("| Event Name | Event Type | Qualification | Match Name | Start Time | Team Score | Opponent Score | Winning Margin | Normalised Winning Margin | Verdict | Team Alliance | Winning Alliance | Red Team 1 | Red Team 2 | Blue Team 1 | Blue Team 2 |\n")
+            md_file.write("|------------|------------|---------------|------------|------------|------------|-----------------|----------------|---------------------------|---------|---------------|------------------|------------|------------|-------------|-------------|\n")
 
-            # Handle missing scheduled time
-            start_time = match.get('started', None)
-            if not start_time:
-                start_time = match.get('scheduled', None) # If started does not exist then use scheduled time (approxmiately the same doesnt matter)
+            for match in matches:
+                event_name = match.get('event', {}).get('name', 'Unknown')
+                event_name = event_name.replace(",", "") 
+                event_type = get_event_type(match.get('event', {}).get('id', -1))
+                match_name = match.get('name', 'Unknown')
+
+                qualification = 'None'
+                for award in awards:
+                    if award.get('event', {}).get('name', '').replace(",", "") == event_name:
+                        qualifications_list = award.get('qualifications', [])
+                        qualification = qualifications_list[0] if qualifications_list else 'None'
+                        break
+
+                start_time = match.get('started', None)
                 if not start_time:
-                    start_time = 'TBD'  # Set to 'TBD' if the start time is not available
+                    start_time = match.get('scheduled', None)
+                    if not start_time:
+                        start_time = 'TBD'
 
-            alliances = match.get('alliances', [])
+                alliances = match.get('alliances', [])
 
-            # Initialize variables for alliance teams and scores
-            red_teams = []
-            blue_teams = []
-            red_score = blue_score = None
-            team_alliance = None
+                red_teams = []
+                blue_teams = []
+                red_score = blue_score = None
+                team_alliance = None
 
-            # Extract the teams and scores from alliances
-            for alliance in alliances:
-                color = alliance.get('color')
-                score = alliance.get('score', None)
-                teams = [team['team']['name'] for team in alliance.get('teams', [])]
+                for alliance in alliances:
+                    color = alliance.get('color')
+                    score = alliance.get('score', None)
+                    teams = [team['team']['name'] for team in alliance.get('teams', [])]
 
-                # Store teams based on alliance color
-                if color == 'red':
-                    red_teams = teams
-                    red_score = score
-                    if team_number in red_teams:
-                        team_alliance = 'red'
-                elif color == 'blue':
-                    blue_teams = teams
-                    blue_score = score
-                    if team_number in blue_teams:
-                        team_alliance = 'blue'
+                    if color == 'red':
+                        red_teams = teams
+                        red_score = score
+                        if team_number in red_teams:
+                            team_alliance = 'red'
+                    elif color == 'blue':
+                        blue_teams = teams
+                        blue_score = score
+                        if team_number in blue_teams:
+                            team_alliance = 'blue'
 
-            # Handle missing scores or team alliance
-            if red_score is None or blue_score is None or team_alliance is None:
-                team_score = opponent_score = margin = normalised_win_margin = 'N/A'
-            else:
-                if team_alliance == 'red':
-                    team_score = red_score
-                    opponent_score = blue_score
-                elif team_alliance == 'blue':
-                    team_score = blue_score
-                    opponent_score = red_score
+                if red_score is None or blue_score is None or team_alliance is None:
+                    team_score = opponent_score = margin = normalised_win_margin = 'N/A'
                 else:
-                    team_score = opponent_score = margin = 'Unknown'
-                # Calculate the winning margin
-                margin = team_score - opponent_score
+                    if team_alliance == 'red':
+                        team_score = red_score
+                        opponent_score = blue_score
+                    elif team_alliance == 'blue':
+                        team_score = blue_score
+                        opponent_score = red_score
+                    else:
+                        team_score = opponent_score = margin = 'Unknown'
 
-                if team_score + opponent_score == 0:
-                    normalised_win_margin = -1
-                    continue
+                    margin = team_score - opponent_score
+
+                    if team_score + opponent_score == 0:
+                        normalised_win_margin = -1
+                        continue
+                    else:
+                        normalised_win_margin = margin / (team_score + opponent_score)
+
+                winning_alliance = 'Unknown'
+                if margin > 0:
+                    winning_alliance = team_alliance
                 else:
-                    normalised_win_margin = margin / (team_score + opponent_score)
+                    if team_alliance == "red":
+                        winning_alliance = "blue"
+                    else:
+                        winning_alliance = "red"
 
-            # Identify the winning alliance
-            winning_alliance = 'Unknown'
-            if margin > 0:
-                winning_alliance = team_alliance
-            else:
-                if team_alliance == "red":
-                    winning_alliance = "blue"
+                verdict = 'D'
+                if winning_alliance == team_alliance:
+                    verdict = 'W'
                 else:
-                    winning_alliance = "red"
+                    verdict = 'L'
 
-            # Debugging: Print out the match details for inspection
-            # print(match_name)
-            # print(f"Event: {event_name}, Match: {match_name}, Start: {start_time}")
-            # print(f"Red Teams: {red_teams}, Blue Teams: {blue_teams}")
-            # print(f"Red Score: {red_score}, Blue Score: {blue_score}")
-            
-            verdict = 'D'
-            if winning_alliance == team_alliance:
-                verdict = 'W'
-            else:
-                verdict = 'L'
+                writer.writerow({
+                    'Event Name': event_name,
+                    'Event Type': event_type,
+                    'Qualification': qualification,
+                    'Match Name': match_name,
+                    'Start Time': start_time,
+                    'Team Score': team_score,
+                    'Opponent Score': opponent_score,
+                    'Winning Margin': margin,
+                    'Normalised Winning Margin': normalised_win_margin,
+                    'Verdict': verdict,
+                    'Team Alliance': team_alliance or 'Unknown',
+                    'Winning Alliance': winning_alliance,
+                    'Red Team 1': red_teams[0],
+                    'Red Team 2': red_teams[1],
+                    'Blue Team 1': blue_teams[0],
+                    'Blue Team 2': blue_teams[1]
+                })
 
-            # Write the match details to the CSV
-            writer.writerow({
-                'Event Name': event_name,
-                'Event Type': event_type,
-                'Qualification': qualification,
-                'Match Name': match_name,
-                'Start Time': start_time,
-                'Team Score': team_score,
-                'Opponent Score': opponent_score,
-                'Winning Margin': margin,
-                'Normalised Winning Margin': normalised_win_margin,
-                'Verdict': verdict,
-                'Team Alliance': team_alliance or 'Unknown',
-                'Winning Alliance': winning_alliance,
-                'Red Team 1': red_teams[0],
-                'Red Team 2': red_teams[1],
-                'Blue Team 1': blue_teams[0],
-                'Blue Team 2': blue_teams[1]
-            })
-    print(f"✅ Match results saved to {team_number}_matches.csv")
+                # Writing to Markdown
+                md_file.write(f"| {event_name} | {event_type} | {qualification} | {match_name} | {start_time} | {team_score} | {opponent_score} | {margin} | {normalised_win_margin} | {verdict} | {team_alliance or 'Unknown'} | {winning_alliance} | {red_teams[0]} | {red_teams[1]} | {blue_teams[0]} | {blue_teams[1]} |\n")
 
+    print(f"✅ Match results saved to {team_number}_matches.csv and {team_number}_matches.md")
 
-def save_awards_to_csv(awards, team_number):
-    filename = f"{team_number}_awards.csv"
+def save_awards_to_csv_and_md(awards, team_number):
+    filename_csv = f"{team_number}_awards.csv"
+    filename_md = f"{team_number}_awards.md"
 
-    with open(filename, mode='w', newline='', encoding='utf-8') as csv_file:
+    with open(filename_csv, mode='w', newline='', encoding='utf-8') as csv_file:
         fieldnames = [
             'Event Name', 'Event Type', 'Title', 'Qualifications'
         ]
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-        
         writer.writeheader()
 
-        for award in awards:
-            event_name = award.get('event', {}).get('name', 'Unknown')
-            event_name = event_name.replace(",", "") # removing the commas from the event name just for easier data analysis on Google Sheets
-            event_type = get_event_type(award.get('event', {}).get('id', -1))
-            title = award.get('title', {'Fault'})
-            qualifications = award.get('qualifications')
+        # Writing to Markdown
+        with open(filename_md, mode='w', encoding='utf-8') as md_file:
+            md_file.write(f"# Awards for Team {team_number}\n\n")
+            md_file.write("| Event Name | Event Type | Title | Qualifications |\n")
+            md_file.write("|------------|------------|-------|----------------|\n")
 
-            # Write the match details to the CSV
-            writer.writerow({
-                'Event Name': event_name,
-                'Event Type': event_type,
-                'Title': title,
-                'Qualifications': ";".join(qualifications)
-            })
-    print(f"✅ Match results saved to {team_number}_awards.csv")
+            for award in awards:
+                event_name = award.get('event', {}).get('name', 'Unknown')
+                event_name = event_name.replace(",", "")
+                event_type = get_event_type(award.get('event', {}).get('id', -1))
+                title = award.get('title', {'Fault'})
+                qualifications = award.get('qualifications')
+
+                writer.writerow({
+                    'Event Name': event_name,
+                    'Event Type': event_type,
+                    'Title': title,
+                    'Qualifications': ";".join(qualifications)
+                })
+
+                # Writing to Markdown
+                md_file.write(f"| {event_name} | {event_type} | {title} | {';'.join(qualifications)} |\n")
+
+    print(f"✅ Award results saved to {team_number}_awards.csv and {team_number}_awards.md")
+
 
 # === MAIN ===
 
@@ -250,27 +256,26 @@ def main():
         # Fetch data
         awards = get_team_awards(team_id)
         matches = get_team_matches(team_id, 2)
-        for i in range(3,10):
-            matches += get_team_matches(team_id, i) # apparently it doesnt work when i try to get them at all once
+        for i in range(3, 10):
+            matches += get_team_matches(team_id, i)
         
         # Process team match data
-        # Include Qualification (2), Quarter-Finals (3), Semi-Finals (4), Finals (5)
         print("⚙ Match data")
         if os.path.exists(f"{team_number}_matches.csv"):
             os.remove(f"{team_number}_matches.csv")
         if matches:
-            save_matches_to_csv(matches, awards, team_number)
+            save_matches_to_csv_and_md(matches, awards, team_number)
         else:
             print("No matches found for team {team_number}")
 
         # Process team award data
-        print("⚙ Match data")
+        print("⚙ Award data")
         if os.path.exists(f"{team_number}_awards.csv"):
             os.remove(f"{team_number}_awards.csv")
         if awards:
-            save_awards_to_csv(awards, team_number)
+            save_awards_to_csv_and_md(awards, team_number)
         else:
-            print("No award found for team {team_number}")
+            print("No awards found for team {team_number}")
     else:
         print("Failed to retrieve team ID.")
 
