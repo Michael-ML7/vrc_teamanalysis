@@ -271,9 +271,9 @@ def main(team_number):
     print(f"\nFetching data for Team {team_number}...")
     
     # Check if files already exist
-    if os.path.exists(f"{team_number}_matches.csv") and os.path.exists(f"{team_number}_awards.csv"):
-        print("Data already exists for this team. Skipping...")
-        return
+    # if os.path.exists(f"{team_number}_matches.csv") and os.path.exists(f"{team_number}_awards.csv"):
+    #     print("Data already exists for this team. Skipping...")
+    #     return
 
     # Get team ID
     team_id = get_team_id(team_number)
@@ -314,7 +314,7 @@ def main(team_number):
 if __name__ == "__main__":
     team_numbers = [
         # special handling
-        
+        "8047F", "8349U", "8682C", "8889S", "9065H", "9231A", "9784A", "937X", "94Z", "81785K", "83149B", "86254B", "89250X", "93199G", "96504E", "97673Z", "99040E", "99904W"
 
         # "39H", "94Z", "210Z", "321D", "360X", "603B", "719S", "839Z", "937X", "1011X",
         # "1065A", "1115E", "1229W", "1381P", "1674A", "1868A", "2011C", "2072C", "2150A", "2567C",
