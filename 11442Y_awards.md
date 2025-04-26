@@ -1,0 +1,7 @@
+# Awards for Team 11442Y
+
+| Event Name | Event Type | Title | Qualifications |
+|------------|------------|-------|----------------|
+| Vex V5 "High Stakes" Competition @ The Harvey School | Other | Amaze Award (VRC/VEXU/VAIRC) | Event Region Championship |
+| Roslyn Robotics V5 Vex High Stakes Challenge | Other | Think Award (VRC/VEXU/VAIRC) |  |
+| 2025 Southern New York State Championship - VEX V5 High School: Hosted by C2C Robotics and John F. Kennedy High School | Regional | Think Award (VRC/VEXU/VAIRC) | World Championship |

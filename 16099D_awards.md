@@ -1,0 +1,7 @@
+# Awards for Team 16099D
+
+| Event Name | Event Type | Title | Qualifications |
+|------------|------------|-------|----------------|
+| VCAT VEX V5 Tournament at Vaughn College | Other | Tournament Finalists (VRC/VEXU/VAIRC) | Event Region Championship |
+| VCAT VEX V5 Tournament at Vaughn College | Other | Innovate Award (VRC/VEXU/VAIRC) | Event Region Championship |
+| 2025 Southern New York State Championship - VEX V5 High School: Hosted by C2C Robotics and John F. Kennedy High School | Regional | Tournament Finalists (VRC/VEXU/VAIRC) | World Championship |

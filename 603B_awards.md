@@ -1,0 +1,17 @@
+# Awards for Team 603B
+
+| Event Name | Event Type | Title | Qualifications |
+|------------|------------|-------|----------------|
+| The Lobstah Bowl VEX V5 Robotics Competition Signature Event: High School | Signature | Create Award (VRC/VEXU/VAIRC) |  |
+| MCC Robotics VEX V5 Robotics Competition Kickoff | Other | Innovate Award (VRC/VEXU/VAIRC) |  |
+| Scarborough October Fest: High Stakes Qualifier | Other | Create Award (VRC/VEXU/VAIRC) |  |
+| First Annual Thetford Academy Haunted Harvest V5 Tournament: Blended V5 High Stakes Tournament | Other | Design Award (VRC/VEXU/VAIRC) | Event Region Championship |
+| Fryeburg Academy VEX V5 High Stakes Qualifier | Other | Tournament Champions (VRC/VEXU/VAIRC) | Event Region Championship |
+| Pinkerton Pre-TDay Tournament: Pinkerton Academy V5 Tourny | Other | Tournament Champions (VRC/VEXU/VAIRC) | Event Region Championship |
+| Pinkerton Pre-TDay Tournament: Pinkerton Academy V5 Tourny | Other | Excellence Award (VRC/VEXU/VAIRC) | Event Region Championship |
+| Fryeburg Academy VEX V5 High Stakes Qualifier | Other | Innovate Award (VRC/VEXU/VAIRC) | Event Region Championship |
+| Bow Bot Bout 2025: Bow High School V5RC Tournament | Other | Innovate Award (VRC/VEXU/VAIRC) |  |
+| River Valley RADs Inaugural VEX V5 Tournament: Vermont's ONLY VEX V5 Tournament in 2025 | Other | Design Award (VRC/VEXU/VAIRC) | Event Region Championship |
+| Coe-Brown Northwood Academy Frosty Bots V5RC Tournament | Other | Tournament Champions (VRC/VEXU/VAIRC) | Event Region Championship |
+| NH/VT 2024 VEX V5 High Stakes State Championship | Regional | Tournament Champions (VRC/VEXU/VAIRC) | World Championship |
+| NH/VT 2024 VEX V5 High Stakes State Championship | Regional | Design Award (VRC/VEXU/VAIRC) | World Championship |

@@ -1,0 +1,8 @@
+# Awards for Team 19122B
+
+| Event Name | Event Type | Title | Qualifications |
+|------------|------------|-------|----------------|
+| 1st Annual ERHS Knights VEX V5 Robotics Challenge: HS/MS Tournament | Other | Amaze Award (VRC/VEXU/VAIRC) |  |
+| Showdown in the Devil's Den VEX V5 Robotics Competition: High School Only | Other | Excellence Award (VRC/VEXU/VAIRC) | Event Region Championship |
+| Showdown in the Devil's Den VEX V5 Robotics Competition: High School Only | Other | Tournament Champions (VRC/VEXU/VAIRC) | Event Region Championship |
+| 2025 North/Central Florida High School Event Region Championship: VEX V5 Robotics Competition | Regional | Think Award (VRC/VEXU/VAIRC) | World Championship |

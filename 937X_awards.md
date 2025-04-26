@@ -1,0 +1,14 @@
+# Awards for Team 937X
+
+| Event Name | Event Type | Title | Qualifications |
+|------------|------------|-------|----------------|
+| Applied Tech Classic VEX V5 Robotics Competition Tournament: VEX V5 Robotics Competition HS Only All in person judging | Other | Robot Skills Champion (VRC/VEXU/VAIRC) |  |
+| Applied Tech Classic VEX V5 Robotics Competition Tournament: VEX V5 Robotics Competition HS Only All in person judging | Other | Design Award (VRC/VEXU/VAIRC) |  |
+| 5th Annual Mountain Pointe Robotics State Qualifier & Expo: VEX V5 Robotics Competition HS Only In-Person Judging | Other | Tournament Champions (VRC/VEXU/VAIRC) | Event Region Championship |
+| 5th Annual Mountain Pointe Robotics State Qualifier & Expo: VEX V5 Robotics Competition HS Only In-Person Judging | Other | Robot Skills Champion (VRC/VEXU/VAIRC) |  |
+| 5th Annual Mountain Pointe Robotics State Qualifier & Expo: VEX V5 Robotics Competition HS Only In-Person Judging | Other | Excellence Award (VRC/VEXU/VAIRC) | Event Region Championship |
+| Applied Tech Winter Showdown Tournament: VEX V5 Robotics Competition HS Only All in person judging | Other | Excellence Award (VRC/VEXU/VAIRC) | Event Region Championship |
+| Applied Tech Winter Showdown Tournament: VEX V5 Robotics Competition HS Only All in person judging | Other | Tournament Champions (VRC/VEXU/VAIRC) | Event Region Championship |
+| Kalahari Classic VEX V5 Robotics Competition Signature Event - HS: High School - WORLDS QUALIFYING DIVISION | Signature | Tournament Finalists (VRC/VEXU/VAIRC) |  |
+| 2025 AIA Arizona VEX V5 Robotics Competition: High School State Championship | Regional | Excellence Award (VRC/VEXU/VAIRC) | World Championship |
+| 2025 AIA Arizona VEX V5 Robotics Competition: High School State Championship | Regional | Tournament Champions (VRC/VEXU/VAIRC) | World Championship |

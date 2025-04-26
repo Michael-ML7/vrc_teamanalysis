@@ -1,0 +1,43 @@
+# Match Results for Team 59001A
+
+| Event Name | Event Type | Qualification | Match Name | Start Time | Team Score | Opponent Score | Winning Margin | Normalised Winning Margin | Verdict | Team Alliance | Winning Alliance | Red Team 1 | Red Team 2 | Blue Team 1 | Blue Team 2 |
+|------------|------------|---------------|------------|------------|------------|-----------------|----------------|---------------------------|---------|---------------|------------------|------------|------------|-------------|-------------|
+| 29 Ekim Cumhuriyet Bayramı VEX Robotics İstanbul Turnuvası | Other | Event Region Championship | Qualifier #2 | 2024-10-19T03:29:20-04:00 | 3 | 9 | -6 | -0.5 | L | red | blue | 59001A | 34100B | 54437A | 63840T |
+| 29 Ekim Cumhuriyet Bayramı VEX Robotics İstanbul Turnuvası | Other | Event Region Championship | Qualifier #12 | 2024-10-19T05:14:46-04:00 | 9 | 8 | 1 | 0.058823529411764705 | W | blue | blue | 34100A | 34035A | 82090A | 59001A |
+| 29 Ekim Cumhuriyet Bayramı VEX Robotics İstanbul Turnuvası | Other | Event Region Championship | Qualifier #15 | 2024-10-19T06:33:51-04:00 | 11 | 21 | -10 | -0.3125 | L | blue | red | 19190T | 34001B | 57570A | 59001A |
+| 29 Ekim Cumhuriyet Bayramı VEX Robotics İstanbul Turnuvası | Other | Event Region Championship | Qualifier #24 | 2024-10-19T08:01:48-04:00 | 3 | 42 | -39 | -0.8666666666666667 | L | red | blue | 59001A | 92320X | 34001A | 11543G |
+| 29 Ekim Cumhuriyet Bayramı VEX Robotics İstanbul Turnuvası | Other | Event Region Championship | Qualifier #34 | 2024-10-19T09:54:43-04:00 | 7 | 3 | 4 | 0.4 | W | red | red | 57933A | 59001A | 15001T | 20230T |
+| 29 Ekim Cumhuriyet Bayramı VEX Robotics İstanbul Turnuvası | Other | Event Region Championship | Qualifier #40 | 2024-10-20T03:25:48-04:00 | 16 | 9 | 7 | 0.28 | W | red | red | 59001A | 38218A | 63840R | 74598F |
+| 29 Ekim Cumhuriyet Bayramı VEX Robotics İstanbul Turnuvası | Other | Event Region Championship | Qualifier #47 | 2024-10-20T04:36:16-04:00 | 6 | 5 | 1 | 0.09090909090909091 | W | blue | blue | 57933A | 19190T | 18634D | 59001A |
+| 29 Ekim Cumhuriyet Bayramı VEX Robotics İstanbul Turnuvası | Other | Event Region Championship | QF #2-1 | 2024-10-20T06:20:22-04:00 | 11 | 10 | 1 | 0.047619047619047616 | W | red | red | 11543G | 59001A | 21190Z | 92320T |
+| 29 Ekim Cumhuriyet Bayramı VEX Robotics İstanbul Turnuvası | Other | Event Region Championship | SF #1-1 | 2024-10-20T06:54:47-04:00 | 11 | 29 | -18 | -0.45 | L | blue | red | 34001A | 19190T | 11543G | 59001A |
+| VEX Robotics Istanbul VRC Open | Other | Event Region Championship | Qualifier #4 | 2025-01-11T02:32:49-05:00 | 19 | 6 | 13 | 0.52 | W | red | red | 59001A | 34035A | 26026B | 34589A |
+| VEX Robotics Istanbul VRC Open | Other | Event Region Championship | Qualifier #19 | 2025-01-11T03:53:19-05:00 | 36 | 15 | 21 | 0.4117647058823529 | W | blue | blue | 15001T | 34001B | 59001A | 18850F |
+| VEX Robotics Istanbul VRC Open | Other | Event Region Championship | Qualifier #24 | 2025-01-11T05:50:22-05:00 | 6 | 11 | -5 | -0.29411764705882354 | L | blue | red | 28390T | 11543G | 34444A | 59001A |
+| VEX Robotics Istanbul VRC Open | Other | Event Region Championship | Qualifier #33 | 2025-01-11T06:40:27-05:00 | 34 | 12 | 22 | 0.4782608695652174 | W | red | red | 59001A | 34100B | 34067A | 41207B |
+| VEX Robotics Istanbul VRC Open | Other | Event Region Championship | Qualifier #47 | 2025-01-11T08:07:27-05:00 | 23 | 6 | 17 | 0.5862068965517241 | W | red | red | 59001A | 51451E | 63840R | 46262X |
+| VEX Robotics Istanbul VRC Open | Other | Event Region Championship | Qualifier #51 | 2025-01-12T02:12:24-05:00 | 38 | 3 | 35 | 0.8536585365853658 | W | red | red | 22911M | 59001A | 1430X | 57570A |
+| VEX Robotics Istanbul VRC Open | Other | Event Region Championship | Qualifier #64 | 2025-01-12T03:19:23-05:00 | 44 | 17 | 27 | 0.4426229508196721 | W | blue | blue | 70710W | 26622B | 34001A | 59001A |
+| VEX Robotics Istanbul VRC Open | Other | Event Region Championship | QF #3-1 | 2025-01-12T06:03:30-05:00 | 36 | 23 | 13 | 0.22033898305084745 | W | red | red | 59001A | 34001B | 11543G | 34100B |
+| VEX Robotics Istanbul VRC Open | Other | Event Region Championship | SF #2-1 | 2025-01-12T06:40:42-05:00 | 22 | 30 | -8 | -0.15384615384615385 | L | red | blue | 59001A | 34001B | 19190T | 20230T |
+| VEX Robotics Competition Ankara Turnuvası | Other | None | Qualifier #9 | 2025-02-15T03:36:58-05:00 | 7 | 13 | -6 | -0.3 | L | red | blue | 33900A | 59001A | 63683C | 41207B |
+| VEX Robotics Competition Ankara Turnuvası | Other | None | Qualifier #18 | 2025-02-15T05:50:01-05:00 | 21 | 7 | 14 | 0.5 | W | blue | blue | 51451E | 33002A | 80084S | 59001A |
+| VEX Robotics Competition Ankara Turnuvası | Other | None | Qualifier #22 | 2025-02-15T06:07:23-05:00 | 32 | 12 | 20 | 0.45454545454545453 | W | red | red | 59001A | 34999A | 71080V | 26622B |
+| VEX Robotics Competition Ankara Turnuvası | Other | None | Qualifier #32 | 2025-02-15T07:02:14-05:00 | 6 | 25 | -19 | -0.6129032258064516 | L | blue | red | 34100A | 86840M | 90622N | 59001A |
+| VEX Robotics Competition Ankara Turnuvası | Other | None | Qualifier #44 | 2025-02-15T08:04:59-05:00 | 32 | 18 | 14 | 0.28 | W | red | red | 8862A | 59001A | 19640A | 33900B |
+| VEX Robotics Competition Ankara Turnuvası | Other | None | Qualifier #53 | 2025-02-16T01:59:44-05:00 | 32 | 4 | 28 | 0.7777777777777778 | W | red | red | 15001T | 59001A | 86840B | 34067A |
+| VEX Robotics Competition Ankara Turnuvası | Other | None | Qualifier #61 | 2025-02-16T02:56:04-05:00 | 31 | 14 | 17 | 0.37777777777777777 | W | blue | blue | 3255D | 34444A | 59001A | 34001B |
+| VEX Robotics Competition Ankara Turnuvası | Other | None | QF #1-1 | 2025-02-16T05:27:01-05:00 | 22 | 23 | -1 | -0.022222222222222223 | L | red | blue | 59001A | 34100A | 86840M | 86840B |
+| VEX Robotics Competition Turkiye National Championship | Regional | RE-V5RC-24-8909 | Qualifier #6 | 2025-03-01T02:26:00-05:00 | 20 | 37 | -17 | -0.2982456140350877 | L | red | blue | 59001A | 22911M | 34100A | 92320X |
+| VEX Robotics Competition Turkiye National Championship | Regional | RE-V5RC-24-8909 | Qualifier #12 | 2025-03-01T03:05:00-05:00 | 17 | 6 | 11 | 0.4782608695652174 | W | red | red | 18416S | 59001A | 33900B | 54437A |
+| VEX Robotics Competition Turkiye National Championship | Regional | RE-V5RC-24-8909 | Qualifier #25 | 2025-03-01T05:55:57-05:00 | 25 | 34 | -9 | -0.15254237288135594 | L | blue | red | 19190T | 80084S | 59001A | 34589A |
+| VEX Robotics Competition Turkiye National Championship | Regional | RE-V5RC-24-8909 | Qualifier #32 | 2025-03-01T06:49:02-05:00 | 36 | 28 | 8 | 0.125 | W | blue | blue | 20230T | 34444A | 59001A | 11543G |
+| VEX Robotics Competition Turkiye National Championship | Regional | RE-V5RC-24-8909 | Qualifier #43 | 2025-03-01T07:37:24-05:00 | 37 | 4 | 33 | 0.8048780487804879 | W | red | red | 59001A | 34999A | 21190Z | 26622B |
+| VEX Robotics Competition Turkiye National Championship | Regional | RE-V5RC-24-8909 | Qualifier #55 | 2025-03-02T02:11:16-05:00 | 16 | 29 | -13 | -0.28888888888888886 | L | blue | red | 28390T | 63840T | 59001A | 86840C |
+| VEX Robotics Competition Turkiye National Championship | Regional | RE-V5RC-24-8909 | Qualifier #68 | 2025-03-02T03:19:52-05:00 | 45 | 26 | 19 | 0.2676056338028169 | W | blue | blue | 86840M | 92320T | 34001A | 59001A |
+| VEX Robotics Competition Turkiye National Championship | Regional | RE-V5RC-24-8909 | Qualifier #74 | 2025-03-02T04:02:41-05:00 | 32 | 13 | 19 | 0.4222222222222222 | W | blue | blue | 86840B | 74598F | 63840R | 59001A |
+| VEX Robotics Competition Turkiye National Championship | Regional | RE-V5RC-24-8909 | QF #1-1 | 2025-03-02T05:17:09-05:00 | 37 | 29 | 8 | 0.12121212121212122 | W | red | red | 34001A | 59001A | 80084S | 92320T |
+| VEX Robotics Competition Turkiye National Championship | Regional | RE-V5RC-24-8909 | Final #1-1 | 2025-03-02T06:39:31-05:00 | 42 | 31 | 11 | 0.1506849315068493 | W | red | red | 34001A | 59001A | 19190T | 20230T |
+| VEX Robotics Competition Turkiye National Championship | Regional | RE-V5RC-24-8909 | Final #1-2 | 2025-03-02T07:35:36-05:00 | 25 | 34 | -9 | -0.15254237288135594 | L | red | blue | 34001A | 59001A | 19190T | 20230T |
+| VEX Robotics Competition Turkiye National Championship | Regional | RE-V5RC-24-8909 | Final #1-3 | 2025-03-02T07:52:16-05:00 | 23 | 32 | -9 | -0.16363636363636364 | L | red | blue | 34001A | 59001A | 19190T | 20230T |
+| VEX Robotics Competition Turkiye National Championship | Regional | RE-V5RC-24-8909 | SF #1-1 | TBD | 21 | 14 | 7 | 0.2 | W | red | red | 34001A | 59001A | 34444A | 22911M |

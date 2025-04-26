@@ -1,0 +1,8 @@
+# Awards for Team 321D
+
+| Event Name | Event Type | Title | Qualifications |
+|------------|------------|-------|----------------|
+| Glenbrook South VEX V5RC HS/MS Qualifier #1; Glenview Illinois: VEX V5 Robotics Competition | Other | Tournament Finalists (VRC/VEXU/VAIRC) |  |
+| College of Lake County - Advanced Tech Center V5RC Blended: VEX V5 Robotics Competition in conjunction with Mundelein High School | Other | Excellence Award (VRC/VEXU/VAIRC) | Event Region Championship |
+| College of Lake County - Advanced Tech Center V5RC Blended: VEX V5 Robotics Competition in conjunction with Mundelein High School | Other | Robot Skills Champion (VRC/VEXU/VAIRC) |  |
+| Illinois V5RC HS State Championship; Olympia Fields IL: Olympia Fields IL; VEX V5 Robotics Competition | Regional | Tournament Semifinalists (VRC/VEXU/VAIRC) | World Championship |

@@ -1,0 +1,7 @@
+# Awards for Team 39599C
+
+| Event Name | Event Type | Title | Qualifications |
+|------------|------------|-------|----------------|
+| Winters FarmBots Blended League | Other | Excellence Award (VRC/VEXU/VAIRC) | Event Region Championship |
+| Winters FarmBots Blended League | Other | Tournament Champions (VRC/VEXU/VAIRC) |  |
+| Battle for Placer Gold Invitational: V5RC High Stakes: VRC Blended MS&HS In-Person with Remote Notebook Judging | Other | Judges Award (VRC/VEXU/VAIC/ADC/VAIRC) |  |

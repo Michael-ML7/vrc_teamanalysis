@@ -1,0 +1,8 @@
+# Awards for Team 7447G
+
+| Event Name | Event Type | Title | Qualifications |
+|------------|------------|-------|----------------|
+| PCCTC VEX V5 MS/HS Robotics Competition: Middle and High School Teams | Other | Excellence Award (VRC/VEXU/VAIRC) | Event Region Championship |
+| Pickens Middle VEX V5 MS/HS Robotics Competition: MS/HS  Tournament | Other | Design Award (VRC/VEXU/VAIRC) |  |
+| Ice Scream Social (V5RC): Middle and High School Teams | Other | Design Award (VRC/VEXU/VAIRC) |  |
+| Bots @ Bristol VEX V5 Robotics Competition Signature Event: High School | Signature | Build Award (VRC/VEXU/VAIRC) |  |

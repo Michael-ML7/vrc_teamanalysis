@@ -1,0 +1,16 @@
+# Awards for Team 4828X
+
+| Event Name | Event Type | Title | Qualifications |
+|------------|------------|-------|----------------|
+| River Region Kick Off VEX V5 Robotics Competition: High School/Middle School Teams | Other | Tournament Champions (VRC/VEXU/VAIRC) | Event Region Championship |
+| River Region Kick Off VEX V5 Robotics Competition: High School/Middle School Teams | Other | Robot Skills Champion (VRC/VEXU/VAIRC) |  |
+| Montgomery Bots at the Fair VEX V5 Robotics Competition: Middle and High School Teams | Other | Tournament Champions (VRC/VEXU/VAIRC) | Event Region Championship |
+| Montgomery Bots at the Fair VEX V5 Robotics Competition: Middle and High School Teams | Other | Robot Skills Champion (VRC/VEXU/VAIRC) |  |
+| Montgomery Bots at the Fair VEX V5 Robotics Competition: Middle and High School Teams | Other | Innovate Award (VRC/VEXU/VAIRC) |  |
+| Montgomery Area Robotics VEX V5 Robotics Competition: Middle and High School Teams | Other | Tournament Champions (VRC/VEXU/VAIRC) | Event Region Championship |
+| Montgomery Area Robotics VEX V5 Robotics Competition: Middle and High School Teams | Other | Robot Skills Champion (VRC/VEXU/VAIRC) |  |
+| Montgomery Area Robotics  VEX V5 Robotics Competition: Middle and High School Teams | Other | Tournament Champions (VRC/VEXU/VAIRC) | Event Region Championship |
+| Montgomery Area Robotics  VEX V5 Robotics Competition: Middle and High School Teams | Other | Robot Skills Champion (VRC/VEXU/VAIRC) |  |
+| Montgomery Area VEX V5 Robotics Competition High Stakes: Middle and High School Teams- Park Crossing | Other | Tournament Champions (VRC/VEXU/VAIRC) | Event Region Championship |
+| Maxwell AFB and MPS VEX V5 Robotics Competition: Middle and High School Teams | Other | Robot Skills Champion (VRC/VEXU/VAIRC) |  |
+| Alabama VEX V5 Event Region Championship 2025: High School Teams Only | Regional | Robot Skills Champion (VRC/VEXU/VAIRC) | World Championship |

@@ -1,0 +1,7 @@
+# Awards for Team 64783A
+
+| Event Name | Event Type | Title | Qualifications |
+|------------|------------|-------|----------------|
+| Canisius 2025 VEX V5 High Stakes Qualifying Tournament (HS & MS) | Other | Tournament Finalists (VRC/VEXU/VAIRC) | Event Region Championship |
+| Harbor Creek Northwest PA Regional: VEX V5 Robotics Competition High Stakes | Other | Tournament Champions (VRC/VEXU/VAIRC) | Event Region Championship |
+| Northern NYS VEX V5RC HS/MS Blended High Stakes Championship | Regional | Tournament Finalists (VRC/VEXU/VAIRC) | World Championship |

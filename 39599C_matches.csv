@@ -1,0 +1,54 @@
+Event Name,Event Type,Qualification,Match Name,Start Time,Team Score,Opponent Score,Winning Margin,Normalised Winning Margin,Verdict,Team Alliance,Winning Alliance,Red Team 1,Red Team 2,Blue Team 1,Blue Team 2
+Winters FarmBots Blended League,Other,Event Region Championship,Qualifier #1,2024-10-09T17:12:03-04:00,3,3,0,0.0,D,blue,Tie,39599A,39599X,39599C,39599Y
+Winters FarmBots Blended League,Other,Event Region Championship,Qualifier #5,2024-10-09T17:57:22-04:00,9,3,6,0.5,W,red,red,39599C,39599M,39599E,39599A
+Winters FarmBots Blended League,Other,Event Region Championship,Qualifier #8,2024-10-09T18:11:57-04:00,0,14,-14,-1.0,L,blue,red,39599H,95694B,39599R,39599C
+Placer Robotics V5RC High Stakes Tournament: HS Only In-Person Digital Engineering Notebooks,Other,None,Qualifier #9,2024-11-03T12:48:58-05:00,22,25,-3,-0.06382978723404255,L,blue,red,83444F,2550R,39599C,5327C
+Placer Robotics V5RC High Stakes Tournament: HS Only In-Person Digital Engineering Notebooks,Other,None,Qualifier #16,2024-11-03T13:20:47-05:00,3,32,-29,-0.8285714285714286,L,red,blue,733B,39599C,66957B,2550A
+Placer Robotics V5RC High Stakes Tournament: HS Only In-Person Digital Engineering Notebooks,Other,None,Qualifier #20,2024-11-03T13:37:29-05:00,24,14,10,0.2631578947368421,W,red,red,39599C,2550S,733D,295X
+Placer Robotics V5RC High Stakes Tournament: HS Only In-Person Digital Engineering Notebooks,Other,None,Qualifier #29,2024-11-03T14:31:16-05:00,3,24,-21,-0.7777777777777778,L,blue,red,295S,733A,39599C,39599D
+Placer Robotics V5RC High Stakes Tournament: HS Only In-Person Digital Engineering Notebooks,Other,None,Qualifier #45,2024-11-03T16:45:57-05:00,14,35,-21,-0.42857142857142855,L,blue,red,5327R,295V,39599C,29712C
+Placer Robotics V5RC High Stakes Tournament: HS Only In-Person Digital Engineering Notebooks,Other,None,Qualifier #51,2024-11-03T17:14:30-05:00,0,12,-12,-1.0,L,red,blue,39599H,39599C,39599G,295K
+Winters FarmBots Blended League,Other,Event Region Championship,Qualifier #4,2024-12-04T16:45:00-05:00,3,3,0,0.0,D,red,Tie,39599C,39599G,95694D,95694C
+Winters FarmBots Blended League,Other,Event Region Championship,Qualifier #6,2024-12-04T16:55:00-05:00,3,0,3,1.0,W,red,red,39599C,39599H,39599J,95694E
+Winters FarmBots Blended League,Other,Event Region Championship,Qualifier #11,2024-12-04T17:20:00-05:00,0,8,-8,-1.0,L,blue,red,39599P,39599K,95694B,39599C
+Winters FarmBots Invitational,Other,None,Qualifier #3,2024-12-21T12:10:00-05:00,34,3,31,0.8378378378378378,W,red,red,39599C,733C,39599X,39599G
+Winters FarmBots Invitational,Other,None,Qualifier #13,2024-12-21T13:00:00-05:00,12,23,-11,-0.3142857142857143,L,blue,red,39599M,295F,39599C,39599B
+Winters FarmBots Invitational,Other,None,Qualifier #22,2024-12-21T13:45:00-05:00,12,23,-11,-0.3142857142857143,L,blue,red,39599Z,20132B,39599C,19359E
+Winters FarmBots Invitational,Other,None,Qualifier #26,2024-12-21T14:05:00-05:00,14,8,6,0.2727272727272727,W,red,red,39599F,39599C,95694B,95694C
+Winters FarmBots Invitational,Other,None,Qualifier #37,2024-12-21T15:00:00-05:00,3,23,-20,-0.7692307692307693,L,blue,red,39599D,20000X,39599E,39599C
+Winters FarmBots Invitational,Other,None,Qualifier #45,2024-12-21T15:40:00-05:00,18,3,15,0.7142857142857143,W,red,red,733A,39599C,19359X,39599A
+NorCal Silicon Valley Golden State High Stakes Tournament #1: VEX V5 Blended MS & HS In-Person with Digital Engineering Notebooks,Other,None,Qualifier #10,2025-02-02T13:29:13-05:00,8,45,-37,-0.6981132075471698,L,red,blue,13980A,39599C,39599B,315N
+NorCal Silicon Valley Golden State High Stakes Tournament #1: VEX V5 Blended MS & HS In-Person with Digital Engineering Notebooks,Other,None,Qualifier #16,2025-02-02T13:50:32-05:00,35,14,21,0.42857142857142855,W,red,red,39599C,2154A,2130J,315P
+NorCal Silicon Valley Golden State High Stakes Tournament #1: VEX V5 Blended MS & HS In-Person with Digital Engineering Notebooks,Other,None,Qualifier #29,2025-02-02T14:35:44-05:00,26,36,-10,-0.16129032258064516,L,blue,red,59200R,1806X,68699A,39599C
+NorCal Silicon Valley Golden State High Stakes Tournament #1: VEX V5 Blended MS & HS In-Person with Digital Engineering Notebooks,Other,None,Qualifier #36,2025-02-02T14:59:37-05:00,4,26,-22,-0.7333333333333333,L,blue,red,295F,96697X,59200N,39599C
+NorCal Silicon Valley Golden State High Stakes Tournament #1: VEX V5 Blended MS & HS In-Person with Digital Engineering Notebooks,Other,None,Qualifier #46,2025-02-02T16:15:34-05:00,31,0,31,1.0,W,blue,blue,13920H,88909B,39599C,95111V
+NorCal Silicon Valley Golden State High Stakes Tournament #1: VEX V5 Blended MS & HS In-Person with Digital Engineering Notebooks,Other,None,Qualifier #63,2025-02-02T17:20:45-05:00,7,37,-30,-0.6818181818181818,L,red,blue,39599C,39599Z,295A,315E
+NorCal Silicon Valley Golden State High Stakes Tournament #1: VEX V5 Blended MS & HS In-Person with Digital Engineering Notebooks,Other,None,Qualifier #68,2025-02-02T17:39:21-05:00,19,27,-8,-0.17391304347826086,L,red,blue,94027C,39599C,57827A,94022A
+NorCal Silicon Valley Golden State High Stakes Tournament #1: VEX V5 Blended MS & HS In-Person with Digital Engineering Notebooks,Other,None,Qualifier #74,2025-02-02T18:02:25-05:00,11,45,-34,-0.6071428571428571,L,blue,red,1698V,59200Z,59200V,39599C
+NorCal Silicon Valley Golden State High Stakes Tournament #1: VEX V5 Blended MS & HS In-Person with Digital Engineering Notebooks,Other,None,R16 #5-1,2025-02-02T20:22:11-05:00,15,38,-23,-0.4339622641509434,L,blue,red,2154A,1806X,59200B,39599C
+Winters FarmBots Blended League,Other,Event Region Championship,Qualifier #2,2025-02-05T16:55:00-05:00,17,7,10,0.4166666666666667,W,blue,blue,95694C,39599D,39599B,39599C
+Winters FarmBots Blended League,Other,Event Region Championship,Qualifier #7,2025-02-05T17:20:00-05:00,12,3,9,0.6,W,red,red,39599Z,39599C,39599G,39599F
+Winters FarmBots Blended League,Other,Event Region Championship,Qualifier #9,2025-02-05T17:30:00-05:00,16,28,-12,-0.2727272727272727,L,blue,red,39599M,95694B,39599D,39599C
+Winters FarmBots Blended League,Other,Event Region Championship,Qualifier #12,2025-02-05T17:45:00-05:00,3,3,0,0.0,D,blue,Tie,39599R,39599A,39599C,39599X
+Battle for Placer Gold Invitational: V5RC High Stakes: VRC Blended MS&HS In-Person with Remote Notebook Judging,Other,None,Qualifier #5,2025-02-23T12:21:09-05:00,33,28,5,0.08196721311475409,W,red,red,2550C,39599C,295R,733B
+Battle for Placer Gold Invitational: V5RC High Stakes: VRC Blended MS&HS In-Person with Remote Notebook Judging,Other,None,Qualifier #15,2025-02-23T13:11:26-05:00,12,16,-4,-0.14285714285714285,L,blue,red,15151A,295Z,39599C,15151C
+Battle for Placer Gold Invitational: V5RC High Stakes: VRC Blended MS&HS In-Person with Remote Notebook Judging,Other,None,Qualifier #26,2025-02-23T14:04:59-05:00,20,25,-5,-0.1111111111111111,L,red,blue,39599C,733D,295T,295E
+Battle for Placer Gold Invitational: V5RC High Stakes: VRC Blended MS&HS In-Person with Remote Notebook Judging,Other,None,Qualifier #37,2025-02-23T15:40:15-05:00,17,6,11,0.4782608695652174,W,red,red,295F,39599C,77729B,733E
+Battle for Placer Gold Invitational: V5RC High Stakes: VRC Blended MS&HS In-Person with Remote Notebook Judging,Other,None,Qualifier #53,2025-02-23T16:57:37-05:00,25,16,9,0.21951219512195122,W,blue,blue,77729C,39599B,295A,39599C
+Battle for Placer Gold Invitational: V5RC High Stakes: VRC Blended MS&HS In-Person with Remote Notebook Judging,Other,None,Qualifier #68,2025-02-23T18:03:33-05:00,5,29,-24,-0.7058823529411765,L,blue,red,295P,295C,9537Z,39599C
+Battle for Placer Gold Invitational: V5RC High Stakes: VRC Blended MS&HS In-Person with Remote Notebook Judging,Other,None,R16 #7-1,2025-02-23T19:55:10-05:00,0,0,0,-1,D,blue,Tie,57827A,295W,39599C,39599D
+Battle for Placer Gold Invitational: V5RC High Stakes: VRC Blended MS&HS In-Person with Remote Notebook Judging,Other,None,R16 #7-2,2025-02-23T20:14:02-05:00,8,35,-27,-0.627906976744186,L,blue,red,57827A,295W,39599C,39599D
+2025 California Region 2 VEX V5 High School Championship: Season: High Stakes (2024-2025) In-Person Judging Digital Engineering Notebook,Regional,None,Qualifier #14,2025-03-08T14:03:38-05:00,27,25,2,0.038461538461538464,W,blue,blue,95212A,94517A,5776K,39599C
+2025 California Region 2 VEX V5 High School Championship: Season: High Stakes (2024-2025) In-Person Judging Digital Engineering Notebook,Regional,None,Qualifier #30,2025-03-08T15:03:00-05:00,30,37,-7,-0.1044776119402985,L,blue,red,295S,95071X,1000A,39599C
+2025 California Region 2 VEX V5 High School Championship: Season: High Stakes (2024-2025) In-Person Judging Digital Engineering Notebook,Regional,None,Qualifier #43,2025-03-08T16:33:59-05:00,22,28,-6,-0.12,L,red,blue,39599C,1806X,315E,3457S
+2025 California Region 2 VEX V5 High School Championship: Season: High Stakes (2024-2025) In-Person Judging Digital Engineering Notebook,Regional,None,Qualifier #80,2025-03-08T18:56:08-05:00,24,25,-1,-0.02040816326530612,L,red,blue,66957B,39599C,95071R,95071U
+2025 California Region 2 VEX V5 High School Championship: Season: High Stakes (2024-2025) In-Person Judging Digital Engineering Notebook,Regional,None,Qualifier #94,2025-03-08T19:47:26-05:00,39,28,11,0.16417910447761194,W,red,red,2154A,39599C,5327A,19359D
+2025 California Region 2 VEX V5 High School Championship: Season: High Stakes (2024-2025) In-Person Judging Digital Engineering Notebook,Regional,None,Qualifier #118,2025-03-08T21:16:22-05:00,13,30,-17,-0.3953488372093023,L,blue,red,5327Y,315N,39599C,5327V
+2025 California Region 2 VEX V5 High School Championship: Season: High Stakes (2024-2025) In-Person Judging Digital Engineering Notebook,Regional,None,Qualifier #137,2025-03-09T12:13:30-04:00,21,36,-15,-0.2631578947368421,L,red,blue,11551A,39599C,1868A,1135E
+2025 California Region 2 VEX V5 High School Championship: Season: High Stakes (2024-2025) In-Person Judging Digital Engineering Notebook,Regional,None,Qualifier #152,2025-03-09T13:12:28-04:00,34,34,0,0.0,D,blue,Tie,57827A,19359A,8000X,39599C
+2025 California Region 2 VEX V5 High School Championship: Season: High Stakes (2024-2025) In-Person Judging Digital Engineering Notebook,Regional,None,Qualifier #169,2025-03-09T14:38:00-04:00,37,28,9,0.13846153846153847,W,red,red,39599C,2550C,68699C,29712C
+2025 California Region 2 VEX V5 High School Championship: Season: High Stakes (2024-2025) In-Person Judging Digital Engineering Notebook,Regional,None,Qualifier #182,2025-03-09T16:05:03-04:00,29,24,5,0.09433962264150944,W,blue,blue,3303K,2130X,3025B,39599C
+Winters FarmBots Invitational,Other,None,QF #3-1,TBD,6,37,-31,-0.7209302325581395,L,blue,red,733A,95694B,39599D,39599C
+Winters FarmBots Blended League,Other,Event Region Championship,SF #1-1,TBD,17,6,11,0.4782608695652174,W,red,red,95694B,39599C,39599Z,39599D
+Winters FarmBots Blended League,Other,Event Region Championship,Final #1-1,TBD,34,0,34,1.0,W,red,red,95694B,39599C,39599M,39599G
+Winters FarmBots Invitational,Other,None,R16 #6-1,TBD,20,0,20,1.0,W,red,red,39599D,39599C,95694D,39599R

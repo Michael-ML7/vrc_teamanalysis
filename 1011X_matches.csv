@@ -1,0 +1,75 @@
+Event Name,Event Type,Qualification,Match Name,Start Time,Team Score,Opponent Score,Winning Margin,Normalised Winning Margin,Verdict,Team Alliance,Winning Alliance,Red Team 1,Red Team 2,Blue Team 1,Blue Team 2
+WPRA V5RC High Stakes Early Season Qualifier,Other,Event Region Championship,Qualifier #5,2024-08-31T14:13:00-04:00,37,3,34,0.85,W,blue,blue,886K,886R,1023E,1011X
+WPRA V5RC High Stakes Early Season Qualifier,Other,Event Region Championship,Qualifier #9,2024-08-31T15:31:16-04:00,27,32,-5,-0.0847457627118644,L,red,blue,1011X,886T,886M,886H
+WPRA V5RC High Stakes Early Season Qualifier,Other,Event Region Championship,Qualifier #17,2024-08-31T17:00:02-04:00,26,9,17,0.4857142857142857,W,blue,blue,28101A,98549V,98549Z,1011X
+WPRA V5RC High Stakes Early Season Qualifier,Other,Event Region Championship,Qualifier #22,2024-08-31T17:37:42-04:00,46,24,22,0.3142857142857143,W,red,red,886W,1011X,47874A,77174B
+WPRA V5RC High Stakes Early Season Qualifier,Other,Event Region Championship,Qualifier #33,2024-08-31T18:44:38-04:00,17,29,-12,-0.2608695652173913,L,red,blue,1011Y,1011X,1091A,47874J
+WPRA V5RC High Stakes Early Season Qualifier,Other,Event Region Championship,Qualifier #41,2024-08-31T19:43:36-04:00,19,0,19,1.0,W,blue,blue,886A,61002G,1011X,886S
+WPRA V5RC High Stakes Early Season Qualifier,Other,Event Region Championship,QF #3-1,2024-08-31T20:54:37-04:00,34,7,27,0.6585365853658537,W,red,red,1011X,886W,1010N,1010T
+WPRA V5RC High Stakes Early Season Qualifier,Other,Event Region Championship,SF #2-1,2024-08-31T21:22:17-04:00,26,25,1,0.0196078431372549,W,red,red,1011X,886W,61002G,66475C
+WPRA V5RC High Stakes Early Season Qualifier,Other,Event Region Championship,Final #1-1,2024-08-31T21:47:04-04:00,39,21,18,0.3,W,blue,blue,1023E,77174B,1011X,886W
+WPRA VEX V5 Robotics Competition High Stakes Season Opener: Qualifier,Other,None,Qualifier #1,2024-09-30T13:04:16-04:00,32,5,27,0.7297297297297297,W,blue,blue,502E,1011Y,1011X,886W
+WPRA VEX V5 Robotics Competition High Stakes Season Opener: Qualifier,Other,None,Qualifier #7,2024-09-30T14:04:54-04:00,29,26,3,0.05454545454545454,W,red,red,10012Y,1011X,886S,3388H
+WPRA VEX V5 Robotics Competition High Stakes Season Opener: Qualifier,Other,None,Qualifier #15,2024-09-30T15:59:55-04:00,48,17,31,0.47692307692307695,W,red,red,77174B,1011X,10012W,886Z
+WPRA VEX V5 Robotics Competition High Stakes Season Opener: Qualifier,Other,None,Qualifier #17,2024-09-30T16:19:59-04:00,39,17,22,0.39285714285714285,W,blue,blue,10012E,886C,886T,1011X
+WPRA VEX V5 Robotics Competition High Stakes Season Opener: Qualifier,Other,None,Qualifier #24,2024-09-30T17:13:32-04:00,29,24,5,0.09433962264150944,W,red,red,1010N,1011X,1011S,19350A
+WPRA VEX V5 Robotics Competition High Stakes Season Opener: Qualifier,Other,None,Qualifier #31,2024-09-30T18:06:23-04:00,31,24,7,0.12727272727272726,W,blue,blue,938X,77174C,1011X,9568Z
+WPRA VEX V5 Robotics Competition High Stakes Season Opener: Qualifier,Other,None,QF #3-1,2024-09-30T19:23:42-04:00,43,20,23,0.36507936507936506,W,red,red,1011X,886Y,10012W,10012E
+PYRS Salish Secondary VEX V5 Robotic Competition Fall Qualifier,Other,None,Qualifier #8,2024-11-16T16:08:40-05:00,20,6,14,0.5384615384615384,W,blue,blue,6408S,87265C,10012V,1011X
+PYRS Salish Secondary VEX V5 Robotic Competition Fall Qualifier,Other,None,Qualifier #20,2024-11-16T16:40:22-05:00,25,25,0,0.0,D,red,Tie,1011X,6408H,19350A,502W
+PYRS Salish Secondary VEX V5 Robotic Competition Fall Qualifier,Other,None,Qualifier #32,2024-11-16T17:05:59-05:00,28,15,13,0.3023255813953488,W,blue,blue,9181G,10012E,10012Y,1011X
+PYRS Salish Secondary VEX V5 Robotic Competition Fall Qualifier,Other,None,Qualifier #40,2024-11-16T17:25:34-05:00,42,8,34,0.68,W,red,red,1011X,886W,1011V,34300F
+PYRS Salish Secondary VEX V5 Robotic Competition Fall Qualifier,Other,None,Qualifier #47,2024-11-16T17:58:59-05:00,31,26,5,0.08771929824561403,W,blue,blue,1010G,87265E,18670A,1011X
+PYRS Salish Secondary VEX V5 Robotic Competition Fall Qualifier,Other,None,R16 #5-1,2024-11-16T19:32:22-05:00,15,25,-10,-0.25,L,red,blue,1011X,1010G,61783D,886S
+Gord Trousdell Ten Ton Robotics VEX V5 Robotics Competition: High School (HS) Tournament,Other,None,Qualifier #5,2024-12-15T16:11:35-05:00,46,20,26,0.3939393939393939,W,red,red,1010G,1011X,9181S,502F
+Gord Trousdell Ten Ton Robotics VEX V5 Robotics Competition: High School (HS) Tournament,Other,None,Qualifier #9,2024-12-15T16:25:19-05:00,47,24,23,0.323943661971831,W,blue,blue,1011T,1010Y,1011X,9181C
+Gord Trousdell Ten Ton Robotics VEX V5 Robotics Competition: High School (HS) Tournament,Other,None,Qualifier #24,2024-12-15T17:04:54-05:00,15,6,9,0.42857142857142855,W,red,red,886S,1011X,1011S,886W
+Gord Trousdell Ten Ton Robotics VEX V5 Robotics Competition: High School (HS) Tournament,Other,None,Qualifier #28,2024-12-15T17:22:25-05:00,36,11,25,0.5319148936170213,W,blue,blue,11818A,1011R,1011X,1011N
+Gord Trousdell Ten Ton Robotics VEX V5 Robotics Competition: High School (HS) Tournament,Other,None,Qualifier #34,2024-12-15T17:36:40-05:00,44,26,18,0.2571428571428571,W,blue,blue,1011W,1010X,1011X,1010T
+Gord Trousdell Ten Ton Robotics VEX V5 Robotics Competition: High School (HS) Tournament,Other,None,R16 #5-1,2024-12-15T18:47:05-05:00,41,22,19,0.30158730158730157,W,red,red,1011X,1010G,1010V,1011W
+Gord Trousdell Ten Ton Robotics VEX V5 Robotics Competition: High School (HS) Tournament,Other,None,QF #3-1,2024-12-15T19:07:05-05:00,26,22,4,0.08333333333333333,W,red,red,1011X,1010G,1011S,1010N
+Gord Trousdell Ten Ton Robotics VEX V5 Robotics Competition: High School (HS) Tournament,Other,None,Qualifier #42,2024-12-15T19:12:00-05:00,47,29,18,0.23684210526315788,W,red,red,886Y,1011X,1011Z,1010W
+Gord Trousdell Ten Ton Robotics VEX V5 Robotics Competition: High School (HS) Tournament,Other,None,SF #2-1,2024-12-15T19:33:37-05:00,41,25,16,0.24242424242424243,W,red,red,1011X,1010G,886Z,502N
+Gord Trousdell Ten Ton Robotics VEX V5 Robotics Competition: High School (HS) Tournament,Other,None,Final #1-1,2024-12-15T19:44:41-05:00,39,41,-2,-0.025,L,blue,red,886Y,1010W,1011X,1010G
+WPRA VEX V5 Robotics Competition High Stakes New Year Qualifier,Other,Event Region Championship,Qualifier #2,2025-01-04T13:48:55-05:00,28,15,13,0.3023255813953488,W,blue,blue,886V,886E,1011X,10012W
+WPRA VEX V5 Robotics Competition High Stakes New Year Qualifier,Other,Event Region Championship,Qualifier #10,2025-01-04T14:57:40-05:00,31,30,1,0.01639344262295082,W,red,red,1011S,1011X,1010N,1010G
+WPRA VEX V5 Robotics Competition High Stakes New Year Qualifier,Other,Event Region Championship,Qualifier #14,2025-01-04T15:27:22-05:00,39,20,19,0.3220338983050847,W,blue,blue,77174B,1011T,1011X,886C
+WPRA VEX V5 Robotics Competition High Stakes New Year Qualifier,Other,Event Region Championship,Qualifier #21,2025-01-04T17:01:45-05:00,34,34,0,0.0,D,red,Tie,886Z,1011X,10012Y,10T
+WPRA VEX V5 Robotics Competition High Stakes New Year Qualifier,Other,Event Region Championship,Qualifier #28,2025-01-04T18:04:23-05:00,33,17,16,0.32,W,red,red,10955M,1011X,886T,886A
+WPRA VEX V5 Robotics Competition High Stakes New Year Qualifier,Other,Event Region Championship,Qualifier #35,2025-01-04T19:00:03-05:00,36,12,24,0.5,W,blue,blue,886E,10836E,1011X,10012H
+WPRA VEX V5 Robotics Competition High Stakes New Year Qualifier,Other,Event Region Championship,QF #1-1,2025-01-04T20:47:57-05:00,34,35,-1,-0.014492753623188406,L,red,blue,1011X,1010G,1011Y,1010N
+VEX V5 Robotic Competition Double-Barrelled Dust Up 2025: Space Cowboy Rodeo,Other,Event Region Championship,Qualifier #9,2025-01-26T13:20:12-05:00,41,27,14,0.20588235294117646,W,blue,blue,9181K,28101A,886C,1011X
+VEX V5 Robotic Competition Double-Barrelled Dust Up 2025: Space Cowboy Rodeo,Other,Event Region Championship,Qualifier #15,2025-01-26T13:42:09-05:00,39,25,14,0.21875,W,red,red,59322B,1011X,502Y,10012W
+VEX V5 Robotic Competition Double-Barrelled Dust Up 2025: Space Cowboy Rodeo,Other,Event Region Championship,Qualifier #19,2025-01-26T13:58:40-05:00,56,12,44,0.6470588235294118,W,red,red,98549Z,1011X,18670A,9181B
+VEX V5 Robotic Competition Double-Barrelled Dust Up 2025: Space Cowboy Rodeo,Other,Event Region Championship,Qualifier #29,2025-01-26T15:52:22-05:00,30,26,4,0.07142857142857142,W,blue,blue,9568V,9181X,9181U,1011X
+VEX V5 Robotic Competition Double-Barrelled Dust Up 2025: Space Cowboy Rodeo,Other,Event Region Championship,Qualifier #37,2025-01-26T16:26:26-05:00,31,7,24,0.631578947368421,W,red,red,1011X,9568M,9181D,9652X
+VEX V5 Robotic Competition Double-Barrelled Dust Up 2025: Space Cowboy Rodeo,Other,Event Region Championship,Qualifier #50,2025-01-26T17:32:19-05:00,24,30,-6,-0.1111111111111111,L,blue,red,886Z,10012Y,1011X,59322C
+VEX V5 Robotic Competition Double-Barrelled Dust Up 2025: Space Cowboy Rodeo,Other,Event Region Championship,R16 #1-1,2025-01-26T19:04:06-05:00,40,0,40,1.0,W,red,red,10012Y,1011X,59322A,9652X
+VEX V5 Robotic Competition Double-Barrelled Dust Up 2025: Space Cowboy Rodeo,Other,Event Region Championship,QF #1-1,2025-01-26T19:35:12-05:00,44,0,44,1.0,W,red,red,10012Y,1011X,886C,10012E
+VEX V5 Robotic Competition Double-Barrelled Dust Up 2025: Space Cowboy Rodeo,Other,Event Region Championship,SF #1-1,2025-01-26T20:01:40-05:00,33,29,4,0.06451612903225806,W,red,red,10012Y,1011X,10836E,10012W
+VEX V5 Robotic Competition Double-Barrelled Dust Up 2025: Space Cowboy Rodeo,Other,Event Region Championship,Final #1-1,2025-01-26T20:19:57-05:00,43,38,5,0.06172839506172839,W,red,red,10012Y,1011X,98549Z,886Z
+Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division,Signature,None,Qualifier #8,2025-02-08T10:55:07-05:00,40,33,7,0.0958904109589041,W,blue,blue,10K,27455C,1011X,9594J
+Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division,Signature,None,Qualifier #20,2025-02-08T11:35:43-05:00,39,31,8,0.11428571428571428,W,red,red,1011X,7842F,538S,886Z
+Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division,Signature,None,R16 #8-1,2025-02-09T15:06:08-05:00,37,30,7,0.1044776119402985,W,red,red,1011X,1159X,3388E,2088G
+Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division,Signature,None,QF #4-1,2025-02-09T15:33:53-05:00,28,28,0,0.0,D,blue,Tie,66475C,360X,1011X,1159X
+Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division,Signature,None,QF #4-2,2025-02-09T15:49:15-05:00,39,14,25,0.4716981132075472,W,blue,blue,66475C,360X,1011X,1159X
+Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division,Signature,None,SF #2-1,2025-02-09T16:12:00-05:00,0,16,-16,-1.0,L,blue,red,16610A,1028A,1011X,1159X
+Ten Ton Robotics VEX V5 Robotics Competition Blended Scrimmage: Last Chance Scrimmage,Other,None,Qualifier #3,2025-02-22T17:33:48-05:00,33,36,-3,-0.043478260869565216,L,red,blue,1011X,1011Y,10012W,1011S
+Ten Ton Robotics VEX V5 Robotics Competition Blended Scrimmage: Last Chance Scrimmage,Other,None,Qualifier #4,2025-02-22T17:41:58-05:00,42,30,12,0.16666666666666666,W,blue,blue,1010W,1011V,1011X,10012E
+Ten Ton Robotics VEX V5 Robotics Competition Blended Scrimmage: Last Chance Scrimmage,Other,None,Qualifier #8,2025-02-22T18:17:49-05:00,44,33,11,0.14285714285714285,W,red,red,10012Y,1011X,10012E,1010G
+Ten Ton Robotics VEX V5 Robotics Competition Blended Scrimmage: Last Chance Scrimmage,Other,None,Qualifier #9,2025-02-22T18:27:09-05:00,34,35,-1,-0.014492753623188406,L,red,blue,1011X,10012R,1011Y,1010W
+Ten Ton Robotics VEX V5 Robotics Competition Blended Scrimmage: Last Chance Scrimmage,Other,None,Qualifier #11,2025-02-22T18:46:49-05:00,18,36,-18,-0.3333333333333333,L,blue,red,1010G,10012W,1011V,1011X
+Ten Ton Robotics VEX V5 Robotics Competition Blended Scrimmage: Last Chance Scrimmage,Other,None,Qualifier #15,2025-02-22T19:22:03-05:00,32,35,-3,-0.04477611940298507,L,blue,red,10012R,10012Y,1011X,1011S
+Ten Ton Robotics VEX V5 Robotics Competition Blended Scrimmage: Last Chance Scrimmage,Other,None,SF #2-1,2025-02-22T19:38:12-05:00,34,14,20,0.4166666666666667,W,blue,blue,10012E,10012W,1010G,1011X
+Ten Ton Robotics VEX V5 Robotics Competition Blended Scrimmage: Last Chance Scrimmage,Other,None,Final #1-1,2025-02-22T20:25:48-05:00,36,38,-2,-0.02702702702702703,L,blue,red,10012Y,1010W,1010G,1011X
+PYRS BC Mainland HS VEX V5 Robotics Regional Championship,Regional,None,Qualifier #5,2025-03-01T13:29:32-05:00,38,38,0,0.0,D,red,Tie,1011X,18670A,1010G,502N
+PYRS BC Mainland HS VEX V5 Robotics Regional Championship,Regional,None,Qualifier #15,2025-03-01T14:23:23-05:00,41,27,14,0.20588235294117646,W,red,red,6408W,1011X,1010X,1010T
+PYRS BC Mainland HS VEX V5 Robotics Regional Championship,Regional,None,Qualifier #23,2025-03-01T15:47:05-05:00,28,18,10,0.21739130434782608,W,blue,blue,886U,9181S,1011X,9181C
+PYRS BC Mainland HS VEX V5 Robotics Regional Championship,Regional,None,Qualifier #29,2025-03-01T16:09:22-05:00,39,27,12,0.18181818181818182,W,blue,blue,1011S,98549Z,9594A,1011X
+PYRS BC Mainland HS VEX V5 Robotics Regional Championship,Regional,None,Qualifier #35,2025-03-01T16:34:10-05:00,33,42,-9,-0.12,L,red,blue,1011X,886W,9181J,1010W
+PYRS BC Mainland HS VEX V5 Robotics Regional Championship,Regional,None,Qualifier #43,2025-03-01T17:05:54-05:00,39,36,3,0.04,W,blue,blue,6408H,886S,886Z,1011X
+PYRS BC Mainland HS VEX V5 Robotics Regional Championship,Regional,None,Qualifier #50,2025-03-01T18:02:06-05:00,16,28,-12,-0.2727272727272727,L,red,blue,9181K,1011X,87265B,9181T
+PYRS BC Mainland HS VEX V5 Robotics Regional Championship,Regional,None,R16 #4-1,2025-03-01T19:49:58-05:00,45,15,30,0.5,W,red,red,1011X,77174B,1011Y,9594A
+PYRS BC Mainland HS VEX V5 Robotics Regional Championship,Regional,None,QF #2-1,2025-03-01T20:06:53-05:00,48,33,15,0.18518518518518517,W,blue,blue,18670A,1010T,1011X,77174B
+PYRS BC Mainland HS VEX V5 Robotics Regional Championship,Regional,None,SF #1-1,2025-03-01T20:22:43-05:00,23,41,-18,-0.28125,L,blue,red,1010W,886Y,1011X,77174B
+WPRA VEX V5 Robotics Competition High Stakes Season Opener: Qualifier,Other,None,SF #2-1,TBD,23,36,-13,-0.22033898305084745,L,red,blue,1011X,886Y,886W,77174B

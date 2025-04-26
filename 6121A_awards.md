@@ -1,0 +1,13 @@
+# Awards for Team 6121A
+
+| Event Name | Event Type | Title | Qualifications |
+|------------|------------|-------|----------------|
+| Firebird VRC High Stakes Qualifier: VEX V5 Robotics Competition High Stakes | Other | Tournament Finalists (VRC/VEXU/VAIRC) |  |
+| Firebird VRC High Stakes Qualifier: VEX V5 Robotics Competition High Stakes | Other | Innovate Award (VRC/VEXU/VAIRC) |  |
+| LMSD State Qualifier: Hosted by Black Rock - VEX V5 Robotics Competition High Stakes | Other | Design Award (VRC/VEXU/VAIRC) | Event Region Championship |
+| Vexmen Showdown Qualifier - High School: VEX V5 Robotics Competition High Stakes | Other | Judges Award (VRC/VEXU/VAIC/ADC/VAIRC) |  |
+| Sugar Rush VEX V5 Robotics Competition Signature Event: High School | Signature | Innovate Award (VRC/VEXU/VAIRC) |  |
+| Conestoga Robotics Qualifying Tournament (High School): VEX V5 Robotics Competition High Stakes | Other | Excellence Award (VRC/VEXU/VAIRC) | Event Region Championship |
+| Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature | Design Award (VRC/VEXU/VAIRC) |  |
+| High Stakes High School Invitational at Norristown: VEX V5 Robotics Competition High Stakes | Other | Design Award (VRC/VEXU/VAIRC) | Event Region Championship |
+| HS Eastern PA State V5RC Championship at Norristown: VEX V5 Robotics Competition High Stakes | Regional | Excellence Award (VRC/VEXU/VAIRC) | World Championship |

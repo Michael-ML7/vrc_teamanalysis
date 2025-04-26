@@ -1,0 +1,7 @@
+# Awards for Team 1674A
+
+| Event Name | Event Type | Title | Qualifications |
+|------------|------------|-------|----------------|
+| Torneo Regional de Robotica VEX Zona Noreste - UASLP - VRC | Other | Tournament Finalists (VRC/VEXU/VAIRC) |  |
+| 3er. Campeonato Internacional de la Frontera Norte: High School VEX V5 Robotics Comeptition Signature Event | Signature | Sportsmanship Award (VRC/VEXU/VAIRC) |  |
+| 16vo.Campeonato Nacional de Robótica y Habilidades STEM | Regional | Innovate Award (VRC/VEXU/VAIRC) | World Championship |

@@ -1,0 +1,6 @@
+# Awards for Team 4148S
+
+| Event Name | Event Type | Title | Qualifications |
+|------------|------------|-------|----------------|
+| Greenville High Stakes Fall Tournament - HS | Other | Tournament Finalists (VRC/VEXU/VAIRC) | UIL Championship |
+| Greenville High Stakes Fall Tournament - HS | Other | Build Award (VRC/VEXU/VAIRC) |  |

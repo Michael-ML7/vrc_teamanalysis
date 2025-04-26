@@ -1,0 +1,8 @@
+# Awards for Team 89250X
+
+| Event Name | Event Type | Title | Qualifications |
+|------------|------------|-------|----------------|
+| High Stakes @ University Technical Institute NEW LOCATION!!: High School & Middle School teams | Other | Robot Skills 2nd Place (VRC/VEXU/VAIRC) |  |
+| High Stakes Melee at McCarthy lX: VEX V5 Robotics Competition Tournament High School | Other | Tournament Champions (VRC/VEXU/VAIRC) | Event Region Championship |
+| 2nd Annual DSAHS VEX V5 Robotics Competition Showdown: Middle and High School Teams | Other | Build Award (VRC/VEXU/VAIRC) |  |
+| South Florida V5RC Regional Championship - High School Division | Regional | Judges Award (VRC/VEXU/VAIC/ADC/VAIRC) |  |

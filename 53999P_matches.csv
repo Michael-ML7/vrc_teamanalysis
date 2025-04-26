@@ -1,0 +1,57 @@
+Event Name,Event Type,Qualification,Match Name,Start Time,Team Score,Opponent Score,Winning Margin,Normalised Winning Margin,Verdict,Team Alliance,Winning Alliance,Red Team 1,Red Team 2,Blue Team 1,Blue Team 2
+Bears Robotics High Stakes Qualifying Tournament,Other,Event Region Championship,Qualifier #8,2024-12-14T09:53:14-05:00,36,9,27,0.6,W,red,red,8746A,53999P,8746B,174B
+Bears Robotics High Stakes Qualifying Tournament,Other,Event Region Championship,Qualifier #19,2024-12-14T10:45:56-05:00,40,10,30,0.6,W,red,red,53999P,8876C,5501C,7157M
+Bears Robotics High Stakes Qualifying Tournament,Other,Event Region Championship,Qualifier #24,2024-12-14T11:04:11-05:00,30,26,4,0.07142857142857142,W,blue,blue,64040B,6527A,53999P,34000S
+Bears Robotics High Stakes Qualifying Tournament,Other,Event Region Championship,Qualifier #38,2024-12-14T11:58:55-05:00,37,7,30,0.6818181818181818,W,blue,blue,8876D,53417X,8876A,53999P
+Bears Robotics High Stakes Qualifying Tournament,Other,Event Region Championship,Qualifier #45,2024-12-14T12:22:51-05:00,32,6,26,0.6842105263157895,W,red,red,53999P,1757A,15796C,15796B
+Bears Robotics High Stakes Qualifying Tournament,Other,Event Region Championship,Qualifier #60,2024-12-14T13:25:50-05:00,32,18,14,0.28,W,blue,blue,1145A,34000Z,7157S,53999P
+Bears Robotics High Stakes Qualifying Tournament,Other,Event Region Championship,Qualifier #69,2024-12-14T14:00:31-05:00,34,5,29,0.7435897435897436,W,blue,blue,64040A,6527B,7157V,53999P
+Bears Robotics High Stakes Qualifying Tournament,Other,Event Region Championship,R16 #5-1,2024-12-14T15:03:12-05:00,44,3,41,0.8723404255319149,W,red,red,53999P,64040B,174D,174E
+Bears Robotics High Stakes Qualifying Tournament,Other,Event Region Championship,QF #3-1,2024-12-14T15:31:05-05:00,45,16,29,0.47540983606557374,W,red,red,53999P,64040B,1757A,8876C
+Bears Robotics High Stakes Qualifying Tournament,Other,Event Region Championship,SF #2-1,2024-12-14T15:48:59-05:00,31,4,27,0.7714285714285715,W,red,red,53999P,64040B,13460B,7157A
+Bears Robotics High Stakes Qualifying Tournament,Other,Event Region Championship,Final #1-1,2024-12-14T15:58:15-05:00,29,25,4,0.07407407407407407,W,blue,blue,53417P,8746A,53999P,64040B
+Timberwolf Turmoil VEX V5 Robotics Competition,Other,None,Qualifier #7,2025-01-18T09:41:04-05:00,29,7,22,0.6111111111111112,W,red,red,34000Z,53999P,53417X,8876E
+Timberwolf Turmoil VEX V5 Robotics Competition,Other,None,Qualifier #12,2025-01-18T10:02:43-05:00,37,6,31,0.7209302325581395,W,blue,blue,84207A,7157X,53999G,53999P
+Timberwolf Turmoil VEX V5 Robotics Competition,Other,None,Qualifier #16,2025-01-18T10:23:01-05:00,24,23,1,0.02127659574468085,W,red,red,8746B,53999P,13460B,34000T
+Timberwolf Turmoil VEX V5 Robotics Competition,Other,None,Qualifier #25,2025-01-18T11:00:58-05:00,3,33,-30,-0.8333333333333334,L,blue,red,8876C,7157B,53999P,53999H
+Timberwolf Turmoil VEX V5 Robotics Competition,Other,None,Qualifier #37,2025-01-18T12:32:23-05:00,35,5,30,0.75,W,red,red,7157M,53999P,1757A,13460D
+Timberwolf Turmoil VEX V5 Robotics Competition,Other,None,Qualifier #43,2025-01-18T12:53:22-05:00,4,35,-31,-0.7948717948717948,L,red,blue,1145A,53999P,34000S,53417P
+Timberwolf Turmoil VEX V5 Robotics Competition,Other,None,Qualifier #47,2025-01-18T13:12:46-05:00,27,11,16,0.42105263157894735,W,blue,blue,7157V,13460A,53999R,53999P
+Timberwolf Turmoil VEX V5 Robotics Competition,Other,None,R16 #6-1,2025-01-18T14:23:33-05:00,24,16,8,0.2,W,red,red,53999P,53999R,13460D,8746B
+Timberwolf Turmoil VEX V5 Robotics Competition,Other,None,QF #3-1,2025-01-18T14:51:37-05:00,24,24,0,0.0,D,blue,Tie,7157M,7157B,53999P,53999R
+Timberwolf Turmoil VEX V5 Robotics Competition,Other,None,SF #2-1,2025-01-18T15:06:05-05:00,9,25,-16,-0.47058823529411764,L,red,blue,53999P,53999R,34000S,34000Z
+VEX in the Valley V5RC High Stakes,Other,Event Region Championship,Qualifier #4,2025-01-25T09:55:19-05:00,35,2,33,0.8918918918918919,W,red,red,7157Z,53999P,14737A,64820B
+VEX in the Valley V5RC High Stakes,Other,Event Region Championship,Qualifier #7,2025-01-25T10:08:24-05:00,12,16,-4,-0.14285714285714285,L,blue,red,7157D,53999R,53999G,53999P
+VEX in the Valley V5RC High Stakes,Other,Event Region Championship,Qualifier #18,2025-01-25T10:53:24-05:00,34,26,8,0.13333333333333333,W,red,red,1716B,53999P,7157V,7157M
+VEX in the Valley V5RC High Stakes,Other,Event Region Championship,Qualifier #26,2025-01-25T11:19:10-05:00,32,25,7,0.12280701754385964,W,blue,blue,1716A,7157A,53999P,8876C
+VEX in the Valley V5RC High Stakes,Other,Event Region Championship,Qualifier #30,2025-01-25T11:32:28-05:00,26,17,9,0.20930232558139536,W,red,red,14737C,53999P,7157B,14895B
+VEX in the Valley V5RC High Stakes,Other,Event Region Championship,Qualifier #38,2025-01-25T12:01:42-05:00,8,31,-23,-0.5897435897435898,L,blue,red,1716M,14895A,7157S,53999P
+VEX in the Valley V5RC High Stakes,Other,Event Region Championship,Qualifier #44,2025-01-25T13:13:20-05:00,33,6,27,0.6923076923076923,W,red,red,53999P,8876E,14737C,53999H
+VEX in the Valley V5RC High Stakes,Other,Event Region Championship,QF #1-1,2025-01-25T14:20:12-05:00,38,3,35,0.8536585365853658,W,red,red,14895A,53999P,14895C,14895B
+VEX in the Valley V5RC High Stakes,Other,Event Region Championship,SF #1-1,2025-01-25T14:42:27-05:00,31,21,10,0.19230769230769232,W,red,red,14895A,53999P,7157A,1716M
+VEX in the Valley V5RC High Stakes,Other,Event Region Championship,Final #1-1,2025-01-25T15:01:00-05:00,22,30,-8,-0.15384615384615385,L,red,blue,14895A,53999P,7157Z,14711B
+9th Annual Elmira Express V5RC High Stakes,Other,Event Region Championship,Qualifier #3,2025-02-08T09:57:36-05:00,39,8,31,0.6595744680851063,W,red,red,3699A,53999P,53999H,53999G
+9th Annual Elmira Express V5RC High Stakes,Other,Event Region Championship,Qualifier #9,2025-02-08T10:27:54-05:00,39,13,26,0.5,W,red,red,14904V,53999P,7157V,14737B
+9th Annual Elmira Express V5RC High Stakes,Other,Event Region Championship,Qualifier #21,2025-02-08T11:07:16-05:00,45,3,42,0.875,W,blue,blue,7157S,1145A,53999P,26455A
+9th Annual Elmira Express V5RC High Stakes,Other,Event Region Championship,Qualifier #26,2025-02-08T11:26:12-05:00,42,4,38,0.8260869565217391,W,red,red,53999P,8746B,14895B,1716A
+9th Annual Elmira Express V5RC High Stakes,Other,Event Region Championship,Qualifier #34,2025-02-08T11:52:18-05:00,31,6,25,0.6756756756756757,W,blue,blue,14737A,64783A,53999P,7157D
+9th Annual Elmira Express V5RC High Stakes,Other,Event Region Championship,Qualifier #48,2025-02-08T13:27:46-05:00,28,21,7,0.14285714285714285,W,red,red,64783D,53999P,64783B,7157B
+9th Annual Elmira Express V5RC High Stakes,Other,Event Region Championship,Qualifier #58,2025-02-08T14:03:01-05:00,37,15,22,0.4230769230769231,W,blue,blue,14895C,7157A,53999P,1716M
+9th Annual Elmira Express V5RC High Stakes,Other,Event Region Championship,R16 #1-1,2025-02-08T14:52:19-05:00,51,8,43,0.7288135593220338,W,red,red,53999P,7157A,1716B,14737B
+9th Annual Elmira Express V5RC High Stakes,Other,Event Region Championship,QF #1-1,2025-02-08T15:09:17-05:00,34,12,22,0.4782608695652174,W,red,red,53999P,7157A,7157V,7157D
+9th Annual Elmira Express V5RC High Stakes,Other,Event Region Championship,SF #1-1,2025-02-08T15:36:44-05:00,49,11,38,0.6333333333333333,W,red,red,53999P,7157A,8746A,26455A
+9th Annual Elmira Express V5RC High Stakes,Other,Event Region Championship,Final #1-1,2025-02-08T15:58:06-05:00,24,25,-1,-0.02040816326530612,L,red,blue,53999P,7157A,14895A,7157Z
+Northern NYS VEX V5RC HS/MS Blended High Stakes Championship,Regional,World Championship,Qualifier #2,2025-03-05T09:46:37-05:00,38,18,20,0.35714285714285715,W,red,red,53999P,34000S,8828A,23241A
+Northern NYS VEX V5RC HS/MS Blended High Stakes Championship,Regional,World Championship,Qualifier #11,2025-03-05T10:30:16-05:00,50,11,39,0.639344262295082,W,blue,blue,174D,7157X,53999P,14711B
+Northern NYS VEX V5RC HS/MS Blended High Stakes Championship,Regional,World Championship,Qualifier #20,2025-03-05T11:11:04-05:00,39,9,30,0.625,W,blue,blue,15796B,13460D,64040B,53999P
+Northern NYS VEX V5RC HS/MS Blended High Stakes Championship,Regional,World Championship,Qualifier #33,2025-03-05T12:07:04-05:00,41,28,13,0.18840579710144928,W,red,red,53999P,3699A,1716M,64783B
+Northern NYS VEX V5RC HS/MS Blended High Stakes Championship,Regional,World Championship,Qualifier #44,2025-03-05T13:33:30-05:00,20,0,20,1.0,W,blue,blue,1870E,14895A,53999P,7157S
+Northern NYS VEX V5RC HS/MS Blended High Stakes Championship,Regional,World Championship,Qualifier #54,2025-03-05T14:17:21-05:00,26,13,13,0.3333333333333333,W,blue,blue,7157A,6527A,5501B,53999P
+Northern NYS VEX V5RC HS/MS Blended High Stakes Championship,Regional,World Championship,Qualifier #59,2025-03-05T14:35:13-05:00,41,28,13,0.18840579710144928,W,red,red,53999P,8876E,53999G,5501D
+Northern NYS VEX V5RC HS/MS Blended High Stakes Championship,Regional,World Championship,QF #1-1,2025-03-05T16:00:43-05:00,36,0,36,1.0,W,red,red,53999P,7157A,34000S,64820A
+Northern NYS VEX V5RC HS/MS Blended High Stakes Championship,Regional,World Championship,SF #1-1,2025-03-05T16:20:15-05:00,30,17,13,0.2765957446808511,W,red,red,53999P,7157A,5501B,12946Z
+Northern NYS VEX V5RC HS/MS Blended High Stakes Championship,Regional,World Championship,Final #1-1,2025-03-05T16:34:32-05:00,28,27,1,0.01818181818181818,W,red,red,53999P,7157A,53417P,8746A
+Northern NYS VEX V5RC HS/MS Blended High Stakes Championship,Regional,World Championship,Final #1-1,2025-03-05T16:57:11-05:00,40,13,27,0.5094339622641509,W,red,red,53999P,7157A,64783C,64783A
+Northern NYS VEX V5RC HS/MS Blended High Stakes Championship,Regional,World Championship,Final #1-2,2025-03-05T17:09:42-05:00,17,19,-2,-0.05555555555555555,L,red,blue,53999P,7157A,64783C,64783A
+Northern NYS VEX V5RC HS/MS Blended High Stakes Championship,Regional,World Championship,Final #1-3,2025-03-05T17:25:19-05:00,32,20,12,0.23076923076923078,W,red,red,53999P,7157A,64783C,64783A
+Timberwolf Turmoil VEX V5 Robotics Competition,Other,None,QF #3-2,TBD,30,5,25,0.7142857142857143,W,blue,blue,7157M,7157B,53999P,53999R

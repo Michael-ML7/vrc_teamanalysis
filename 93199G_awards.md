@@ -1,0 +1,5 @@
+# Awards for Team 93199G
+
+| Event Name | Event Type | Title | Qualifications |
+|------------|------------|-------|----------------|
+| Ignite’s High Stakes Showdown: V5RC HS Only In-Person with Hybrid Judging. (Online Notebook Submission and In-Person Team Interviews) | Other | Judges Award (VRC/VEXU/VAIC/ADC/VAIRC) |  |

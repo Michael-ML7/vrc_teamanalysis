@@ -1,0 +1,5 @@
+# Awards for Team 30214A
+
+| Event Name | Event Type | Title | Qualifications |
+|------------|------------|-------|----------------|
+| Uganda V5RC High Stakes National Championship 2025 | Regional | Robot Skills Champion (VRC/VEXU/VAIRC) | World Championship;RE-V5RC-24-8909;RE-V5RC-24-8910 |

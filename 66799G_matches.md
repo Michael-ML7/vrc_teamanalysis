@@ -1,0 +1,45 @@
+# Match Results for Team 66799G
+
+| Event Name | Event Type | Qualification | Match Name | Start Time | Team Score | Opponent Score | Winning Margin | Normalised Winning Margin | Verdict | Team Alliance | Winning Alliance | Red Team 1 | Red Team 2 | Blue Team 1 | Blue Team 2 |
+|------------|------------|---------------|------------|------------|------------|-----------------|----------------|---------------------------|---------|---------------|------------------|------------|------------|-------------|-------------|
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Qualifier #4 | 2024-10-27T02:54:29-04:00 | 21 | 26 | -5 | -0.10638297872340426 | L | blue | red | 2813X | 96969X | 66799G | 68678S |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Qualifier #7 | 2024-10-27T03:09:03-04:00 | 35 | 37 | -2 | -0.027777777777777776 | L | red | blue | 78181A | 66799G | 66994C | 2813B |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Qualifier #16 | 2024-10-27T04:00:44-04:00 | 35 | 13 | 22 | 0.4583333333333333 | W | blue | blue | 96069X | 96969W | 66799G | 23083Y |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Qualifier #22 | 2024-10-27T04:37:18-04:00 | 45 | 6 | 39 | 0.7647058823529411 | W | red | red | 66799G | 1791V | 31947A | 4253Z |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Qualifier #26 | 2024-10-27T04:55:17-04:00 | 17 | 20 | -3 | -0.08108108108108109 | L | blue | red | 77701A | 88168A | 23083Z | 66799G |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Qualifier #31 | 2024-10-27T05:20:56-04:00 | 42 | 38 | 4 | 0.05 | W | red | red | 66799G | 96969Y | 17022A | 66994S |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Qualifier #2 | 2024-11-17T01:07:02-05:00 | 31 | 26 | 5 | 0.08771929824561403 | W | blue | blue | 2813B | 77701A | 66799G | 4253H |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Qualifier #11 | 2024-11-17T01:58:03-05:00 | 37 | 23 | 14 | 0.23333333333333334 | W | red | red | 23083Y | 66799G | 4253K | 96969X |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Qualifier #15 | 2024-11-17T02:17:55-05:00 | 11 | 25 | -14 | -0.3888888888888889 | L | red | blue | 66799G | 4253Z | 66994S | 17022A |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Qualifier #18 | 2024-11-17T02:33:39-05:00 | 43 | 29 | 14 | 0.19444444444444445 | W | blue | blue | 66994C | 68678S | 66799G | 96969W |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Qualifier #24 | 2024-11-17T03:04:11-05:00 | 37 | 7 | 30 | 0.6818181818181818 | W | red | red | 66799G | 4253B | 19788A | 1791V |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Qualifier #30 | 2024-11-17T03:35:28-05:00 | 28 | 30 | -2 | -0.034482758620689655 | L | blue | red | 96069X | 2813X | 23083Z | 66799G |
+| 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature | None | Qualifier #11 | 2024-12-19T19:52:56-05:00 | 35 | 20 | 15 | 0.2727272727272727 | W | blue | blue | 4253H | 2813X | 66799G | 85301V |
+| 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature | None | Qualifier #21 | 2024-12-19T20:35:40-05:00 | 27 | 19 | 8 | 0.17391304347826086 | W | red | red | 68678S | 66799G | 96969X | 96969Z |
+| 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature | None | Qualifier #41 | 2024-12-19T22:25:37-05:00 | 34 | 27 | 7 | 0.11475409836065574 | W | red | red | 66799G | 4253B | 2836A | 1791V |
+| 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature | None | Qualifier #58 | 2024-12-20T00:41:04-05:00 | 33 | 37 | -4 | -0.05714285714285714 | L | blue | red | 839A | 78181A | 27272S | 66799G |
+| 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature | None | Qualifier #68 | 2024-12-20T01:28:50-05:00 | 37 | 0 | 37 | 1.0 | W | red | red | 66799X | 66799G | 23083Y | 14797A |
+| 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature | None | Qualifier #80 | 2024-12-20T02:41:17-05:00 | 49 | 27 | 22 | 0.2894736842105263 | W | blue | blue | 96944B | 4275Z | 66799G | 96969Y |
+| 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature | None | Qualifier #98 | 2024-12-20T19:20:46-05:00 | 41 | 29 | 12 | 0.17142857142857143 | W | blue | blue | 4253Z | 19788A | 4275B | 66799G |
+| 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature | None | Qualifier #118 | 2024-12-20T21:03:14-05:00 | 34 | 29 | 5 | 0.07936507936507936 | W | blue | blue | 66994C | 14683C | 66799G | 917X |
+| 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature | None | R16 #4-1 | 2024-12-21T00:22:02-05:00 | 40 | 30 | 10 | 0.14285714285714285 | W | red | red | 66799G | 839A | 85301V | 85301X |
+| 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature | None | QF #2-1 | 2024-12-21T01:08:52-05:00 | 21 | 34 | -13 | -0.23636363636363636 | L | blue | red | 86254B | 96969Y | 66799G | 839A |
+| 2024-2025 VEX TAIWAN OPEN V5RC高中組冠軍賽(HS): National Championship | Regional | World Championship | Qualifier #9 | 2024-12-27T03:17:00-05:00 | 47 | 0 | 47 | 1.0 | W | blue | blue | 68957T | 77701A | 66799G | 96069X |
+| 2024-2025 VEX TAIWAN OPEN V5RC高中組冠軍賽(HS): National Championship | Regional | World Championship | Qualifier #17 | 2024-12-27T21:11:11-05:00 | 36 | 31 | 5 | 0.07462686567164178 | W | red | red | 66799G | 4253Z | 96969X | 4253Y |
+| 2024-2025 VEX TAIWAN OPEN V5RC高中組冠軍賽(HS): National Championship | Regional | World Championship | Qualifier #27 | 2024-12-27T22:17:17-05:00 | 36 | 36 | 0 | 0.0 | D | blue | Tie | 4253V | 66001C | 66799G | 39234A |
+| 2024-2025 VEX TAIWAN OPEN V5RC高中組冠軍賽(HS): National Championship | Regional | World Championship | Qualifier #33 | 2024-12-27T22:48:58-05:00 | 45 | 0 | 45 | 1.0 | W | red | red | 96969W | 66799G | 90065P | 66799X |
+| 2024-2025 VEX TAIWAN OPEN V5RC高中組冠軍賽(HS): National Championship | Regional | World Championship | Qualifier #53 | 2024-12-28T02:20:58-05:00 | 25 | 23 | 2 | 0.041666666666666664 | W | red | red | 66799G | 75663A | 66994S | 78181A |
+| 2024-2025 VEX TAIWAN OPEN V5RC高中組冠軍賽(HS): National Championship | Regional | World Championship | Qualifier #61 | 2024-12-28T20:01:21-05:00 | 36 | 35 | 1 | 0.014084507042253521 | W | blue | blue | 68678S | 35185V | 66799G | 96969Z |
+| 2024-2025 VEX TAIWAN OPEN V5RC高中組冠軍賽(HS): National Championship | Regional | World Championship | Qualifier #70 | 2024-12-28T21:08:34-05:00 | 41 | 7 | 34 | 0.7083333333333334 | W | red | red | 23083Y | 66799G | 4253B | 92641A |
+| 2024-2025 VEX TAIWAN OPEN V5RC高中組冠軍賽(HS): National Championship | Regional | World Championship | Qualifier #82 | 2024-12-28T22:19:32-05:00 | 27 | 25 | 2 | 0.038461538461538464 | W | blue | blue | 92641B | 14683D | 14683C | 66799G |
+| 2024-2025 VEX TAIWAN OPEN V5RC高中組冠軍賽(HS): National Championship | Regional | World Championship | R16 #1-1 | 2024-12-29T00:47:31-05:00 | 40 | 22 | 18 | 0.2903225806451613 | W | red | red | 66799G | 17022A | 92641B | 4253R |
+| 2024-2025 VEX TAIWAN OPEN V5RC高中組冠軍賽(HS): National Championship | Regional | World Championship | QF #1-1 | 2024-12-29T01:40:08-05:00 | 27 | 34 | -7 | -0.11475409836065574 | L | red | blue | 66799G | 17022A | 4253S | 14683B |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Qualifier #2 | 2025-02-15T21:33:42-05:00 | 49 | 28 | 21 | 0.2727272727272727 | W | red | red | 66799G | 17022A | 77701A | 96969W |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Qualifier #9 | 2025-02-16T01:05:24-05:00 | 31 | 28 | 3 | 0.05084745762711865 | W | blue | blue | 66799X | 96969X | 66799G | 1791V |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Qualifier #13 | 2025-02-16T01:29:49-05:00 | 28 | 8 | 20 | 0.5555555555555556 | W | blue | blue | 19788A | 2813X | 66799G | 78181A |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Qualifier #19 | 2025-02-16T02:00:12-05:00 | 45 | 17 | 28 | 0.45161290322580644 | W | blue | blue | 96969Y | 66994S | 66799G | 66994C |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Qualifier #23 | 2025-02-16T02:19:09-05:00 | 23 | 37 | -14 | -0.23333333333333334 | L | red | blue | 23083Z | 66799G | 4253Z | 17022A |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Qualifier #27 | 2025-02-16T02:39:47-05:00 | 37 | 35 | 2 | 0.027777777777777776 | W | red | red | 66799G | 23083Y | 4253Y | 88168A |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | QF #3-1 | 2025-02-16T03:55:05-05:00 | 38 | 30 | 8 | 0.11764705882352941 | W | red | red | 1791V | 66799G | 88168A | 96969W |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | SF #2-1 | 2025-02-16T04:11:40-05:00 | 36 | 25 | 11 | 0.18032786885245902 | W | red | red | 1791V | 66799G | 2813B | 2813X |
+| TAI-VEX HS League 2024-2025 High Stakes | Other | None | Final #1-1 | 2025-02-16T04:23:55-05:00 | 27 | 35 | -8 | -0.12903225806451613 | L | blue | red | 17022A | 78181A | 1791V | 66799G |

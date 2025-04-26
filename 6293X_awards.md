@@ -1,0 +1,11 @@
+# Awards for Team 6293X
+
+| Event Name | Event Type | Title | Qualifications |
+|------------|------------|-------|----------------|
+| VEX V5 ROBOTICS COMPETITION KICKOFF! NOW OPEN TO HS & MS TEAMS: LOCATION CHANGE | Other | Design Award (VRC/VEXU/VAIRC) |  |
+| V5RC - HIGH STAKES AT THE SWAMP - NEW LOCATION @DILLARD HIGH: Middle School & High School teams Digital Notebook Submissions | Other | Design Award (VRC/VEXU/VAIRC) | Event Region Championship |
+| High Stakes @ University Technical Institute NEW LOCATION!!: High School & Middle School teams | Other | Tournament Champions (VRC/VEXU/VAIRC) | Event Region Championship |
+| High Stakes @ University Technical Institute NEW LOCATION!!: High School & Middle School teams | Other | Energy Award (VRC/VEXU/VAIRC) |  |
+| High Stakes Melee at McCarthy lX: VEX V5 Robotics Competition Tournament High School | Other | Innovate Award (VRC/VEXU/VAIRC) |  |
+| South Florida V5RC Regional Championship - High School Division | Regional | Tournament Champions (VRC/VEXU/VAIRC) | World Championship |
+| South Florida V5RC Regional Championship - High School Division | Regional | Sportsmanship Award (VRC/VEXU/VAIRC) |  |
