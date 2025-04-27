@@ -586,7 +586,7 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
     markdown_content = f"""# Team {team_number} Performance Summary
 
 ## 📈 Key Performance Indicators
-- blah blah blah
+- important metrics for the team
 
 {kpi_table_md}
 
@@ -612,22 +612,22 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
 if __name__ == "__main__":
     team_numbers = [
         # special handling
-        "86254B"
+        
         # teams in innovate division
-        # "39H", "94Z", "210Z", "321D", "360X", "603B", "719S", "839Z", "937X", "1011X",
-        # "1065A", "1115E", "1229W", "1381P", "1674A", "1868A", "2011C", "2072C", "2150A", "2567C",
-        # "2775V", "3131V", "3333W", "3723A", "3946S", "4148S", "4378A", "4828X", "5150J", "5864D",
-        # "6121A", "6293X", "6741R", "7192F", "7447G", "7870Y", "8047F", "8349U", "8682C", "8889S",
-        # "9065H", "9231A", "9784A", "10478S", "11442Y", "12478X", "14241A", "16099D", "16756B", "18031A",
-        # "19122B", "20096G", "20605A", "23805S", "28828A", "30214A", "32792B", "35016Z", "36830B", "39599C",
-        # "43272A", "45434S", "53999P", "55755A", "59001A", "62629X", "64783A", "66799G", "69403A", "71113X",
-        # "74000M", "75503A", "77717F", "80001B", "81785K", "83149B", "86254B", "89250X", "93199G", "96504E",
-        # "97673Z", "99040E", "99904W"
+        "39H", "94Z", "210Z", "321D", "360X", "603B", "719S", "839Z", "937X", "1011X",
+        "1065A", "1115E", "1229W", "1381P", "1674A", "1868A", "2011C", "2072C", "2150A", "2567C",
+        "2775V", "3131V", "3333W", "3723A", "3946S", "4148S", "4378A", "4828X", "5150J", "5864D",
+        "6121A", "6293X", "6741R", "7192F", "7447G", "7870Y", "8047F", "8349U", "8682C", "8889S",
+        "9065H", "9231A", "9784A", "10478S", "11442Y", "12478X", "14241A", "16099D", "16756B", "18031A",
+        "19122B", "20096G", "20605A", "23805S", "28828A", "30214A", "32792B", "35016Z", "36830B", "39599C",
+        "43272A", "45434S", "53999P", "55755A", "59001A", "62629X", "64783A", "66799G", "69403A", "71113X",
+        "74000M", "75503A", "77717F", "80001B", "81785K", "83149B", "86254B", "89250X", "93199G", "96504E",
+        "97673Z", "99040E", "99904W"
     ]
 
     # for team_number in team_numbers:
     #     main_get_data(team_number)
-    # compute_kpi(team_numbers)
+    compute_kpi(team_numbers)
     for team_number in team_numbers:
         main_analyse_data(team_number)
 
