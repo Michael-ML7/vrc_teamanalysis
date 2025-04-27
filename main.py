@@ -2,6 +2,7 @@ import requests
 import csv
 import os
 import time
+import pandas as pd
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
@@ -77,10 +78,10 @@ def get_team_id(team_number):
             print(f"No team found with number {team_number}")
     return None
 
-def get_team_matches(team_id, rounds):
+def get_team_matches(team_id):
     params = {
         "season[]": [190, 197],
-        "round[]": rounds
+        "round[]": [2, 3, 4, 5, 6]
     }
     
     url = f"{BASE_URL}/teams/{team_id}/matches"
@@ -267,13 +268,17 @@ def save_awards_to_csv_and_md(awards, team_number):
 
 failed = []
 
-def main(team_number):
+def main_get_data(team_number):
     print(f"\nFetching data for Team {team_number}...")
+
+    if team_number == "3946S":
+        print("Skipping team 3946S (special case, no awards)")
+        return
     
     # Check if files already exist
-    # if os.path.exists(f"{team_number}_matches.csv") and os.path.exists(f"{team_number}_awards.csv"):
-    #     print("Data already exists for this team. Skipping...")
-    #     return
+    if os.path.exists(f"{team_number}_matches.csv") and os.path.exists(f"{team_number}_awards.csv"):
+        print("Data already exists for this team. Skipping...")
+        return
 
     # Get team ID
     team_id = get_team_id(team_number)
@@ -288,15 +293,9 @@ def main(team_number):
     # Fetch data with rate limiting
     print("Fetching awards...")
     awards = get_team_awards(team_id)
-    time.sleep(2)  # Rate limiting
-
     print("Fetching matches...")
-    matches = []
-    for round_num in range(2, 10):
-        print(f"Fetching round {round_num} matches...")
-        round_matches = get_team_matches(team_id, round_num)
-        matches.extend(round_matches)
-        time.sleep(1)  # Rate limiting
+    matches = get_team_matches(team_id)
+    time.sleep(2)  # Rate limiting
 
     # Save data
     if matches:
@@ -310,26 +309,336 @@ def main(team_number):
     else:
         failed.append(team_number)
         print(f"No awards found for team {team_number}")
+    time.sleep(5)
+
+event_type_weights = {
+    'World': 6,
+    'Signature': 4,
+    'National': 2.5,
+    'Regional': 2.5,
+    'State': 2,
+    'Other': 1,
+}
+
+tournament_level_weights = {
+    'Practice': 0,
+    'Qualification': 0,
+    'Quarter-Finals': 1,
+    'Semi-Finals': 1,
+    'Finals': 1,
+    'Round of 16': 1,
+}
+
+import pandas as pd
+import os
+
+def compute_kpi(team_list, match_folder="./", output_file="innov_kpi_summary.csv"):
+    team_list.remove('30214A')
+    all_team_stats = {}
+
+    for team in team_list:
+        filepath = os.path.join(match_folder, f"{team}_matches.csv")
+        if not os.path.exists(filepath):
+            print(f"❗ File not found for team {team}: {filepath}")
+            continue
+        
+        df = pd.read_csv(filepath)
+
+        # Clean missing or incomplete matches
+        df = df[(df['Team Score'] != 'N/A') & (df['Opponent Score'] != 'N/A')]
+        df['Team Score'] = pd.to_numeric(df['Team Score'])
+        df['Opponent Score'] = pd.to_numeric(df['Opponent Score'])
+
+        # Remove anomalies: one team scores 0
+        df = df[(df['Team Score'] > 0) & (df['Opponent Score'] > 0)]
+
+        df['Event Type'] = df['Event Type'].fillna('Other')
+        df['Qualification'] = df['Qualification'].fillna('None')
+
+        # Determine match categories
+        df['Is Regional+'] = df['Event Type'].isin(['World', 'Signature', 'National', 'Regional'])
+        df['Is Signature+'] = df['Event Type'].isin(['World', 'Signature'])
+        df['Is Elimination'] = df['Match Name'].str.contains('QF|SF|Final|R-16', case=False, na=False)
+
+        # Compute match weights
+        df['Weight'] = df['Event Type'].map(event_type_weights).fillna(1.0)
+
+        # --- Compute categories ---
+        stats = {}
+
+        def compute_win_rate(sub_df):
+            if len(sub_df) == 0:
+                return 0
+            wins = (sub_df['Verdict'] == 'W').sum()
+            return wins / len(sub_df)
+
+        def compute_avg(sub_df, column):
+            if len(sub_df) == 0:
+                return 0
+            return sub_df[column].mean()
+
+        def compute_weighted_avg(sub_df, column):
+            if len(sub_df) == 0:
+                return 0
+            return (sub_df[column] * sub_df['Weight']).sum() / sub_df['Weight'].sum()
+
+        def compute_weighted_normalized_margin(sub_df):
+            if len(sub_df) == 0:
+                return 0
+            margins = (sub_df['Team Score'] - sub_df['Opponent Score']) / (sub_df['Team Score'] + sub_df['Opponent Score'])
+            weighted_margins = margins * sub_df['Weight']
+            return weighted_margins.sum() / sub_df['Weight'].sum()
+
+        # All Matches
+        stats['all_win_rate'] = compute_win_rate(df)
+        stats['all_avg_for'] = compute_avg(df, 'Team Score')
+        stats['all_avg_against'] = compute_avg(df, 'Opponent Score')
+        stats['all_match_count'] = len(df)
+
+        stats['weighted_avg_for'] = compute_weighted_avg(df, 'Team Score')
+        stats['weighted_avg_against'] = compute_weighted_avg(df, 'Opponent Score')
+        stats['weighted_normalized_margin'] = compute_weighted_normalized_margin(df)
+
+        # Regional+ Matches
+        regional_df = df[df['Is Regional+']]
+        stats['regional_plus_win_rate'] = compute_win_rate(regional_df)
+        stats['regional_plus_match_count'] = len(regional_df)
+
+        # Signature+ Matches
+        signature_df = df[df['Is Signature+']]
+        stats['signature_plus_win_rate'] = compute_win_rate(signature_df)
+        stats['signature_plus_match_count'] = len(signature_df)
+
+        # Elimination Matches
+        elim_df = df[df['Is Elimination']]
+        stats['elim_win_rate'] = compute_win_rate(elim_df)
+        stats['elim_avg_for'] = compute_avg(elim_df, 'Team Score')
+        stats['elim_avg_against'] = compute_avg(elim_df, 'Opponent Score')
+        stats['elim_match_count'] = len(elim_df)
+
+        # Elimination + Regional+
+        elim_regional_df = df[df['Is Elimination'] & df['Is Regional+']]
+        stats['elim_regional_plus_win_rate'] = compute_win_rate(elim_regional_df)
+        stats['elim_regional_plus_match_count'] = len(elim_regional_df)
+
+        # Elimination + Signature+
+        elim_signature_df = df[df['Is Elimination'] & df['Is Signature+']]
+        stats['elim_signature_plus_win_rate'] = compute_win_rate(elim_signature_df)
+        stats['elim_signature_plus_match_count'] = len(elim_signature_df)
+
+        all_team_stats[team] = stats
+
+    # === Create DataFrame ===
+    rows = []
+    for team, stat in all_team_stats.items():
+        rows.append({
+            'Team': team,
+            'All Win Rate': stat['all_win_rate'],
+            'All Avg For': stat['all_avg_for'],
+            'All Avg Against': stat['all_avg_against'],
+            'All Matches Played': stat['all_match_count'],
+            'Weighted Avg For': stat['weighted_avg_for'],
+            'Weighted Avg Against': stat['weighted_avg_against'],
+            'Weighted Normalized Win Margin': stat['weighted_normalized_margin'],
+            'Regional+ Win Rate': stat['regional_plus_win_rate'],
+            'Regional+ Matches Played': stat['regional_plus_match_count'],
+            'Signature+ Win Rate': stat['signature_plus_win_rate'],
+            'Signature+ Matches Played': stat['signature_plus_match_count'],
+            'Elim Win Rate': stat['elim_win_rate'],
+            'Elim Avg For': stat['elim_avg_for'],
+            'Elim Avg Against': stat['elim_avg_against'],
+            'Elim Matches Played': stat['elim_match_count'],
+            'Elim Regional+ Win Rate': stat['elim_regional_plus_win_rate'],
+            'Elim Regional+ Matches Played': stat['elim_regional_plus_match_count'],
+            'Elim Signature+ Win Rate': stat['elim_signature_plus_win_rate'],
+            'Elim Signature+ Matches Played': stat['elim_signature_plus_match_count'],
+        })
+
+    kpi_df = pd.DataFrame(rows)
+
+    # === Add Rankings ===
+    metric_cols = [
+        'All Win Rate',
+        'All Avg For',
+        'All Avg Against',
+        'Weighted Avg For',
+        'Weighted Avg Against',
+        'Weighted Normalized Win Margin',
+        'Regional+ Win Rate',
+        'Signature+ Win Rate',
+        'Elim Win Rate',
+        'Elim Avg For',
+        'Elim Avg Against',
+        'Elim Regional+ Win Rate',
+        'Elim Signature+ Win Rate',
+    ]
+
+    for col in metric_cols:
+        ascending = True if ("Against" in col) else False  # lower avg against is better
+        kpi_df[f"{col} Rank"] = kpi_df[col].rank(ascending=ascending, method='min').astype(int)
+
+    # === Save output ===
+    kpi_df.sort_values('All Win Rate Rank').to_csv(output_file, index=False)
+    print(f"✅ KPI Summary saved to {output_file}")
+
+
+def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summary.csv", output_folder="./"):
+    # === Load Files ===
+    awards_path = os.path.join(match_folder, f"{team_number}_awards.csv")
+    matches_path = os.path.join(match_folder, f"{team_number}_matches.csv")
+    kpi_path = os.path.join(match_folder, kpi_file)
+
+    if not (os.path.exists(awards_path) and os.path.exists(matches_path) and os.path.exists(kpi_path)):
+        print(f"❗ Missing one or more files for team {team_number}.")
+        return
+
+    awards_df = pd.read_csv(awards_path)
+    matches_df = pd.read_csv(matches_path)
+    kpi_df = pd.read_csv(kpi_path)
+
+    # === 1. Most important KPIs ===
+    important_metrics = [
+        ('All Win Rate', 'All Win Rate Rank'),
+        ('Weighted Avg For', 'Weighted Avg For Rank'),
+        ('Weighted Avg Against', 'Weighted Avg Against Rank'),
+        ('Weighted Normalized Win Margin', 'Weighted Normalized Win Margin Rank'),
+        ('Regional+ Win Rate', 'Regional+ Win Rate Rank'),
+        ('Signature+ Win Rate', 'Signature+ Win Rate Rank'),
+        ('Elim Win Rate', 'Elim Win Rate Rank'),
+    ]
+
+    team_kpi_row = kpi_df[kpi_df['Team'] == team_number]
+    if team_kpi_row.empty:
+        print(f"❗ Team {team_number} not found in KPI summary.")
+        return
+
+    # Pre-calculate max rank for each metric
+    max_ranks = {}
+    for _, rank_metric in important_metrics:
+        max_ranks[rank_metric] = kpi_df[rank_metric].max()
+
+    # Build KPI Markdown Table
+    kpi_table_md = "| KPI | Value | Rank | Top % |\n|:---|:-----|:----|:------|\n"
+    for metric, rank_metric in important_metrics:
+        value = team_kpi_row.iloc[0][metric]
+        rank = team_kpi_row.iloc[0][rank_metric]
+        max_rank = max_ranks[rank_metric]
+        rank_pct = rank / max_rank if max_rank > 0 else 0
+        kpi_table_md += f"| {metric} | {value:.3f} | {rank} | {rank_pct:.3%} |\n"
+
+    # === 2. How the team qualified for Worlds ===
+    qualifications = awards_df[awards_df['Qualifications'].astype(str).str.contains('World Championship', na=False)]
+    if qualifications.empty:
+        worlds_qualifications_md = "No recorded qualifications for Worlds found."
+    else:
+        worlds_qualifications_md = "; ".join(qualifications['Event Name'].unique())
+
+    # === 3. Signature Events Participation ===
+    signature_matches = matches_df[matches_df['Event Type'] == 'Signature']
+    signature_events = signature_matches['Event Name'].dropna().unique()
+
+    sig_summary_table_md = "| Signature Event | Elim Stage Reached | Won? |\n|:----------------|:-------------------|:----|\n"
+    for event in signature_events:
+        event_matches = signature_matches[signature_matches['Event Name'] == event]
+        max_stage = "Qualification"
+        won_event = False
+        if any(event_matches['Match Name'].str.contains('Final', case=False, na=False)):
+            max_stage = "Finals"
+            # If they won the Finals
+            final_matches = event_matches[event_matches['Match Name'].str.contains('Final', case=False, na=False)]
+            if (final_matches['Verdict'] == 'W').any():
+                won_event = True
+        elif any(event_matches['Match Name'].str.contains('SF', case=False, na=False)):
+            max_stage = "Semifinals"
+        elif any(event_matches['Match Name'].str.contains('QF', case=False, na=False)):
+            max_stage = "Quarterfinals"
+        elif any(event_matches['Match Name'].str.contains('R-16', case=False, na=False)):
+            max_stage = "Round of 16"
+        else:
+            max_stage = "Qualification"
+
+        sig_summary_table_md += f"| {event} | {max_stage} | {'🏆' if won_event else ''} |\n"
+
+    sig_events_count = len(signature_events)
+
+    # === 4. Important Awards ===
+    awards_filtered = awards_df[
+        awards_df['Event Type'].isin(['Signature', 'Regional', 'World', 'National'])
+    ].copy()
+
+    # Importance mapping
+    award_priority = {
+        'Excellence Award': 1,
+        'Tournament Champion': 2,
+        'Design Award': 3,
+    }
+    # Default priority for unknown awards
+    default_priority = 99
+
+    def get_award_priority(title):
+        for key in award_priority:
+            if key.lower() in title.lower():
+                return award_priority[key]
+        return default_priority
+
+    # Add priority column and sort
+    awards_filtered['Priority'] = awards_filtered['Title'].apply(get_award_priority)
+    awards_filtered = awards_filtered.sort_values(['Priority', 'Event Type'], ascending=[True, True])
+
+    # Build Awards list
+    if awards_filtered.empty:
+        awards_md = "No major awards found."
+    else:
+        awards_md = ""
+        for idx, row in awards_filtered.iterrows():
+            awards_md += f"- **{row['Title']}** at {row['Event Name']}\n"
+
+    # === Build Markdown ===
+    markdown_content = f"""# Team {team_number} Performance Summary
+
+## 📈 Key Performance Indicators
+{kpi_table_md}
+
+## 🎯 Worlds Qualification
+{worlds_qualifications_md}
+
+## 🏆 Signature Events Participation
+- Total Signature Events Attended: **{sig_events_count}**
+
+{sig_summary_table_md}
+
+## 🥇 Major Awards
+{awards_md}
+"""
+
+    # === Save Output ===
+    output_path = os.path.join(output_folder, f"{team_number}.md")
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(markdown_content)
+    print(f"✅ Summary for {team_number} saved to {output_path}")
+
 
 if __name__ == "__main__":
     team_numbers = [
         # special handling
-        "8047F", "8349U", "8682C", "8889S", "9065H", "9231A", "9784A", "937X", "94Z", "81785K", "83149B", "86254B", "89250X", "93199G", "96504E", "97673Z", "99040E", "99904W"
 
-        # "39H", "94Z", "210Z", "321D", "360X", "603B", "719S", "839Z", "937X", "1011X",
-        # "1065A", "1115E", "1229W", "1381P", "1674A", "1868A", "2011C", "2072C", "2150A", "2567C",
-        # "2775V", "3131V", "3333W", "3723A", "3946S", "4148S", "4378A", "4828X", "5150J", "5864D",
-        # "6121A", "6293X", "6741R", "7192F", "7447G", "7870Y", "8047F", "8349U", "8682C", "8889S",
-        # "9065H", "9231A", "9784A", "10478S", "11442Y", "12478X", "14241A", "16099D", "16756B", "18031A",
-        # "19122B", "20096G", "20605A", "23805S", "28828A", "30214A", "32792B", "35016Z", "36830B", "39599C",
-        # "43272A", "45434S", "53999P", "55755A", "59001A", "62629X", "64783A", "66799G", "69403A", "71113X",
-        # "74000M", "75503A", "77717F", "80001B", "81785K", "83149B", "86254B", "89250X", "93199G", "96504E",
-        # "97673Z", "99040E", "99904W"
+        # teams in innovate division
+        "39H", "94Z", "210Z", "321D", "360X", "603B", "719S", "839Z", "937X", "1011X",
+        "1065A", "1115E", "1229W", "1381P", "1674A", "1868A", "2011C", "2072C", "2150A", "2567C",
+        "2775V", "3131V", "3333W", "3723A", "3946S", "4148S", "4378A", "4828X", "5150J", "5864D",
+        "6121A", "6293X", "6741R", "7192F", "7447G", "7870Y", "8047F", "8349U", "8682C", "8889S",
+        "9065H", "9231A", "9784A", "10478S", "11442Y", "12478X", "14241A", "16099D", "16756B", "18031A",
+        "19122B", "20096G", "20605A", "23805S", "28828A", "30214A", "32792B", "35016Z", "36830B", "39599C",
+        "43272A", "45434S", "53999P", "55755A", "59001A", "62629X", "64783A", "66799G", "69403A", "71113X",
+        "74000M", "75503A", "77717F", "80001B", "81785K", "83149B", "86254B", "89250X", "93199G", "96504E",
+        "97673Z", "99040E", "99904W"
     ]
 
     for team_number in team_numbers:
-        main(team_number)
-        time.sleep(5)  # Delay between teams
+        main_get_data(team_number)
+    compute_kpi(team_numbers)
+    for team_number in team_numbers:
+        main_analyse_data(team_number)
 
     for x in failed:
         print(x)
