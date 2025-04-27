@@ -505,7 +505,8 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
         max_ranks[rank_metric] = kpi_df[rank_metric].max()
 
     # Build KPI Markdown Table
-    kpi_table_md = "| KPI | Value | Rank | Top % |\n|:---|:-----|:----|:-----|\n"
+    kpi_table_md = "| KPI | Value | Rank | Top % |\n"
+    # kpi_table_md += "|:---|:-----|:----|:-----|\n"
     # for metric, rank_metric in important_metrics:
     #     value = f"{team_kpi_row.iloc[0][metric]:.3f}"
     #     rank = int(team_kpi_row.iloc[0][rank_metric])
@@ -585,6 +586,7 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
     markdown_content = f"""# Team {team_number} Performance Summary
 
 ## 📈 Key Performance Indicators
+
 {kpi_table_md}
 
 ## 🎯 Worlds Qualification
@@ -622,9 +624,9 @@ if __name__ == "__main__":
         # "97673Z", "99040E", "99904W"
     ]
 
-    for team_number in team_numbers:
-        main_get_data(team_number)
-    compute_kpi(team_numbers)
+    # for team_number in team_numbers:
+    #     main_get_data(team_number)
+    # compute_kpi(team_numbers)
     for team_number in team_numbers:
         main_analyse_data(team_number)
 
