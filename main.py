@@ -8,7 +8,7 @@ from urllib3.util.retry import Retry
 
 # === CONFIG ===
 BASE_URL = "https://www.robotevents.com/api/v2"
-BEARER_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiZTdmMDQ0MTkwMWFjZmE0ZTVlYTcyMDMyMTFkNWRiOGQ2ZjBjZmU1MzFkNDMxOTExMzE3NWZiZGJhYzU3MGY2Y2U2Y2JiZmU2MmU0N2FmODkiLCJpYXQiOjE3NDU0MTA5NzUuMzgwOTM4MSwibmJmIjoxNzQ1NDEwOTc1LjM4MDk0LCJleHAiOjI2OTIwOTU3NzUuMzc2NDQ4Miwic3ViIjoiMTQ1ODYyIiwic2NvcGVzIjpbXX0.qt1W7qsLo9-TuhzaQgiVJLgf-jYp1ApNDr4l89LKjjf8yHaVWAl6PmxypofaOZK51Z96o5C4Ns16lGIxLFSMjnbcCHi-xVXvaqeh0G6-fnFY1kr4l-TqUsyd6AuJCczBWQNModTCfOu1FZUsvguxSr0g7F5Ft1kXyySb7T4QzJnTHcHWEmCZnsmWupdIunvSw-D9wn26DajIVqqJPKgBTJDAgdYsK7paq4B9yi0j2iLGb0IJ3PkdxHrOjfBNKyCZmGEfS_Y8kGiRM3M-iwuu0lOTCVKsxyR5to5kqrwnAxbLlnwnl2oLAbupeTguBxkEFlGCOtKjJWrBElRcBJFrneUeuEHYdVcQUg5xGT1W2iOL3lYEZgkPVt9Xr5c8-3UrK9h4J1ksMGdp1ZzPbUYNS2wxymEZfi3d8xa9u9SuzJgb1G6O57EIO8-_YaXmHhwskfHo3rD11H6J9DMb0Q6sGp0iy-ZR31-J2sIUsL4C-NKJUqLKiJInK8-en0wrb37BLXKCgq2AG7ZZ76obsLcvGI6GsIXzjoQirsv5oO1yLlhiXyFznjbd_jaatqsKxdsDLA7dfuDwYGWjQl4Td3Wfb-WPPuXuK0n1vNGGZYaRspaeECmtWRv_ss39QbbGrOcIH8pxJrwchloqcrq4PJuMh-w3VBRcbaw_C-7yYV_OG8k"
+BEARER_TOKEN = ""
 
 # Configure session with retries
 session = requests.Session()
@@ -469,7 +469,6 @@ def compute_kpi(team_list, match_folder="./", output_file="innov_kpi_summary.csv
     kpi_df.sort_values('All Win Rate Rank').to_csv(output_file, index=False)
     print(f"✅ KPI Summary saved to {output_file}")
 
-
 def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summary.csv", output_folder="./"):
     # === Load Files ===
     awards_path = os.path.join(match_folder, f"{team_number}_awards.csv")
@@ -506,7 +505,7 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
         max_ranks[rank_metric] = kpi_df[rank_metric].max()
 
     # Build KPI Markdown Table
-    kpi_table_md = "| KPI | Value | Rank | Top % |\n|:---|:---|:---|:---|\n"
+    kpi_table_md = "| KPI | Value | Rank | Top % |\n| --- | ----- | ---- | ----- |\n"
     for metric, rank_metric in important_metrics:
         value = team_kpi_row.iloc[0][metric]
         rank = team_kpi_row.iloc[0][rank_metric]
