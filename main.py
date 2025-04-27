@@ -508,10 +508,10 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
     kpi_table_md = "| KPI | Value | Rank | Top percentage |\n| --- | ----- | ---- | ----- |\n"
     for metric, rank_metric in important_metrics:
         value = str(team_kpi_row.iloc[0][metric])
-        rank = float(team_kpi_row.iloc[0][rank_metric])
-        rank_prt = str(rank) # rank print
+        rank = int(team_kpi_row.iloc[0][rank_metric])
+        rank_prt = str(rank)  # rank print
         max_rank = float(max_ranks[rank_metric])
-        rank_pct = str(rank / max_rank if max_rank > 0 else 0) # rank percentage
+        rank_pct = f"{(rank / max_rank * 100 if max_rank > 0 else 0):.3f}"  # Limit rank_pct to 3 decimal places
 
         kpi_table_md += f"| {metric} | {value} | {rank_prt} | {rank_pct} |\n"
 
