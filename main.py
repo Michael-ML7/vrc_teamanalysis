@@ -507,11 +507,14 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
     # Build KPI Markdown Table
     kpi_table_md = "| KPI | Value | Rank | Top % |\n| --- | ----- | ---- | ----- |\n"
     for metric, rank_metric in important_metrics:
-        value = team_kpi_row.iloc[0][metric]
-        rank = team_kpi_row.iloc[0][rank_metric]
-        max_rank = max_ranks[rank_metric]
-        rank_pct = rank / max_rank if max_rank > 0 else 0
-        kpi_table_md += f"| {metric} | {value:.3f} | {rank} | {rank_pct:.3%} |\n"
+        value = str(team_kpi_row.iloc[0][metric])
+        rank = float(team_kpi_row.iloc[0][rank_metric])
+        rank_prt = str(rank) # rank print
+        max_rank = float(max_ranks[rank_metric])
+        rank_pct = str(rank / max_rank if max_rank > 0 else 0) # rank percentage
+
+        kpi_table_md += f"| {metric} | {value} | {rank_prt} | {rank_pct} |\n"
+
 
     # === 2. How the team qualified for Worlds ===
     qualifications = awards_df[awards_df['Qualifications'].astype(str).str.contains('World Championship', na=False)]
