@@ -496,8 +496,8 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
         value = f"{team_kpi_row.iloc[0][metric]:.3f}"
         rank = int(team_kpi_row.iloc[0][rank_metric])
         max_rank = float(max_ranks[rank_metric])
-        if metric == "Weighted Avg Against":
-            rank = max_ranks[rank_metric] - rank + 1
+        # if metric == "Weighted Avg Against":
+        #     rank = max_rank - rank + 1
         rank_pct = f"{(rank / max_rank * 100 if max_rank > 0 else 0):.3f}%"
         kpi_table_md += f"| {metric} | {value} | {rank} | {rank_pct} |\n"
 
