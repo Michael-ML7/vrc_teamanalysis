@@ -582,10 +582,15 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
             if pd.isna(qualification) or qualification.strip() == "":
                 qualification = "-"
 
-            # Bold important awards/events
-            if event_type == 'Signature' or \
-               'Excellence' in title or \
-               'Tournament Champion' in title:
+            # Apply bolding rules
+            bold_title = False
+            if event_type == 'Signature':
+                bold_title = True
+            elif event_type in ['Regional', 'National', 'World']:
+                if ('Excellence' in title) or ('Tournament Champion' in title):
+                    bold_title = True
+
+            if bold_title:
                 title = f"**{title}**"
                 event_name = f"**{event_name}**"
 
@@ -640,9 +645,9 @@ if __name__ == "__main__":
 
     # for team_number in team_numbers:
     #     main_get_data(team_number)
-    compute_kpi(innovate_teams)
+    compute_kpi(innovate_teams) # works on innovate only
     for team_number in team_numbers:
-        main_analyse_data(team_number)
+        main_analyse_data(team_number) # works on innovate only
 
     for x in failed:
         print(x)
