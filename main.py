@@ -97,17 +97,6 @@ def get_team_awards(team_id):
     data = make_request(url, params)
     return data.get('data', []) if data else []
 
-event_id2type = {}
-def get_event_type(event_id):
-    if event_id not in event_id2type:
-        url = f"{BASE_URL}/events/{event_id}"
-        data = make_request(url)
-        if data:
-            event_id2type[event_id] = data.get('level', 'Unknown')
-        else:
-            event_id2type[event_id] = 'Unknown'
-    return event_id2type[event_id]
-
 def save_matches_to_csv_and_md(matches, awards, team_number):
     # Process matches data
     for match in matches:
@@ -288,7 +277,6 @@ def main_get_data(team_number):
         return
 
     print(f"Found Team ID: {team_id}")
-    event_id2type.clear()
 
     # Fetch data with rate limiting
     print("Fetching awards...")
@@ -500,23 +488,20 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
         return
 
     # Pre-calculate max rank for each metric
-    max_ranks = {}
-    for _, rank_metric in important_metrics:
-        max_ranks[rank_metric] = kpi_df[rank_metric].max()
+    max_ranks = {rank_metric: kpi_df[rank_metric].max() for _, rank_metric in important_metrics}
 
     # Build KPI Markdown Table
-    kpi_table_md = "| KPI | Value | Rank | Top % |\n"
-    kpi_table_md += "|:---|:-----|:----|:-----|\n"
+    kpi_table_md = "| KPI | Value | Rank | Top % |\n|:---|:-----|:----|:-----|\n"
     for metric, rank_metric in important_metrics:
         value = f"{team_kpi_row.iloc[0][metric]:.3f}"
         rank = int(team_kpi_row.iloc[0][rank_metric])
-        rank_prt = str(rank)  # rank print
         max_rank = float(max_ranks[rank_metric])
-        rank_pct = f"{(rank / max_rank * 100 if max_rank > 0 else 0):.3f}"
-        kpi_table_md += f"| {metric} | {value} | {rank_prt} | {rank_pct} |\n"
+        rank_pct = f"{(rank / max_rank * 100 if max_rank > 0 else 0):.3f}%"
+        kpi_table_md += f"| {metric} | {value} | {rank} | {rank_pct} |\n"
 
     # === 2. How the team qualified for Worlds ===
-    qualifications = awards_df[awards_df['Qualifications'].astype(str).str.contains('World Championship', na=False)]
+    awards_df['Qualifications'] = awards_df['Qualifications'].astype(str)
+    qualifications = awards_df[awards_df['Qualifications'].str.contains('World Championship', na=False)]
     if qualifications.empty:
         worlds_qualifications_md = "No recorded qualifications for Worlds found."
     else:
@@ -533,7 +518,6 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
         won_event = False
         if any(event_matches['Match Name'].str.contains('Final', case=False, na=False)):
             max_stage = "Finals"
-            # If they won the Finals
             final_matches = event_matches[event_matches['Match Name'].str.contains('Final', case=False, na=False)]
             if (final_matches['Verdict'] == 'W').any():
                 won_event = True
@@ -543,50 +527,75 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
             max_stage = "Quarterfinals"
         elif any(event_matches['Match Name'].str.contains('R-16', case=False, na=False)):
             max_stage = "Round of 16"
-        else:
-            max_stage = "Qualification"
 
         sig_summary_table_md += f"| {event} | {max_stage} | {'🏆' if won_event else ''} |\n"
 
     sig_events_count = len(signature_events)
 
-    # === 4. Important Awards ===
-    awards_filtered = awards_df[
-        awards_df['Event Type'].isin(['Signature', 'Regional', 'World', 'National'])
-    ].copy()
+    # === 4. Major Awards (ALL awards, sorted by importance) ===
+    awards_filtered = awards_df.copy()
 
-    # Importance mapping
-    award_priority = {
+    # Event Type Priority
+    event_type_priority = {
+        'World': 0,
+        'Signature': 1,
+        'Regional': 2,
+        'National': 3,
+    }
+    # Award Title Priority
+    award_title_priority = {
         'Excellence Award': 1,
         'Tournament Champion': 2,
         'Design Award': 3,
     }
-    # Default priority for unknown awards
-    default_priority = 99
+    default_event_priority = 99
+    default_award_priority = 99
+
+    def get_event_priority(event_type):
+        return event_type_priority.get(event_type, default_event_priority)
 
     def get_award_priority(title):
-        for key in award_priority:
+        for key in award_title_priority:
             if key.lower() in title.lower():
-                return award_priority[key]
-        return default_priority
+                return award_title_priority[key]
+        return default_award_priority
 
-    # Add priority column and sort
-    awards_filtered['Priority'] = awards_filtered['Title'].apply(get_award_priority)
-    awards_filtered = awards_filtered.sort_values(['Priority', 'Event Type'], ascending=[True, True])
+    awards_filtered['Event Priority'] = awards_filtered['Event Type'].apply(get_event_priority)
+    awards_filtered['Award Priority'] = awards_filtered['Title'].apply(get_award_priority)
 
-    # Build Awards list
+    # Sort by Event Priority first, then Award Priority
+    awards_filtered = awards_filtered.sort_values(
+        ['Event Priority', 'Award Priority'],
+        ascending=[True, True]
+    )
+
+    # Build Awards Table
     if awards_filtered.empty:
-        awards_md = "No major awards found."
+        awards_md = "No awards found."
     else:
-        awards_md = ""
+        awards_md = "| Award | Event | Event Type | Qualification |\n|:------|:------|:-----------|:--------------|\n"
         for idx, row in awards_filtered.iterrows():
-            awards_md += f"- **{row['Title']}** at {row['Event Name']}\n"
+            title = row['Title']
+            event_name = row['Event Name']
+            event_type = row['Event Type']
+            qualification = row.get('Qualifications', '-')
+            if pd.isna(qualification) or qualification.strip() == "":
+                qualification = "-"
+
+            # Bold important awards/events
+            if event_type == 'Signature' or \
+               'Excellence' in title or \
+               'Tournament Champion' in title:
+                title = f"**{title}**"
+                event_name = f"**{event_name}**"
+
+            awards_md += f"| {title} | {event_name} | {event_type} | {qualification} |\n"
 
     # === Build Markdown ===
     markdown_content = f"""# Team {team_number} Performance Summary
 
 ## 📈 Key Performance Indicators
-- important metrics for the team
+- Important metrics for the team
 
 {kpi_table_md}
 
@@ -599,6 +608,9 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
 {sig_summary_table_md}
 
 ## 🥇 Major Awards
+- Awards that qualified the team for at least something
+- Sorted by dec. importance
+
 {awards_md}
 """
 
@@ -606,13 +618,12 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
     output_path = os.path.join(output_folder, f"{team_number}.md")
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(markdown_content)
+
     print(f"✅ Summary for {team_number} saved to {output_path}")
 
 
 if __name__ == "__main__":
-    team_numbers = [
-        # special handling
-        
+    innovate_teams = [
         # teams in innovate division
         "39H", "94Z", "210Z", "321D", "360X", "603B", "719S", "839Z", "937X", "1011X",
         "1065A", "1115E", "1229W", "1381P", "1674A", "1868A", "2011C", "2072C", "2150A", "2567C",
@@ -625,9 +636,11 @@ if __name__ == "__main__":
         "97673Z", "99040E", "99904W"
     ]
 
+    team_numbers = innovate_teams.copy()
+
     # for team_number in team_numbers:
     #     main_get_data(team_number)
-    compute_kpi(team_numbers)
+    compute_kpi(innovate_teams)
     for team_number in team_numbers:
         main_analyse_data(team_number)
 
