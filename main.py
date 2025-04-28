@@ -491,11 +491,13 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
     max_ranks = {rank_metric: kpi_df[rank_metric].max() for _, rank_metric in important_metrics}
 
     # Build KPI Markdown Table
-    kpi_table_md = "| KPI | Value | Rank | Top % |\n|:---|:-----|:----|:-----|\n"
+    kpi_table_md = "| KPI | Value | Rank (Inno) | Top % |\n|:---|:-----|:----|:-----|\n"
     for metric, rank_metric in important_metrics:
         value = f"{team_kpi_row.iloc[0][metric]:.3f}"
         rank = int(team_kpi_row.iloc[0][rank_metric])
         max_rank = float(max_ranks[rank_metric])
+        if metric == "Weighted Avg Against":
+            rank = max_ranks[rank_metric] - rank + 1
         rank_pct = f"{(rank / max_rank * 100 if max_rank > 0 else 0):.3f}%"
         kpi_table_md += f"| {metric} | {value} | {rank} | {rank_pct} |\n"
 
@@ -645,7 +647,7 @@ if __name__ == "__main__":
 
     # for team_number in team_numbers:
     #     main_get_data(team_number)
-    compute_kpi(innovate_teams) # works on innovate only
+    # compute_kpi(innovate_teams) # works on innovate only
     for team_number in team_numbers:
         main_analyse_data(team_number) # works on innovate only
 
