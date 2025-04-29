@@ -8,7 +8,7 @@ from urllib3.util.retry import Retry
 
 # === CONFIG ===
 BASE_URL = "https://www.robotevents.com/api/v2"
-BEARER_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiODQ0NjAwNTEwZjUyZmQwYTJkMDIzYTk5MzQyMGFkMDc2MmNlYzQxYjgzZjUyZDBhMThkYWExNTkxMzJhNTI0YzM4MmUxZGVlNGJmYmIwZDgiLCJpYXQiOjE3NDU5MjI2OTAuODA4NTk1OSwibmJmIjoxNzQ1OTIyNjkwLjgwODU5OCwiZXhwIjoyNjkyNjA3NDkwLjgwMzI0MDgsInN1YiI6IjE0NTg2MiIsInNjb3BlcyI6W119.ojSRZfpidtOgWsZGLUtuTYlUKNPPs41_ON_gwxZsGXBggLCowO0ftZVs2iJfsxHQrwnecaRP4aLn9B94QJde3FZevPoTJPu86eRzHYlJ_VQZ7oU-jtYMYrjmrGFg7aJjbGLu3aNIUNZC2ZF8g33SnuN9xkZ8thcIKUMiKWNbo2eZT5zzRtA4nT_wmQYjVGyb-2usLDasEFiDv5nz0QbEhqmTNt6lFuvODb8UsjA3J8D1W0iIffTWc8O6GBL0T8QuzHBD4UHWzKoJYjtH-Nag0ApL94SuamOvdJ1NsARF7-1BlWq5e1haTNhSq51w9ODsDGrDobcWgkiHKYZipOozlF4NRM9Ll-aps_cY9BiRkL_wlg7EXlRgrBvcKowgvxfssjnuCzTLiei4NOvxajdKSeq6Bzctv1D3jghRkKjTxVqYtZZMz0vPbxCYTNkbuFt3QHjXcNCqt5uEt-39u2CnhEhNlzm92Iu8Gvj_r3CSODbN41tfJYXtwU4oSb3fg16m5R3hsnalPhGaf3iDjTmJk-G4IeRpjRgWqxGhQdj_PoOtvLVNTvURVt4PibKx0NB3tJ6XdUFL_n0qpf6sBMfiBu1HDePikG4DrJZc1gJQOcB1ZIigvKGXHNyvNgPomP8ji-DntMvUu4AKmZ8dE-Ed_MfiDT4kySjm63KHZ-bv9A0"
+BEARER_TOKEN = ""
 
 # Configure session with retries
 session = requests.Session()
@@ -658,6 +658,138 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
 
     print(f"✅ Summary for {team_number} saved to {output_path}")
 
+def div_analyse(team_numbers, match_folder="./", kpi_file="innov_kpi_summary.csv", output_folder="./"):
+    """
+    Analyze multiple teams and generate a markdown report of strong teams
+    Strong teams are defined as:
+    1. Award winners at any Signature event, OR
+    2. Tournament Champion/Excellence Award winners at Regional events
+    """
+    # Load data files
+    kpi_df = pd.read_csv(os.path.join(match_folder, kpi_file))
+    
+    # Load team info if available
+    team_info = {}
+    team_info_path = os.path.join(match_folder, "team_info.csv")
+    if os.path.exists(team_info_path):
+        team_info_df = pd.read_csv(team_info_path)
+        team_info = team_info_df.set_index('team_number').to_dict('index')
+    
+    # Initialize markdown content
+    md_content = "# Strong Teams Analysis\n\n"
+    strong_teams = []
+    
+    for team_number in team_numbers:
+        # Load team-specific data
+        matches_path = os.path.join(match_folder, f"{team_number}_matches.csv")
+        awards_path = os.path.join(match_folder, f"{team_number}_awards.csv")
+        
+        if not (os.path.exists(matches_path) and os.path.exists(awards_path)):
+            continue
+            
+        matches_df = pd.read_csv(matches_path)
+        awards_df = pd.read_csv(awards_path)
+        
+        # Check for strong team criteria
+        is_strong = False
+        team_details = {
+            'team_number': team_number,
+            'team_name': team_info.get(team_number, {}).get('name', 'Unknown'),
+            'location': team_info.get(team_number, {}).get('location', 'Unknown'),
+            'signature_awards': [],
+            'regional_awards': [],
+            'kpi': {}
+        }
+        
+        # 1. Check Signature event awards
+        signature_awards = awards_df[awards_df['Event Type'] == 'Signature']
+        if not signature_awards.empty:
+            is_strong = True
+            team_details['signature_awards'] = signature_awards[['Title', 'Event Name', 'Event Type']].to_dict('records')
+
+        signature_matches = matches_df[matches_df['Event Type'] == 'Signature']
+        signature_events = signature_matches['Event Name'].dropna().unique()
+        for event in signature_events:
+            event_matches = signature_matches[signature_matches['Event Name'] == event]
+            max_stage = "Qualification"
+            won_event = False
+            if any(event_matches['Match Name'].str.contains('Final', case=False, na=False)):
+                max_stage = "Finals"
+                final_matches = event_matches[event_matches['Match Name'].str.contains('Final', case=False, na=False)]
+                if (final_matches['Verdict'] == 'W').any():
+                    won_event = True
+            elif any(event_matches['Match Name'].str.contains('SF', case=False, na=False)):
+                max_stage = "Semifinals"
+            elif any(event_matches['Match Name'].str.contains('QF', case=False, na=False)):
+                max_stage = "Quarterfinals"
+            elif any(event_matches['Match Name'].str.contains('R-16', case=False, na=False)):
+                max_stage = "Round of 16"
+        if max_stage == "Finals" or max_stage == "Semifinals" or max_stage == "Quarterfinals":
+            is_strong = True
+            team_details['signature_awards'].append({
+                'Title': f"Reached {max_stage}",
+                'Event Name': event,
+                'Event Type': 'Signature'
+            })
+        
+        # 2. Check Regional Tournament Champion/Excellence
+        regional_awards = awards_df[
+            (awards_df['Event Type'] == 'Regional') & 
+            (awards_df['Title'].str.contains('Tournament Champion|Excellence Award', case=False))
+        ]
+        if not regional_awards.empty:
+            is_strong = True
+            team_details['regional_awards'] = regional_awards[['Title', 'Event Name', 'Event Type']].to_dict('records')
+        
+        # Get KPI data if available
+        team_kpi = kpi_df[kpi_df['Team'] == team_number]
+        if not team_kpi.empty:
+            team_details['kpi'] = {
+                'win_rate': team_kpi.iloc[0]['All Win Rate'],
+                'rank': team_kpi.iloc[0]['All Win Rate Rank']
+            }
+        
+        if is_strong:
+            strong_teams.append(team_details)
+    
+    # Sort strong teams by KPI rank (best first)
+    strong_teams.sort(key=lambda x: x['kpi'].get('rank', float('inf')))
+    
+    # Generate markdown content
+    for team in strong_teams:
+        md_content += f"## Team [{team['team_number']}](/{team['team_number']}.md): {team['team_name']}\n"
+        md_content += f"*Location: {team['location']}*\n\n"
+        
+        # Add KPI info if available
+        if team['kpi']:
+            md_content += (
+                f"- **Win Rate**: {team['kpi']['win_rate']:.3f} "
+                f"(Rank: {team['kpi']['rank']})\n"
+            )
+        
+        # Add Signature awards
+        if team['signature_awards']:
+            md_content += "### Signature Event Awards\n"
+            md_content += "| Award | Event | Event Type |\n|:------|:------|:-----------|\n"
+            for award in team['signature_awards']:
+                md_content += f"| {award['Title']} | {award['Event Name']} | {award['Event Type']} |\n"
+        
+        # Add Regional awards
+        if team['regional_awards']:
+            md_content += "\n### Regional Event Awards\n"
+            md_content += "| Award | Event | Event Type |\n|:------|:------|:-----------|\n"
+            for award in team['regional_awards']:
+                md_content += f"| {award['Title']} | {award['Event Name']} | {award['Event Type']} |\n"
+        
+        md_content += "\n---\n\n"
+    
+    # Save to file
+    output_path = os.path.join(output_folder, "inno.md")
+    with open(output_path, 'w', encoding='utf-8') as f:
+        f.write(md_content)
+    
+    print(f"✅ Report generated: {output_path}")
+    return output_path
 
 if __name__ == "__main__":
     innovate_teams = [
@@ -675,17 +807,16 @@ if __name__ == "__main__":
 
     team_numbers = innovate_teams.copy()
 
-    for team in team_numbers:
-        get_team_id(team)
-        time.sleep(0.5)  # Rate limiting
-    # for team in team_info_cache:
-    #     print(f"Team {team} Name: {team_info_cache[team]['name']}")
+    # for team in team_numbers:
+    #     get_team_id(team)
+    #     time.sleep(0.5)  # Rate limiting
 
     # for team_number in team_numbers:
         # main_get_data(team_number)
     # compute_kpi(innovate_teams) # works on innovate only
-    for team_number in team_numbers:
-        main_analyse_data(team_number) # works on innovate only
+    # for team_number in team_numbers:
+    #     main_analyse_data(team_number) # works on innovate only
+    div_analyse(innovate_teams) # works on innovate only
 
     for x in failed:
         print(x)
