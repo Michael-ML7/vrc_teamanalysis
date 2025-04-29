@@ -769,19 +769,19 @@ def div_analyse(team_numbers, match_folder="./", kpi_file="innov_kpi_summary.csv
         
         # Add Signature awards
         if team['signature_awards']:
-            md_content += "### Signature Event Awards\n"
+            md_content += "### Signature Event Awards\n\n"
             md_content += "| Award | Event | Event Type |\n|:------|:------|:-----------|\n"
             for award in team['signature_awards']:
                 md_content += f"| {award['Title']} | {award['Event Name']} | {award['Event Type']} |\n"
         
         # Add Regional awards
         if team['regional_awards']:
-            md_content += "\n### Regional Event Awards\n"
+            md_content += "\n### Regional Event Awards\n\n"
             md_content += "| Award | Event | Event Type |\n|:------|:------|:-----------|\n"
             for award in team['regional_awards']:
                 md_content += f"| {award['Title']} | {award['Event Name']} | {award['Event Type']} |\n"
         
-        md_content += "\n---\n\n"
+        md_content += "\n---\n\n\n"
     
     # Save to file
     output_path = os.path.join(output_folder, "inno.md")
