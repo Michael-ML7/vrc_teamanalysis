@@ -8,7 +8,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Quarterfinals | Kalahari Classic VEX V5 Robotics Competition Signature Event - HS: High School - WORLDS QUALIFYING DIVISION | Signature |
+| QF | Kalahari Classic VEX V5 Robotics Competition Signature Event - HS: High School - WORLDS QUALIFYING DIVISION | Signature |
 
 ---
 
@@ -21,7 +21,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Semifinals | 3er. Campeonato Internacional de la Frontera Norte: High School VEX V5 Robotics Comeptition Signature Event | Signature |
+| SF | 3er. Campeonato Internacional de la Frontera Norte: High School VEX V5 Robotics Comeptition Signature Event | Signature |
 
 ### Regional Event Awards
 
@@ -55,7 +55,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Quarterfinals | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
+| QF | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
 
 ---
 
@@ -70,7 +70,7 @@
 |:------|:------|:-----------|
 | Tournament Champions (VRC/VEXU/VAIRC) | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
 | Build Award (VRC/VEXU/VAIRC) | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
-| Reached Finals | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
+| Finals | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
 
 ---
 
@@ -88,7 +88,7 @@
 | Tournament Champions (VRC/VEXU/VAIRC) | Colombia VEX V5 Robotics Competition Signature Event: High School | Signature |
 | Robot Skills Champion (VRC/VEXU/VAIRC) | Colombia VEX V5 Robotics Competition Signature Event: High School | Signature |
 | Design Award (VRC/VEXU/VAIRC) | Colombia VEX V5 Robotics Competition Signature Event: High School | Signature |
-| Reached Finals | Colombia VEX V5 Robotics Competition Signature Event: High School | Signature |
+| Finals | Colombia VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 
@@ -122,7 +122,7 @@
 | Tournament Finalists (VRC/VEXU/VAIRC) | LAUNCH VEX V5 Robotics Competition Signature Event: High School | Signature |
 | Amaze Award (VRC/VEXU/VAIRC) | LAUNCH VEX V5 Robotics Competition Signature Event: High School | Signature |
 | Build Award (VRC/VEXU/VAIRC) | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
-| Reached Quarterfinals | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
+| QF | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
 
 ---
 
@@ -136,7 +136,7 @@
 | Award | Event | Event Type |
 |:------|:------|:-----------|
 | Tournament Semifinalists (VRC/VEXU/VAIRC) | 2024-2025 VEX V5 Robotics Competition Asia Open Signature Event: High School | Signature |
-| Reached Semifinals | 2024-2025 VEX V5 Robotics Competition Asia Open Signature Event: High School | Signature |
+| SF | 2024-2025 VEX V5 Robotics Competition Asia Open Signature Event: High School | Signature |
 
 ### Regional Event Awards
 
@@ -160,7 +160,7 @@
 | Tournament Finalists (VRC/VEXU/VAIRC) | Kalahari Classic VEX V5 Robotics Competition Signature Event - HS: High School - WORLDS QUALIFYING DIVISION | Signature |
 | Tournament Champions (VRC/VEXU/VAIRC) | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
 | Think Award (VRC/VEXU/VAIRC) | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
-| Reached Finals | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
+| Finals | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
 
 ### Regional Event Awards
 
@@ -180,7 +180,7 @@
 | Award | Event | Event Type |
 |:------|:------|:-----------|
 | Tournament Finalists (VRC/VEXU/VAIRC) | Kalahari Classic VEX V5 Robotics Competition Signature Event - HS: High School - WORLDS QUALIFYING DIVISION | Signature |
-| Reached Finals | Kalahari Classic VEX V5 Robotics Competition Signature Event - HS: High School - WORLDS QUALIFYING DIVISION | Signature |
+| Finals | Kalahari Classic VEX V5 Robotics Competition Signature Event - HS: High School - WORLDS QUALIFYING DIVISION | Signature |
 
 ### Regional Event Awards
 
@@ -201,7 +201,7 @@
 | Award | Event | Event Type |
 |:------|:------|:-----------|
 | Excellence Award (VRC/VEXU/VAIRC) | Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature |
-| Reached Quarterfinals | Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ### Regional Event Awards
 
@@ -237,7 +237,7 @@
 |:------|:------|:-----------|
 | Build Award (VRC/VEXU/VAIRC) | Rumble In the Rockies VEX V5 Robotics Competition Signature Event: High School | Signature |
 | Innovate Award (VRC/VEXU/VAIRC) | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
-| Reached Semifinals | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
+| SF | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
 
 ---
 
@@ -250,7 +250,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Semifinals | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
+| SF | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
 
 ---
 
@@ -277,7 +277,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Quarterfinals | NorCal Silicon Valley VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | NorCal Silicon Valley VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 
@@ -290,7 +290,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Quarterfinals | Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ### Regional Event Awards
 
@@ -309,7 +309,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Semifinals | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
+| SF | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
 
 ---
 
@@ -323,7 +323,7 @@
 | Award | Event | Event Type |
 |:------|:------|:-----------|
 | Tournament Champions (VRC/VEXU/VAIRC) | Rumble In the Rockies VEX V5 Robotics Competition Signature Event: High School | Signature |
-| Reached Quarterfinals | NorCal Silicon Valley VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | NorCal Silicon Valley VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 
@@ -336,7 +336,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Quarterfinals | Bots @ Bristol VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | Bots @ Bristol VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 
@@ -350,7 +350,7 @@
 | Award | Event | Event Type |
 |:------|:------|:-----------|
 | Tournament Finalists (VRC/VEXU/VAIRC) | HAUNTED @ SLOSS VEX V5 Robotics Competition Signature Event: High School | Signature |
-| Reached Semifinals | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
+| SF | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
 
 ### Regional Event Awards
 
@@ -370,7 +370,7 @@
 | Award | Event | Event Type |
 |:------|:------|:-----------|
 | Build Award (VRC/VEXU/VAIRC) | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
-| Reached Quarterfinals | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ### Regional Event Awards
 
@@ -403,7 +403,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Semifinals | LAUNCH VEX V5 Robotics Competition Signature Event: High School | Signature |
+| SF | LAUNCH VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 
@@ -436,7 +436,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Quarterfinals | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
+| QF | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
 
 ---
 
@@ -468,7 +468,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Quarterfinals | NorCal Silicon Valley VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | NorCal Silicon Valley VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 
@@ -495,7 +495,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Quarterfinals | AFCEA Pikes Peak VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | AFCEA Pikes Peak VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 
@@ -508,7 +508,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Quarterfinals | AFCEA Pikes Peak VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | AFCEA Pikes Peak VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 
@@ -535,7 +535,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Quarterfinals | Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 
@@ -576,7 +576,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Quarterfinals | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 
@@ -603,7 +603,7 @@
 | Award | Event | Event Type |
 |:------|:------|:-----------|
 | Tournament Champions (VRC/VEXU/VAIRC) | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
-| Reached Finals | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
+| Finals | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 
@@ -616,7 +616,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Finals | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
+| Finals | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 
@@ -629,7 +629,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Finals | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
+| Finals | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
 
 ---
 
@@ -642,7 +642,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Quarterfinals | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 
@@ -655,7 +655,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Quarterfinals | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 
@@ -702,7 +702,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Reached Quarterfinals | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 

@@ -719,15 +719,15 @@ def div_analyse(team_numbers, match_folder="./", kpi_file="innov_kpi_summary.csv
                 if (final_matches['Verdict'] == 'W').any():
                     won_event = True
             elif any(event_matches['Match Name'].str.contains('SF', case=False, na=False)):
-                max_stage = "Semifinals"
+                max_stage = "SF"
             elif any(event_matches['Match Name'].str.contains('QF', case=False, na=False)):
-                max_stage = "Quarterfinals"
+                max_stage = "QF"
             elif any(event_matches['Match Name'].str.contains('R-16', case=False, na=False)):
-                max_stage = "Round of 16"
-        if max_stage == "Finals" or max_stage == "Semifinals" or max_stage == "Quarterfinals":
+                max_stage = "R-16"
+        if max_stage == "Finals" or max_stage == "SF" or max_stage == "QF":
             is_strong = True
             team_details['signature_awards'].append({
-                'Title': f"Reached {max_stage}",
+                'Title': f"{max_stage}",
                 'Event Name': event,
                 'Event Type': 'Signature'
             })
