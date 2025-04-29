@@ -473,13 +473,13 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
 
     # === 1. Most important KPIs ===
     important_metrics = [
-        ('All Win Rate', 'All Win Rate Rank'),
-        ('Weighted Avg For', 'Weighted Avg For Rank'),
-        ('Weighted Avg Against', 'Weighted Avg Against Rank'),
-        ('Weighted Normalized Win Margin', 'Weighted Normalized Win Margin Rank'),
-        ('Regional+ Win Rate', 'Regional+ Win Rate Rank'),
-        ('Signature+ Win Rate', 'Signature+ Win Rate Rank'),
-        ('Elim Win Rate', 'Elim Win Rate Rank'),
+        ('All Win Rate', 'All Win Rate Rank', 'All Matches Played'),
+        ('Weighted Avg For', 'Weighted Avg For Rank', None),
+        ('Weighted Avg Against', 'Weighted Avg Against Rank', None),
+        ('Weighted Normalized Win Margin', 'Weighted Normalized Win Margin Rank', None),
+        ('Regional+ Win Rate', 'Regional+ Win Rate Rank', 'Regional+ Matches Played'),
+        ('Signature+ Win Rate', 'Signature+ Win Rate Rank', 'Signature+ Matches Played'),
+        ('Elim Win Rate', 'Elim Win Rate Rank', 'Elim Matches Played'),
     ]
 
     team_kpi_row = kpi_df[kpi_df['Team'] == team_number]
@@ -488,18 +488,20 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
         return
 
     # Pre-calculate max rank for each metric
-    max_ranks = {rank_metric: kpi_df[rank_metric].max() for _, rank_metric in important_metrics}
+    max_ranks = {rank_metric: kpi_df[rank_metric].max() for _, rank_metric, _ in important_metrics}
 
     # Build KPI Markdown Table
-    kpi_table_md = "| KPI | Value | Rank (Inno) | Top % |\n|:---|:-----|:----|:-----|\n"
-    for metric, rank_metric in important_metrics:
+    kpi_table_md = "| KPI | Value | Matches Played | Rank (Inno) | Top % |\n|:---|:-----|:--------------:|:----|:-----|\n"
+    for metric, rank_metric, matches_col in important_metrics:
         value = f"{team_kpi_row.iloc[0][metric]:.3f}"
         rank = int(team_kpi_row.iloc[0][rank_metric])
         max_rank = float(max_ranks[rank_metric])
-        # if metric == "Weighted Avg Against":
-        #     rank = max_rank - rank + 1
         rank_pct = f"{(rank / max_rank * 100 if max_rank > 0 else 0):.3f}%"
-        kpi_table_md += f"| {metric} | {value} | {rank} | {rank_pct} |\n"
+        
+        # Add matches played if available for this metric
+        matches_played = str(int(team_kpi_row.iloc[0][matches_col])) if matches_col else ""
+        
+        kpi_table_md += f"| {metric} | {value} | {matches_played} | {rank} | {rank_pct} |\n"
 
     # === 2. How the team qualified for Worlds ===
     awards_df['Qualifications'] = awards_df['Qualifications'].astype(str)
