@@ -8,7 +8,7 @@ from urllib3.util.retry import Retry
 
 # === CONFIG ===
 BASE_URL = "https://www.robotevents.com/api/v2"
-BEARER_TOKEN = ""
+BEARER_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiODQ0NjAwNTEwZjUyZmQwYTJkMDIzYTk5MzQyMGFkMDc2MmNlYzQxYjgzZjUyZDBhMThkYWExNTkxMzJhNTI0YzM4MmUxZGVlNGJmYmIwZDgiLCJpYXQiOjE3NDU5MjI2OTAuODA4NTk1OSwibmJmIjoxNzQ1OTIyNjkwLjgwODU5OCwiZXhwIjoyNjkyNjA3NDkwLjgwMzI0MDgsInN1YiI6IjE0NTg2MiIsInNjb3BlcyI6W119.ojSRZfpidtOgWsZGLUtuTYlUKNPPs41_ON_gwxZsGXBggLCowO0ftZVs2iJfsxHQrwnecaRP4aLn9B94QJde3FZevPoTJPu86eRzHYlJ_VQZ7oU-jtYMYrjmrGFg7aJjbGLu3aNIUNZC2ZF8g33SnuN9xkZ8thcIKUMiKWNbo2eZT5zzRtA4nT_wmQYjVGyb-2usLDasEFiDv5nz0QbEhqmTNt6lFuvODb8UsjA3J8D1W0iIffTWc8O6GBL0T8QuzHBD4UHWzKoJYjtH-Nag0ApL94SuamOvdJ1NsARF7-1BlWq5e1haTNhSq51w9ODsDGrDobcWgkiHKYZipOozlF4NRM9Ll-aps_cY9BiRkL_wlg7EXlRgrBvcKowgvxfssjnuCzTLiei4NOvxajdKSeq6Bzctv1D3jghRkKjTxVqYtZZMz0vPbxCYTNkbuFt3QHjXcNCqt5uEt-39u2CnhEhNlzm92Iu8Gvj_r3CSODbN41tfJYXtwU4oSb3fg16m5R3hsnalPhGaf3iDjTmJk-G4IeRpjRgWqxGhQdj_PoOtvLVNTvURVt4PibKx0NB3tJ6XdUFL_n0qpf6sBMfiBu1HDePikG4DrJZc1gJQOcB1ZIigvKGXHNyvNgPomP8ji-DntMvUu4AKmZ8dE-Ed_MfiDT4kySjm63KHZ-bv9A0"
 
 # Configure session with retries
 session = requests.Session()
@@ -48,35 +48,59 @@ def make_request(url, params=None):
         print(f"JSON decode error: {e}")
         return None
 
+TEAM_INFO_FILE = "team_info.csv"
+team_info_cache = {}
+
 def get_team_id(team_number):
-    if team_number == "1065A":
-        return 153404
-    if team_number == "1674A":
-        return 180763
-    if team_number == "2072C":
-        return 169750
-    if team_number == "3333W":
-        return 123820
-    if team_number == "3723A":
-        return 129768
-    if team_number == "10478S":
-        return 128399
-
-    params = {
-        "grade[]": "High School",
-        "program[]": 1
-    }
-
+    global team_info_cache
+    
+    # Load cache if empty but file exists
+    if not team_info_cache and os.path.exists(TEAM_INFO_FILE):
+        with open(TEAM_INFO_FILE, mode='r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                team_info_cache[row['team_number']] = {
+                    'id': int(row['id']),
+                    'name': row['name'],
+                    'location': row['location']
+                }
+    
+    # Return cached data if available
+    if team_number in team_info_cache:
+        return team_info_cache[team_number]['id']
+    
+    # API request for new teams
+    params = {"grade[]": "High School", "program[]": 1}
     url = f"{BASE_URL}/teams?number={team_number}"
     data = make_request(url, params)
     
-    if data:
-        teams = data.get('data', [])
-        if teams:
-            return teams[0]['id']
-        else:
-            print(f"No team found with number {team_number}")
-    return None
+    if not data or not data.get('data'):
+        print(f"Team {team_number} not found")
+        return None
+    
+    team_data = data['data'][0]
+    team_info = {
+        'id': team_data['id'],
+        'name': team_data['team_name'],
+        'location': f"{team_data['location']['region']}; {team_data['location']['country']}"
+    }
+    
+    # Update cache and save to CSV
+    team_info_cache[team_number] = team_info
+    
+    file_exists = os.path.exists(TEAM_INFO_FILE)
+    with open(TEAM_INFO_FILE, mode='a', newline='', encoding='utf-8') as f:
+        writer = csv.DictWriter(f, fieldnames=['team_number', 'id', 'name', 'location'])
+        if not file_exists:
+            writer.writeheader()
+        writer.writerow({
+            'team_number': team_number,
+            'id': team_info['id'],
+            'name': team_info['name'],
+            'location': team_info['location']
+        })
+    
+    return team_info['id']
 
 def get_team_matches(team_id):
     params = {
@@ -603,6 +627,10 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
     # === Build Markdown ===
     markdown_content = f"""# Team {team_number} Performance Summary
 
+##  Team Information
+- **Team Name**: {team_info_cache[team_number]['name']}
+- **Location**: {team_info_cache[team_number]['location']}
+
 ## 📈 Key Performance Indicators
 - Important metrics for the team
 
@@ -647,8 +675,14 @@ if __name__ == "__main__":
 
     team_numbers = innovate_teams.copy()
 
+    for team in team_numbers:
+        get_team_id(team)
+        time.sleep(0.5)  # Rate limiting
+    # for team in team_info_cache:
+    #     print(f"Team {team} Name: {team_info_cache[team]['name']}")
+
     # for team_number in team_numbers:
-    #     main_get_data(team_number)
+        # main_get_data(team_number)
     # compute_kpi(innovate_teams) # works on innovate only
     for team_number in team_numbers:
         main_analyse_data(team_number) # works on innovate only
