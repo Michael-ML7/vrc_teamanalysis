@@ -547,7 +547,12 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
         if any(event_matches['Match Name'].str.contains('Final', case=False, na=False)):
             max_stage = "Finals"
             final_matches = event_matches[event_matches['Match Name'].str.contains('Final', case=False, na=False)]
-            if (final_matches['Verdict'] == 'W').count() >= 2:
+            wincnt = 0
+            for match in final_matches.itertuples():
+                print(match)
+                if match.Verdict == 'W':
+                    wincnt += 1
+            if wincnt >= 2:
                 won_event = True
         elif any(event_matches['Match Name'].str.contains('SF', case=False, na=False)):
             max_stage = "Semifinals"
