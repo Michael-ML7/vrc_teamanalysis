@@ -8,6 +8,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
+| QF | Space City VEX V5 Robotics Competition Signature Event: High School | Signature |
 | QF | Kalahari Classic VEX V5 Robotics Competition Signature Event - HS: High School - WORLDS QUALIFYING DIVISION | Signature |
 
 ---
@@ -55,6 +56,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
+| SF | HAUNTED @ SLOSS VEX V5 Robotics Competition Signature Event: High School | Signature |
 | QF | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
 
 ---
@@ -88,6 +90,7 @@
 | Tournament Champions (VRC/VEXU/VAIRC) | Colombia VEX V5 Robotics Competition Signature Event: High School | Signature |
 | Robot Skills Champion (VRC/VEXU/VAIRC) | Colombia VEX V5 Robotics Competition Signature Event: High School | Signature |
 | Design Award (VRC/VEXU/VAIRC) | Colombia VEX V5 Robotics Competition Signature Event: High School | Signature |
+| Finals | 3er. Campeonato Internacional de la Frontera Norte: High School VEX V5 Robotics Comeptition Signature Event | Signature |
 | Finals | Colombia VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
@@ -122,6 +125,9 @@
 | Tournament Finalists (VRC/VEXU/VAIRC) | LAUNCH VEX V5 Robotics Competition Signature Event: High School | Signature |
 | Amaze Award (VRC/VEXU/VAIRC) | LAUNCH VEX V5 Robotics Competition Signature Event: High School | Signature |
 | Build Award (VRC/VEXU/VAIRC) | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
+| QF | Speedway High Stakes VEX V5 Robotics Competition Signature Event: High School | Signature |
+| SF | Space City VEX V5 Robotics Competition Signature Event: High School | Signature |
+| Finals | LAUNCH VEX V5 Robotics Competition Signature Event: High School | Signature |
 | QF | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
 
 ---
@@ -160,6 +166,10 @@
 | Tournament Finalists (VRC/VEXU/VAIRC) | Kalahari Classic VEX V5 Robotics Competition Signature Event - HS: High School - WORLDS QUALIFYING DIVISION | Signature |
 | Tournament Champions (VRC/VEXU/VAIRC) | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
 | Think Award (VRC/VEXU/VAIRC) | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
+| QF | Minnesota Signature Event - VEX V5 Robotics Competition: Presented by The National Center for Autonomous Technologies | Signature |
+| QF | Speedway High Stakes VEX V5 Robotics Competition Signature Event: High School | Signature |
+| Finals | Sugar Rush VEX V5 Robotics Competition Signature Event: High School | Signature |
+| Finals | Kalahari Classic VEX V5 Robotics Competition Signature Event - HS: High School - WORLDS QUALIFYING DIVISION | Signature |
 | Finals | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
 
 ### Regional Event Awards
@@ -242,19 +252,6 @@
 ---
 
 
-## Team [321D](/321D.md): Deimos
-*Location: Illinois, United States*
-
-- **Win Rate**: 0.759 (Rank: 16)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| SF | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
-
----
-
-
 ## Team [6293X](/6293X.md): X-ECUTE
 *Location: Florida, United States*
 
@@ -269,28 +266,10 @@
 ---
 
 
-## Team [81785K](/81785K.md): Kinsale 4
-*Location: Cork; Ireland*
-
-- **Win Rate**: 0.756 (Rank: 18)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| QF | NorCal Silicon Valley VEX V5 Robotics Competition Signature Event: High School | Signature |
-
----
-
-
 ## Team [7192F](/7192F.md): The Masked Bandits
 *Location: Minnesota, United States*
 
 - **Win Rate**: 0.738 (Rank: 19)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| QF | Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ### Regional Event Awards
 
@@ -314,6 +293,19 @@
 ---
 
 
+## Team [99040E](/99040E.md): Botanical Bots
+*Location: Alabama; United States*
+
+- **Win Rate**: 0.724 (Rank: 24)
+### Signature Event Awards
+
+| Award | Event | Event Type |
+|:------|:------|:-----------|
+| QF | HAUNTED @ SLOSS VEX V5 Robotics Competition Signature Event: High School | Signature |
+
+---
+
+
 ## Team [80001B](/80001B.md): Double Play
 *Location: California; United States*
 
@@ -323,6 +315,7 @@
 | Award | Event | Event Type |
 |:------|:------|:-----------|
 | Tournament Champions (VRC/VEXU/VAIRC) | Rumble In the Rockies VEX V5 Robotics Competition Signature Event: High School | Signature |
+| Finals | Rumble In the Rockies VEX V5 Robotics Competition Signature Event: High School | Signature |
 | QF | NorCal Silicon Valley VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
@@ -336,6 +329,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
+| QF | NE Wisconsin Showdown VEX V5 Robotics Competition Signature Event: High School | Signature |
 | QF | Bots @ Bristol VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
@@ -350,6 +344,7 @@
 | Award | Event | Event Type |
 |:------|:------|:-----------|
 | Tournament Finalists (VRC/VEXU/VAIRC) | HAUNTED @ SLOSS VEX V5 Robotics Competition Signature Event: High School | Signature |
+| Finals | HAUNTED @ SLOSS VEX V5 Robotics Competition Signature Event: High School | Signature |
 | SF | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
 
 ### Regional Event Awards
@@ -460,19 +455,6 @@
 ---
 
 
-## Team [83149B](/83149B.md): Babylon
-*Location: Massachusetts; United States*
-
-- **Win Rate**: 0.667 (Rank: 36)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| QF | NorCal Silicon Valley VEX V5 Robotics Competition Signature Event: High School | Signature |
-
----
-
-
 ## Team [839Z](/839Z.md): // Caution Tape ZOOM! //
 *Location: Ontario, Canada*
 
@@ -491,19 +473,6 @@
 *Location: California, United States*
 
 - **Win Rate**: 0.657 (Rank: 40)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| QF | AFCEA Pikes Peak VEX V5 Robotics Competition Signature Event: High School | Signature |
-
----
-
-
-## Team [14241A](/14241A.md): RoboDragons
-*Location: North Carolina; United States*
-
-- **Win Rate**: 0.643 (Rank: 45)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
@@ -535,6 +504,7 @@
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
+| QF | The RiverBots III VEX V5 Robotics Competition Signature Event: High School | Signature |
 | QF | Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
@@ -568,19 +538,6 @@
 ---
 
 
-## Team [74000M](/74000M.md): JZ-SO7EN
-*Location: Sichuan; China*
-
-- **Win Rate**: 0.614 (Rank: 54)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| QF | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
-
----
-
-
 ## Team [7447G](/7447G.md): The Dysfunctional
 *Location: South Carolina, United States*
 
@@ -590,6 +547,19 @@
 | Award | Event | Event Type |
 |:------|:------|:-----------|
 | Build Award (VRC/VEXU/VAIRC) | Bots @ Bristol VEX V5 Robotics Competition Signature Event: High School | Signature |
+
+---
+
+
+## Team [16099D](/16099D.md): Overclock
+*Location: New York; United States*
+
+- **Win Rate**: 0.597 (Rank: 57)
+### Signature Event Awards
+
+| Award | Event | Event Type |
+|:------|:------|:-----------|
+| QF | The Highlander Summit VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 
@@ -608,58 +578,6 @@
 ---
 
 
-## Team [89250X](/89250X.md): X-Ray
-*Location: Florida; United States*
-
-- **Win Rate**: 0.582 (Rank: 60)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| Finals | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
-
----
-
-
-## Team [23805S](/23805S.md): Imagineers
-*Location: Kildare; Ireland*
-
-- **Win Rate**: 0.561 (Rank: 63)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| Finals | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
-
----
-
-
-## Team [71113X](/71113X.md): Under Control
-*Location: Guangdong; China*
-
-- **Win Rate**: 0.548 (Rank: 65)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| QF | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
-
----
-
-
-## Team [69403A](/69403A.md): Atlus
-*Location: Louisiana; United States*
-
-- **Win Rate**: 0.538 (Rank: 66)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| QF | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
-
----
-
-
 ## Team [6121A](/6121A.md): The Pioneers
 *Location: Pennsylvania, United States*
 
@@ -670,6 +588,7 @@
 |:------|:------|:-----------|
 | Innovate Award (VRC/VEXU/VAIRC) | Sugar Rush VEX V5 Robotics Competition Signature Event: High School | Signature |
 | Design Award (VRC/VEXU/VAIRC) | Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | Sugar Rush VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ### Regional Event Awards
 
@@ -690,19 +609,6 @@
 | Award | Event | Event Type |
 |:------|:------|:-----------|
 | Excellence Award (VRC/VEXU/VAIRC) | 2025 Texas Region 1 High School State Championship: VEX V5 Robotics Competition 2024-2025: High Stakes | Regional |
-
----
-
-
-## Team [75503A](/75503A.md): Bluetooth Motors
-*Location: Texas; United States*
-
-- **Win Rate**: 0.458 (Rank: 73)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| QF | 2024-2025 PAS-VEX VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 

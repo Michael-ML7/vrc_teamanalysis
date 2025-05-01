@@ -549,7 +549,7 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
             final_matches = event_matches[event_matches['Match Name'].str.contains('Final', case=False, na=False)]
             wincnt = 0
             for match in final_matches.itertuples():
-                print(match)
+                # print(match)
                 if match.Verdict == 'W':
                     wincnt += 1
             if wincnt >= 2:
@@ -717,6 +717,7 @@ def div_analyse(team_numbers, match_folder="./", kpi_file="innov_kpi_summary.csv
         signature_matches = matches_df[matches_df['Event Type'] == 'Signature']
         signature_events = signature_matches['Event Name'].dropna().unique()
         for event in signature_events:
+            max_stage = "NA"
             event_matches = signature_matches[signature_matches['Event Name'] == event]
             max_stage = "Qualification"
             if any(event_matches['Match Name'].str.contains('Final', case=False, na=False)):
@@ -727,13 +728,13 @@ def div_analyse(team_numbers, match_folder="./", kpi_file="innov_kpi_summary.csv
                 max_stage = "QF"
             elif any(event_matches['Match Name'].str.contains('R-16', case=False, na=False)):
                 max_stage = "R-16"
-        if max_stage == "Finals" or max_stage == "SF" or max_stage == "QF":
-            is_strong = True
-            team_details['signature_awards'].append({
-                'Title': f"{max_stage}",
-                'Event Name': event,
-                'Event Type': 'Signature'
-            })
+            if max_stage == "Finals" or max_stage == "SF" or max_stage == "QF":
+                is_strong = True
+                team_details['signature_awards'].append({
+                    'Title': f"{max_stage}",
+                    'Event Name': event,
+                    'Event Type': 'Signature'
+                })
         
         # 2. Check Regional Tournament Champion/Excellence
         regional_awards = awards_df[
