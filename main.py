@@ -547,7 +547,7 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
         if any(event_matches['Match Name'].str.contains('Final', case=False, na=False)):
             max_stage = "Finals"
             final_matches = event_matches[event_matches['Match Name'].str.contains('Final', case=False, na=False)]
-            if (final_matches['Verdict'] == 'W').any():
+            if (final_matches['Verdict'] == 'W').count() >= 2:
                 won_event = True
         elif any(event_matches['Match Name'].str.contains('SF', case=False, na=False)):
             max_stage = "Semifinals"
@@ -705,6 +705,8 @@ def div_analyse(team_numbers, match_folder="./", kpi_file="innov_kpi_summary.csv
         signature_awards = awards_df[awards_df['Event Type'] == 'Signature']
         if not signature_awards.empty:
             is_strong = True
+            # if signature_awards['Title'].str.contains('Tournament Champion', case=False).any() or signature_awards['Title'].str.contains('Excellence', case=False).any():
+            #     signature_awards['Title'].append("🏆")
             team_details['signature_awards'] = signature_awards[['Title', 'Event Name', 'Event Type']].to_dict('records')
 
         signature_matches = matches_df[matches_df['Event Type'] == 'Signature']
@@ -712,12 +714,8 @@ def div_analyse(team_numbers, match_folder="./", kpi_file="innov_kpi_summary.csv
         for event in signature_events:
             event_matches = signature_matches[signature_matches['Event Name'] == event]
             max_stage = "Qualification"
-            won_event = False
             if any(event_matches['Match Name'].str.contains('Final', case=False, na=False)):
                 max_stage = "Finals"
-                final_matches = event_matches[event_matches['Match Name'].str.contains('Final', case=False, na=False)]
-                if (final_matches['Verdict'] == 'W').any():
-                    won_event = True
             elif any(event_matches['Match Name'].str.contains('SF', case=False, na=False)):
                 max_stage = "SF"
             elif any(event_matches['Match Name'].str.contains('QF', case=False, na=False)):
@@ -807,15 +805,15 @@ if __name__ == "__main__":
 
     team_numbers = innovate_teams.copy()
 
-    # for team in team_numbers:
-    #     get_team_id(team)
+    for team in team_numbers:
+        get_team_id(team)
     #     time.sleep(0.5)  # Rate limiting
 
     # for team_number in team_numbers:
         # main_get_data(team_number)
     # compute_kpi(innovate_teams) # works on innovate only
-    # for team_number in team_numbers:
-    #     main_analyse_data(team_number) # works on innovate only
+    for team_number in team_numbers:
+        main_analyse_data(team_number) # works on innovate only
     div_analyse(innovate_teams) # works on innovate only
 
     for x in failed:
