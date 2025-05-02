@@ -289,9 +289,9 @@ def main_get_data(team_number):
         return
     
     # Check if files already exist
-    if os.path.exists(f"{team_number}_matches.csv") and os.path.exists(f"{team_number}_awards.csv"):
-        print("Data already exists for this team. Skipping...")
-        return
+    # if os.path.exists(f"{team_number}_matches.csv") and os.path.exists(f"{team_number}_awards.csv"):
+    #     print("Data already exists for this team. Skipping...")
+    #     return
 
     # Get team ID
     team_id = get_team_id(team_number)
@@ -630,7 +630,7 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
             awards_md += f"| {title} | {event_name} | {event_type} | {qualification} |\n"
 
     # === Build Markdown ===
-    markdown_content = f"""# Team {team_number} Performance Summary
+    markdown_content = f"""# [Team {team_number}](https://https://www.robotevents.com/teams/V5RC/{team_number}) Performance Summary
 
 ##  Team Information
 - **Team Name**: {team_info_cache[team_number]['name']}
@@ -813,11 +813,11 @@ if __name__ == "__main__":
 
     for team in team_numbers:
         get_team_id(team)
-    #     time.sleep(0.5)  # Rate limiting
+        time.sleep(0.5)  # Rate limiting
 
-    # for team_number in team_numbers:
-        # main_get_data(team_number)
-    # compute_kpi(innovate_teams) # works on innovate only
+    for team_number in team_numbers:
+        main_get_data(team_number)
+    compute_kpi(innovate_teams) # works on innovate only
     for team_number in team_numbers:
         main_analyse_data(team_number) # works on innovate only
     div_analyse(innovate_teams) # works on innovate only
