@@ -60,10 +60,18 @@
 | Alberta VEX V5 Robotics Competition Provincial Championships (HS): presented by Syncrude | Regional | None | Final #1-1 | 2025-02-22T21:03:07-05:00 | 38 | 30 | 8 | 0.11764705882352941 | W | red | red | 210Z | 210K | 221X | 3388S |
 | Alberta VEX V5 Robotics Competition Provincial Championships (HS): presented by Syncrude | Regional | None | Final #1-2 | 2025-02-22T21:23:28-05:00 | 15 | 31 | -16 | -0.34782608695652173 | L | red | blue | 210Z | 210K | 221X | 3388S |
 | Alberta VEX V5 Robotics Competition Provincial Championships (HS): presented by Syncrude | Regional | None | Final #1-3 | 2025-02-22T21:36:14-05:00 | 29 | 32 | -3 | -0.04918032786885246 | L | red | blue | 210Z | 210K | 221X | 3388S |
+| WestMech V5RC End of Season Scrimmage | Other | None | Qualifier #5 | 2025-04-26T12:37:54-04:00 | 29 | 1 | 28 | 0.9333333333333333 | W | blue | blue | 2088K | 2088H | 210Z | 36467E |
+| WestMech V5RC End of Season Scrimmage | Other | None | Qualifier #7 | 2025-04-26T12:54:24-04:00 | 32 | 22 | 10 | 0.18518518518518517 | W | red | red | 210Z | 45519C | 2088E | 20245A |
+| WestMech V5RC End of Season Scrimmage | Other | None | Qualifier #13 | 2025-04-26T13:40:07-04:00 | 35 | 20 | 15 | 0.2727272727272727 | W | red | red | 210Z | 2088U | 2088T | 50021A |
+| WestMech V5RC End of Season Scrimmage | Other | None | Qualifier #20 | 2025-04-26T15:13:10-04:00 | 31 | 30 | 1 | 0.01639344262295082 | W | blue | blue | 2088S | 3388S | 210Z | 2088A |
+| WestMech V5RC End of Season Scrimmage | Other | None | Qualifier #22 | 2025-04-26T15:32:38-04:00 | 23 | 44 | -21 | -0.31343283582089554 | L | red | blue | 2088G | 210Z | 2088B | 210K |
+| WestMech V5RC End of Season Scrimmage | Other | None | QF #1-1 | TBD | 41 | 19 | 22 | 0.36666666666666664 | W | red | red | 210K | 210Z | 2088T | 2088W |
 | Bowness Robotics VEX V5 Robotics Competition: High Stakes Tournament | Other | Event Region Championship | QF #3-1 | TBD | 39 | 0 | 39 | 1.0 | W | red | red | 210Z | 210K | 2088G | 3388G |
 | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature | None | QF #4-1 | TBD | 36 | 33 | 3 | 0.043478260869565216 | W | red | red | 210Z | 8198X | 3284B | 5327K |
-| Bowness Robotics VEX V5 Robotics Competition: High Stakes Tournament | Other | Event Region Championship | SF #2-1 | TBD | 37 | 3 | 34 | 0.85 | W | red | red | 210Z | 210K | 3388H | 3388C |
+| WestMech V5RC End of Season Scrimmage | Other | None | SF #1-1 | TBD | 38 | 19 | 19 | 0.3333333333333333 | W | red | red | 210K | 210Z | 50021A | 2088H |
 | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature | None | SF #2-1 | TBD | 0 | 34 | -34 | -1.0 | L | blue | red | 10W | 10B | 210Z | 8198X |
+| Bowness Robotics VEX V5 Robotics Competition: High Stakes Tournament | Other | Event Region Championship | SF #2-1 | TBD | 37 | 3 | 34 | 0.85 | W | red | red | 210Z | 210K | 3388H | 3388C |
 | Bowness Robotics VEX V5 Robotics Competition: High Stakes Tournament | Other | Event Region Championship | Final #1-1 | TBD | 35 | 24 | 11 | 0.1864406779661017 | W | blue | blue | 9409Z | 99197T | 210Z | 210K |
+| WestMech V5RC End of Season Scrimmage | Other | None | Final #1-1 | TBD | 39 | 32 | 7 | 0.09859154929577464 | W | red | red | 210K | 210Z | 2088B | 2088K |
 | Bowness Robotics VEX V5 Robotics Competition: High Stakes Tournament | Other | Event Region Championship | R16 #5-1 | TBD | 46 | 1 | 45 | 0.9574468085106383 | W | red | red | 210Z | 210K | 99197S | 6659A |
 | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature | None | R16 #7-1 | TBD | 44 | 21 | 23 | 0.35384615384615387 | W | red | red | 210Z | 8198X | 9409Y | 1010T |

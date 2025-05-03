@@ -67,15 +67,17 @@ def get_team_id(team_number):
     
     # Return cached data if available
     if team_number in team_info_cache:
+        print(f"✅ {team_number}'s team id {team_info_cache[team_number]['id']} stored in cache.")
         return team_info_cache[team_number]['id']
     
     # API request for new teams
     params = {"grade[]": "High School", "program[]": 1}
     url = f"{BASE_URL}/teams?number={team_number}"
     data = make_request(url, params)
+    time.delay(1) # rate limiting
     
     if not data or not data.get('data'):
-        print(f"Team {team_number} not found")
+        print(f"❗ Team {team_number} not found")
         return None
     
     team_data = data['data'][0]
@@ -100,17 +102,44 @@ def get_team_id(team_number):
             'location': team_info['location']
         })
     
+    print(f"✅ {team_number}'s team id {team_info_cache[team_number]['id']} requested from API.")
     return team_info['id']
 
 def get_team_matches(team_id):
-    params = {
-        "season[]": [190, 197],
-        "round[]": [2, 3, 4, 5, 6]
-    }
-    
-    url = f"{BASE_URL}/teams/{team_id}/matches"
-    data = make_request(url, params)
-    return data.get('data', []) if data else []
+    def fetch_all_matches(round_params):
+        page = 1
+        per_page = 250
+        all_matches = []
+
+        while True:
+            params = {
+                "season[]": 190,
+                "round[]": round_params,
+                "page": page,
+                "per_page": per_page
+            }
+            url = f"{BASE_URL}/teams/{team_id}/matches"
+            response = make_request(url, params)
+            if not response or 'data' not in response:
+                break
+
+            matches = response['data']
+            if not matches:
+                break  # No more data
+
+            all_matches.extend(matches)
+            page += 1
+
+        return all_matches
+
+    # Qualifying matches (round 2)
+    data1 = fetch_all_matches(2)
+    # Elimination and others (rounds 3–6)
+    data2 = fetch_all_matches([3, 4, 5, 6])
+
+    print(f"✅ {team_id}'s matches requested from API: {len(data1) + len(data2)} matches total.")
+    return data1 + data2
+
 
 def get_team_awards(team_id):
     params = {
@@ -119,7 +148,56 @@ def get_team_awards(team_id):
     
     url = f"{BASE_URL}/teams/{team_id}/awards"
     data = make_request(url, params)
+    print(f"✅ {team_id}'s awards requested from API.")
     return data.get('data', []) if data else []
+
+EVENT_INFO_FILE = "event_info.csv"
+event_info_cache = {}
+
+def get_event_type(event_id):
+    global event_info_cache
+
+    # Load from CSV cache if memory cache is empty
+    if not event_info_cache and os.path.exists(EVENT_INFO_FILE):
+        with open(EVENT_INFO_FILE, mode='r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                event_info_cache[row['event_id']] = {
+                    'level': row['level']
+                }
+
+    # Return cached result
+    if event_id in event_info_cache:
+        print(f"✅ Event {event_id} level {event_info_cache[event_id]} stored in cache.")
+        return event_info_cache[event_id]['level']
+
+    # Make API call
+    url = f"{BASE_URL}/events?id={event_id}"
+    data = make_request(url)
+    time.sleep(1)
+
+    if not data or not data.get('data'):
+        print(f"⚠️ Event {event_id} not found")
+        return None
+
+    event_data = data['data'][0]
+    event_level = event_data['level']
+
+    # Cache and save
+    event_info_cache[event_id] = {'level': event_level}
+
+    file_exists = os.path.exists(EVENT_INFO_FILE)
+    with open(EVENT_INFO_FILE, mode='a', newline='', encoding='utf-8') as f:
+        writer = csv.DictWriter(f, fieldnames=['event_id', 'level'])
+        if not file_exists:
+            writer.writeheader()
+        writer.writerow({
+            'event_id': event_id,
+            'level': event_level
+        })
+
+    print(f"✅ Event {event_id} level {event_level} requested from API.")
+    return event_level
 
 def save_matches_to_csv_and_md(matches, awards, team_number):
     # Process matches data
@@ -305,12 +383,15 @@ def main_get_data(team_number):
     # Fetch data with rate limiting
     print("Fetching awards...")
     awards = get_team_awards(team_id)
+    time.sleep(1)
     print("Fetching matches...")
     matches = get_team_matches(team_id)
-    time.sleep(2)  # Rate limiting
-
+    time.sleep(1)  # Rate limiting
+    
     # Save data
     if matches:
+        # for match in matches:
+        #     print(f"Match type: {match['name']}")
         save_matches_to_csv_and_md(matches, awards, team_number)
     else:
         failed.append(team_number)
@@ -358,7 +439,7 @@ def compute_kpi(team_list, match_folder="./", output_file="innov_kpi_summary.csv
         # Determine match categories
         df['Is Regional+'] = df['Event Type'].isin(['World', 'Signature', 'National', 'Regional'])
         df['Is Signature+'] = df['Event Type'].isin(['World', 'Signature'])
-        df['Is Elimination'] = df['Match Name'].str.contains('QF|SF|Final|R-16', case=False, na=False)
+        df['Is Elimination'] = df['Match Name'].str.contains('QF|SF|Final|R16|R-16', case=False, na=False)
 
         # Compute match weights
         df['Weight'] = df['Event Type'].map(event_type_weights).fillna(1.0)
@@ -558,7 +639,7 @@ def main_analyse_data(team_number, match_folder="./", kpi_file="innov_kpi_summar
             max_stage = "Semifinals"
         elif any(event_matches['Match Name'].str.contains('QF', case=False, na=False)):
             max_stage = "Quarterfinals"
-        elif any(event_matches['Match Name'].str.contains('R-16', case=False, na=False)):
+        elif any(event_matches['Match Name'].str.contains('R16', case=False, na=False)) or any(event_matches['Match Name'].str.contains('R-16', case=False, na=False)):
             max_stage = "Round of 16"
 
         sig_summary_table_md += f"| {event} | {max_stage} | {'🏆' if won_event else ''} |\n"
@@ -726,7 +807,7 @@ def div_analyse(team_numbers, match_folder="./", kpi_file="innov_kpi_summary.csv
                 max_stage = "SF"
             elif any(event_matches['Match Name'].str.contains('QF', case=False, na=False)):
                 max_stage = "QF"
-            elif any(event_matches['Match Name'].str.contains('R-16', case=False, na=False)):
+            elif any(event_matches['Match Name'].str.contains('R16', case=False, na=False)) or any(event_matches['Match Name'].str.contains('R-16', case=False, na=False)):
                 max_stage = "R-16"
             if max_stage == "Finals" or max_stage == "SF" or max_stage == "QF":
                 is_strong = True
@@ -813,7 +894,6 @@ if __name__ == "__main__":
 
     for team in team_numbers:
         get_team_id(team)
-        time.sleep(0.5)  # Rate limiting
 
     for team_number in team_numbers:
         main_get_data(team_number)

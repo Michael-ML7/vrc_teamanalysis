@@ -7,11 +7,13 @@
 | Hall Robotics VEX V5 October High Stakes Qualifier: 5th Annual CT Season Opener | Other | None | Qualifier #36 | 2024-10-19T10:58:50-04:00 | 0 | 30 | -30 | -1.0 | L | red | blue | 8878F | 28828A | 4478E | 78889S |
 | Hall Robotics VEX V5 October High Stakes Qualifier: 5th Annual CT Season Opener | Other | None | Qualifier #58 | 2024-10-19T12:06:31-04:00 | 3 | 20 | -17 | -0.7391304347826086 | L | blue | red | 9909M | 4478C | 28828A | 1695E |
 | Hall Robotics VEX V5 October High Stakes Qualifier: 5th Annual CT Season Opener | Other | None | Qualifier #69 | 2024-10-19T12:45:22-04:00 | 6 | 8 | -2 | -0.14285714285714285 | L | red | blue | 18891B | 28828A | 119A | 1618A |
+| Hall Robotics VEX V5 October High Stakes Qualifier: 5th Annual CT Season Opener | Other | None | Qualifier #89 | 2024-10-19T13:49:49-04:00 | 4 | 25 | -21 | -0.7241379310344828 | L | blue | red | 78889X | 5150J | 28828A | 8079R |
 | Daniel Hand High School - CTEEA VEX “High Stakes” Qualifier | Other | None | Qualifier #11 | 2024-11-16T09:56:14-05:00 | 25 | 0 | 25 | 1.0 | W | red | red | 28828A | 5150E | 1697A | 1697B |
 | Daniel Hand High School - CTEEA VEX “High Stakes” Qualifier | Other | None | Qualifier #20 | 2024-11-16T10:27:51-05:00 | 45 | 1 | 44 | 0.9565217391304348 | W | blue | blue | 8079C | 70258B | 28828A | 9909B |
 | Daniel Hand High School - CTEEA VEX “High Stakes” Qualifier | Other | None | Qualifier #31 | 2024-11-16T10:59:59-05:00 | 18 | 10 | 8 | 0.2857142857142857 | W | red | red | 8079R | 28828A | 1188A | 99088V |
 | Daniel Hand High School - CTEEA VEX “High Stakes” Qualifier | Other | None | Qualifier #47 | 2024-11-16T11:51:10-05:00 | 24 | 6 | 18 | 0.6 | W | red | red | 17814Y | 28828A | 99088A | 1695E |
 | Daniel Hand High School - CTEEA VEX “High Stakes” Qualifier | Other | None | Qualifier #61 | 2024-11-16T12:37:55-05:00 | 33 | 14 | 19 | 0.40425531914893614 | W | blue | blue | 99088K | 5150D | 4478U | 28828A |
+| Daniel Hand High School - CTEEA VEX “High Stakes” Qualifier | Other | None | Qualifier #87 | 2024-11-16T13:54:20-05:00 | 15 | 22 | -7 | -0.1891891891891892 | L | blue | red | 9909G | 119B | 1930D | 28828A |
 | Daniel Hand High School - CTEEA VEX “High Stakes” Qualifier | Other | None | R16 #7-1 | 2024-11-16T15:17:46-05:00 | 38 | 3 | 35 | 0.8536585365853658 | W | red | red | 28828A | 4478U | 99088A | 1695B |
 | Daniel Hand High School - CTEEA VEX “High Stakes” Qualifier | Other | None | QF #4-1 | 2024-11-16T15:49:40-05:00 | 10 | 37 | -27 | -0.574468085106383 | L | red | blue | 28828A | 4478U | 9909V | 9909M |
 | Ridgefield High Stakes Qualifier (HS & MS): 4th Annual Tournament | Other | None | Qualifier #16 | 2024-11-23T10:19:00-05:00 | 31 | 6 | 25 | 0.6756756756756757 | W | red | red | 17814X | 28828A | 877D | 162Z |
@@ -19,6 +21,7 @@
 | Ridgefield High Stakes Qualifier (HS & MS): 4th Annual Tournament | Other | None | Qualifier #46 | 2024-11-23T11:48:40-05:00 | 11 | 22 | -11 | -0.3333333333333333 | L | blue | red | 4478K | 119B | 28828A | 1697B |
 | Ridgefield High Stakes Qualifier (HS & MS): 4th Annual Tournament | Other | None | Qualifier #54 | 2024-11-23T12:11:50-05:00 | 34 | 22 | 12 | 0.21428571428571427 | W | red | red | 28828A | 8878A | 4478E | 8878J |
 | Ridgefield High Stakes Qualifier (HS & MS): 4th Annual Tournament | Other | None | Qualifier #67 | 2024-11-23T12:53:21-05:00 | 14 | 9 | 5 | 0.21739130434782608 | W | red | red | 4478S | 28828A | 877Z | 99088K |
+| Ridgefield High Stakes Qualifier (HS & MS): 4th Annual Tournament | Other | None | Qualifier #86 | 2024-11-23T13:55:26-05:00 | 2 | 27 | -25 | -0.8620689655172413 | L | red | blue | 22736A | 28828A | 8878C | 7405R |
 | Ridgefield High Stakes Qualifier (HS & MS): 4th Annual Tournament | Other | None | R16 #6-1 | 2024-11-23T15:40:18-05:00 | 27 | 0 | 27 | 1.0 | W | red | red | 17814W | 28828A | 8878C | 4478U |
 | Ridgefield High Stakes Qualifier (HS & MS): 4th Annual Tournament | Other | None | QF #3-1 | 2024-11-23T16:17:43-05:00 | 36 | 0 | 36 | 1.0 | W | blue | blue | 8878A | 4478Z | 17814W | 28828A |
 | Ridgefield High Stakes Qualifier (HS & MS): 4th Annual Tournament | Other | None | SF #2-1 | 2024-11-23T16:32:19-05:00 | 18 | 19 | -1 | -0.02702702702702703 | L | red | blue | 17814W | 28828A | 17814X | 119W |
@@ -26,6 +29,8 @@
 | Masuk Robotics High School VRC December High Stake Qualifier | Other | None | Qualifier #32 | 2024-12-14T11:31:21-05:00 | 32 | 0 | 32 | 1.0 | W | red | red | 28828A | 4478J | 1188A | 5150K |
 | Masuk Robotics High School VRC December High Stake Qualifier | Other | None | Qualifier #41 | 2024-12-14T12:01:55-05:00 | 10 | 4 | 6 | 0.42857142857142855 | W | red | red | 28828A | 5150H | 9909M | 17814X |
 | Masuk Robotics High School VRC December High Stake Qualifier | Other | None | Qualifier #63 | 2024-12-14T13:13:38-05:00 | 31 | 9 | 22 | 0.55 | W | blue | blue | 17814W | 1695D | 4478U | 28828A |
+| Masuk Robotics High School VRC December High Stake Qualifier | Other | None | Qualifier #80 | 2024-12-14T14:08:06-05:00 | 50 | 9 | 41 | 0.6949152542372882 | W | blue | blue | 877W | 162Z | 119A | 28828A |
+| Masuk Robotics High School VRC December High Stake Qualifier | Other | None | Qualifier #92 | 2024-12-14T14:43:49-05:00 | 37 | 17 | 20 | 0.37037037037037035 | W | red | red | 877D | 28828A | 1697B | 1695C |
 | Masuk Robotics High School VRC December High Stake Qualifier | Other | None | R16 #6-1 | 2024-12-14T15:57:21-05:00 | 26 | 25 | 1 | 0.0196078431372549 | W | red | red | 28828A | 119X | 17814X | 5150H |
 | Masuk Robotics High School VRC December High Stake Qualifier | Other | None | QF #3-1 | 2024-12-14T16:16:29-05:00 | 11 | 24 | -13 | -0.37142857142857144 | L | blue | red | 4478J | 17814W | 28828A | 119X |
 | Weston Robotics High Stakes Qualifier: (High School) | Other | None | Qualifier #7 | 2025-01-04T09:30:32-05:00 | 13 | 40 | -27 | -0.5094339622641509 | L | blue | red | 5150Z | 162Z | 28828A | 47743B |
@@ -49,11 +54,18 @@
 | Middletown Robotics HS V5RC High Stakes | Other | None | Qualifier #53 | 2025-01-25T11:57:07-05:00 | 30 | 29 | 1 | 0.01694915254237288 | W | blue | blue | 4478E | 119X | 1695D | 28828A |
 | Middletown Robotics HS V5RC High Stakes | Other | None | Qualifier #68 | 2025-01-25T12:41:38-05:00 | 42 | 6 | 36 | 0.75 | W | red | red | 28828A | 5150F | 4478F | 1695F |
 | Middletown Robotics HS V5RC High Stakes | Other | None | Qualifier #77 | 2025-01-25T13:06:51-05:00 | 32 | 31 | 1 | 0.015873015873015872 | W | red | red | 28828A | 1695E | 4478Z | 9909M |
+| Middletown Robotics HS V5RC High Stakes | Other | None | Qualifier #96 | 2025-01-25T14:03:07-05:00 | 21 | 37 | -16 | -0.27586206896551724 | L | blue | red | 17814V | 5150J | 28828A | 1695A |
 | Middletown Robotics HS V5RC High Stakes | Other | None | R16 #4-1 | 2025-01-25T16:01:08-05:00 | 31 | 33 | -2 | -0.03125 | L | red | blue | 5150J | 28828A | 17814Y | 17814W |
 | Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature | None | Qualifier #1 | 2025-01-31T10:10:42-05:00 | 32 | 23 | 9 | 0.16363636363636364 | W | blue | blue | 12Z | 1140X | 28828A | 11124M |
 | Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature | None | Qualifier #19 | 2025-01-31T11:03:51-05:00 | 10 | 38 | -28 | -0.5833333333333334 | L | blue | red | 9039J | 6008X | 20164B | 28828A |
 | Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature | None | Qualifier #43 | 2025-01-31T13:29:08-05:00 | 16 | 31 | -15 | -0.3191489361702128 | L | red | blue | 1658T | 28828A | 4303X | 1104V |
 | Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature | None | Qualifier #64 | 2025-01-31T14:49:10-05:00 | 0 | 46 | -46 | -1.0 | L | red | blue | 8889X | 28828A | 9364C | 1723A |
+| Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature | None | Qualifier #89 | 2025-01-31T16:17:23-05:00 | 21 | 10 | 11 | 0.3548387096774194 | W | blue | blue | 32792B | 12B | 62961X | 28828A |
+| Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature | None | Qualifier #102 | 2025-01-31T17:02:13-05:00 | 26 | 37 | -11 | -0.1746031746031746 | L | red | blue | 26038V | 28828A | 62629Y | 62629Z |
+| Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature | None | Qualifier #121 | 2025-02-01T09:18:01-05:00 | 19 | 26 | -7 | -0.15555555555555556 | L | blue | red | 62629P | 61568A | 28828A | 26571A |
+| Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature | None | Qualifier #137 | 2025-02-01T10:13:51-05:00 | 21 | 20 | 1 | 0.024390243902439025 | W | red | red | 28828A | 4303C | 50805A | 10102C |
+| Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature | None | Qualifier #160 | 2025-02-01T11:40:16-05:00 | 25 | 42 | -17 | -0.2537313432835821 | L | red | blue | 28828A | 6741A | 6210M | 11124W |
+| Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature | None | Qualifier #170 | 2025-02-01T13:12:40-05:00 | 23 | 23 | 0 | 0.0 | D | blue | Tie | 10102X | 2055A | 28828A | 26038A |
 | CTEEA University of New Haven VEX Robotics Competition: High Stakes Qualifier | Other | None | Qualifier #1 | 2025-02-08T09:09:37-05:00 | 12 | 37 | -25 | -0.5102040816326531 | L | blue | red | 1784W | 15923A | 28828A | 32610B |
 | CTEEA University of New Haven VEX Robotics Competition: High Stakes Qualifier | Other | None | Qualifier #15 | 2025-02-08T09:59:46-05:00 | 19 | 27 | -8 | -0.17391304347826086 | L | red | blue | 28828A | 21503A | 4478E | 4478A |
 | CTEEA University of New Haven VEX Robotics Competition: High Stakes Qualifier | Other | None | Qualifier #28 | 2025-02-08T10:48:46-05:00 | 38 | 28 | 10 | 0.15151515151515152 | W | red | red | 28828A | 15923B | 5150F | 47743B |
@@ -67,4 +79,10 @@
 | Connecticut High School V5 Robotics Championships: High Stake Championships | Regional | None | Qualifier #26 | 2025-02-24T10:52:50-05:00 | 27 | 17 | 10 | 0.22727272727272727 | W | red | red | 877W | 28828A | 1784X | 119B |
 | Connecticut High School V5 Robotics Championships: High Stake Championships | Regional | None | Qualifier #54 | 2025-02-24T13:23:57-05:00 | 7 | 17 | -10 | -0.4166666666666667 | L | blue | red | 78889H | 4478N | 28828A | 32610C |
 | Connecticut High School V5 Robotics Championships: High Stake Championships | Regional | None | Qualifier #66 | 2025-02-24T14:12:20-05:00 | 20 | 33 | -13 | -0.24528301886792453 | L | blue | red | 4478C | 4478B | 28828A | 22736A |
+| Connecticut High School V5 Robotics Championships: High Stake Championships | Regional | None | Qualifier #84 | 2025-02-24T15:19:54-05:00 | 15 | 17 | -2 | -0.0625 | L | blue | red | 78889S | 50170B | 28828A | 5150J |
+| Connecticut High School V5 Robotics Championships: High Stake Championships | Regional | None | Qualifier #111 | 2025-02-24T16:57:21-05:00 | 29 | 33 | -4 | -0.06451612903225806 | L | blue | red | 47743A | 5150Z | 1697A | 28828A |
+| Connecticut High School V5 Robotics Championships: High Stake Championships | Regional | None | Qualifier #136 | 2025-02-25T08:56:23-05:00 | 29 | 7 | 22 | 0.6111111111111112 | W | red | red | 28828A | 15923B | 4478K | 40535J |
+| Connecticut High School V5 Robotics Championships: High Stake Championships | Regional | None | Qualifier #155 | 2025-02-25T10:21:14-05:00 | 36 | 27 | 9 | 0.14285714285714285 | W | red | red | 28828A | 1695C | 32610A | 4478S |
+| Connecticut High School V5 Robotics Championships: High Stake Championships | Regional | None | Qualifier #168 | 2025-02-25T11:12:12-05:00 | 17 | 14 | 3 | 0.0967741935483871 | W | blue | blue | 32610B | 228A | 28828A | 162Z |
+| Connecticut High School V5 Robotics Championships: High Stake Championships | Regional | None | Qualifier #194 | 2025-02-25T13:35:36-05:00 | 27 | 36 | -9 | -0.14285714285714285 | L | blue | red | 9909V | 1188A | 28828A | 1695D |
 | Connecticut High School V5 Robotics Championships: High Stake Championships | Regional | None | R16 #3-1 | 2025-02-25T14:36:59-05:00 | 29 | 33 | -4 | -0.06451612903225806 | L | blue | red | 9909M | 4478B | 1784W | 28828A |

@@ -12,3 +12,4 @@
 | VEX V5 Robotic Competition Double-Barrelled Dust Up 2025: Space Cowboy Rodeo | Other | Amaze Award (VRC/VEXU/VAIRC) |  |
 | Ten Ton Robotics VEX V5 Robotics Competition Blended Scrimmage: Last Chance Scrimmage | Other | Tournament Finalists (VRC/VEXU/VAIRC) |  |
 | PYRS BC Mainland HS VEX V5 Robotics Regional Championship | Regional | Judges Award (VRC/VEXU/VAIC/ADC/VAIRC) |  |
+| Burnsview Robotics Cup Scrimmage - High Stakes | Other | Think Award (VRC/VEXU/VAIRC) |  |

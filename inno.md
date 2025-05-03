@@ -1,23 +1,9 @@
 # Strong Teams Analysis
 
-## Team [1065A](/1065A.md): Sunny
-*Location: Texas, United States*
-
-- **Win Rate**: 0.905 (Rank: 1)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| QF | Space City VEX V5 Robotics Competition Signature Event: High School | Signature |
-| QF | Kalahari Classic VEX V5 Robotics Competition Signature Event - HS: High School - WORLDS QUALIFYING DIVISION | Signature |
-
----
-
-
 ## Team [97673Z](/97673Z.md): ZETBOTS
 *Location: Chihuahua; Mexico*
 
-- **Win Rate**: 0.900 (Rank: 2)
+- **Win Rate**: 0.900 (Rank: 1)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
@@ -36,7 +22,7 @@
 ## Team [62629X](/62629X.md): Iron Patriots:  X-RAY
 *Location: West Virginia; United States*
 
-- **Win Rate**: 0.881 (Rank: 3)
+- **Win Rate**: 0.866 (Rank: 2)
 
 ### Regional Event Awards
 
@@ -48,16 +34,16 @@
 ---
 
 
-## Team [4828X](/4828X.md): Redux
-*Location: Alabama, United States*
+## Team [1065A](/1065A.md): Sunny
+*Location: Texas, United States*
 
-- **Win Rate**: 0.857 (Rank: 4)
+- **Win Rate**: 0.859 (Rank: 3)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| SF | HAUNTED @ SLOSS VEX V5 Robotics Competition Signature Event: High School | Signature |
-| QF | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
+| QF | Space City VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | Kalahari Classic VEX V5 Robotics Competition Signature Event - HS: High School - WORLDS QUALIFYING DIVISION | Signature |
 
 ---
 
@@ -65,7 +51,7 @@
 ## Team [20605A](/20605A.md): First Class
 *Location: Alabama; United States*
 
-- **Win Rate**: 0.855 (Rank: 5)
+- **Win Rate**: 0.852 (Rank: 4)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
@@ -77,29 +63,10 @@
 ---
 
 
-## Team [8047F](/8047F.md): FNATIC
-*Location: Jalisco, Mexico*
-
-- **Win Rate**: 0.833 (Rank: 6)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| Tournament Champions (VRC/VEXU/VAIRC) | 3er. Campeonato Internacional de la Frontera Norte: High School VEX V5 Robotics Comeptition Signature Event | Signature |
-| Robot Skills Champion (VRC/VEXU/VAIRC) | 3er. Campeonato Internacional de la Frontera Norte: High School VEX V5 Robotics Comeptition Signature Event | Signature |
-| Tournament Champions (VRC/VEXU/VAIRC) | Colombia VEX V5 Robotics Competition Signature Event: High School | Signature |
-| Robot Skills Champion (VRC/VEXU/VAIRC) | Colombia VEX V5 Robotics Competition Signature Event: High School | Signature |
-| Design Award (VRC/VEXU/VAIRC) | Colombia VEX V5 Robotics Competition Signature Event: High School | Signature |
-| Finals | 3er. Campeonato Internacional de la Frontera Norte: High School VEX V5 Robotics Comeptition Signature Event | Signature |
-| Finals | Colombia VEX V5 Robotics Competition Signature Event: High School | Signature |
-
----
-
-
 ## Team [53999P](/53999P.md): Robo Hornets
 *Location: New York; United States*
 
-- **Win Rate**: 0.833 (Rank: 6)
+- **Win Rate**: 0.833 (Rank: 5)
 
 ### Regional Event Awards
 
@@ -113,7 +80,7 @@
 ## Team [360X](/360X.md): Full Circle
 *Location: Florida, United States*
 
-- **Win Rate**: 0.823 (Rank: 9)
+- **Win Rate**: 0.821 (Rank: 6)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
@@ -136,7 +103,7 @@
 ## Team [9231A](/9231A.md): Aiglon College
 *Location: Waadt, Switzerland*
 
-- **Win Rate**: 0.815 (Rank: 10)
+- **Win Rate**: 0.815 (Rank: 7)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
@@ -154,10 +121,93 @@
 ---
 
 
+## Team [937X](/937X.md): Aurora
+*Location: Arizona, United States*
+
+- **Win Rate**: 0.800 (Rank: 8)
+### Signature Event Awards
+
+| Award | Event | Event Type |
+|:------|:------|:-----------|
+| Tournament Finalists (VRC/VEXU/VAIRC) | Kalahari Classic VEX V5 Robotics Competition Signature Event - HS: High School - WORLDS QUALIFYING DIVISION | Signature |
+| Finals | Kalahari Classic VEX V5 Robotics Competition Signature Event - HS: High School - WORLDS QUALIFYING DIVISION | Signature |
+
+### Regional Event Awards
+
+| Award | Event | Event Type |
+|:------|:------|:-----------|
+| Excellence Award (VRC/VEXU/VAIRC) | 2025 AIA Arizona VEX V5 Robotics Competition: High School State Championship | Regional |
+| Tournament Champions (VRC/VEXU/VAIRC) | 2025 AIA Arizona VEX V5 Robotics Competition: High School State Championship | Regional |
+
+---
+
+
+## Team [1115E](/1115E.md): Exothermic
+*Location: Indiana, United States*
+
+- **Win Rate**: 0.794 (Rank: 9)
+
+### Regional Event Awards
+
+| Award | Event | Event Type |
+|:------|:------|:-----------|
+| Tournament Champions (VRC/VEXU/VAIRC) | 2025 Indiana Robotics State Championship - High School: VEX V5 Robotics Competition High School Teams | Regional |
+
+---
+
+
+## Team [4828X](/4828X.md): Redux
+*Location: Alabama, United States*
+
+- **Win Rate**: 0.788 (Rank: 10)
+### Signature Event Awards
+
+| Award | Event | Event Type |
+|:------|:------|:-----------|
+| SF | HAUNTED @ SLOSS VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
+
+---
+
+
+## Team [8047F](/8047F.md): FNATIC
+*Location: Jalisco, Mexico*
+
+- **Win Rate**: 0.785 (Rank: 11)
+### Signature Event Awards
+
+| Award | Event | Event Type |
+|:------|:------|:-----------|
+| Tournament Champions (VRC/VEXU/VAIRC) | 3er. Campeonato Internacional de la Frontera Norte: High School VEX V5 Robotics Comeptition Signature Event | Signature |
+| Robot Skills Champion (VRC/VEXU/VAIRC) | 3er. Campeonato Internacional de la Frontera Norte: High School VEX V5 Robotics Comeptition Signature Event | Signature |
+| Tournament Champions (VRC/VEXU/VAIRC) | Colombia VEX V5 Robotics Competition Signature Event: High School | Signature |
+| Robot Skills Champion (VRC/VEXU/VAIRC) | Colombia VEX V5 Robotics Competition Signature Event: High School | Signature |
+| Design Award (VRC/VEXU/VAIRC) | Colombia VEX V5 Robotics Competition Signature Event: High School | Signature |
+| Finals | 3er. Campeonato Internacional de la Frontera Norte: High School VEX V5 Robotics Comeptition Signature Event | Signature |
+| Finals | Colombia VEX V5 Robotics Competition Signature Event: High School | Signature |
+
+---
+
+
+## Team [210Z](/210Z.md): Eclipse
+*Location: Alberta, Canada*
+
+- **Win Rate**: 0.778 (Rank: 12)
+### Signature Event Awards
+
+| Award | Event | Event Type |
+|:------|:------|:-----------|
+| Build Award (VRC/VEXU/VAIRC) | Rumble In the Rockies VEX V5 Robotics Competition Signature Event: High School | Signature |
+| Innovate Award (VRC/VEXU/VAIRC) | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
+| SF | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
+
+---
+
+
 ## Team [2775V](/2775V.md): Jackson Area Robotics
 *Location: Tennessee, United States*
 
-- **Win Rate**: 0.812 (Rank: 11)
+- **Win Rate**: 0.770 (Rank: 13)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
@@ -181,23 +231,58 @@
 ---
 
 
-## Team [937X](/937X.md): Aurora
-*Location: Arizona, United States*
+## Team [6293X](/6293X.md): X-ECUTE
+*Location: Florida, United States*
 
-- **Win Rate**: 0.800 (Rank: 12)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| Tournament Finalists (VRC/VEXU/VAIRC) | Kalahari Classic VEX V5 Robotics Competition Signature Event - HS: High School - WORLDS QUALIFYING DIVISION | Signature |
-| Finals | Kalahari Classic VEX V5 Robotics Competition Signature Event - HS: High School - WORLDS QUALIFYING DIVISION | Signature |
+- **Win Rate**: 0.762 (Rank: 15)
 
 ### Regional Event Awards
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Excellence Award (VRC/VEXU/VAIRC) | 2025 AIA Arizona VEX V5 Robotics Competition: High School State Championship | Regional |
-| Tournament Champions (VRC/VEXU/VAIRC) | 2025 AIA Arizona VEX V5 Robotics Competition: High School State Championship | Regional |
+| Tournament Champions (VRC/VEXU/VAIRC) | South Florida V5RC Regional Championship - High School Division | Regional |
+
+---
+
+
+## Team [1381P](/1381P.md): Perditor
+*Location: Nevada, United States*
+
+- **Win Rate**: 0.747 (Rank: 17)
+
+### Regional Event Awards
+
+| Award | Event | Event Type |
+|:------|:------|:-----------|
+| Excellence Award (VRC/VEXU/VAIRC) | Nevada VEX V5 Robotics Competition State Championship: High School | Regional |
+
+---
+
+
+## Team [80001B](/80001B.md): Double Play
+*Location: California; United States*
+
+- **Win Rate**: 0.738 (Rank: 18)
+### Signature Event Awards
+
+| Award | Event | Event Type |
+|:------|:------|:-----------|
+| Tournament Champions (VRC/VEXU/VAIRC) | Rumble In the Rockies VEX V5 Robotics Competition Signature Event: High School | Signature |
+| Finals | Rumble In the Rockies VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | NorCal Silicon Valley VEX V5 Robotics Competition Signature Event: High School | Signature |
+
+---
+
+
+## Team [1011X](/1011X.md): Ten Ton Robotics
+*Location: British Columbia, Canada*
+
+- **Win Rate**: 0.736 (Rank: 19)
+### Signature Event Awards
+
+| Award | Event | Event Type |
+|:------|:------|:-----------|
+| SF | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
 
 ---
 
@@ -205,7 +290,7 @@
 ## Team [20096G](/20096G.md): Guardians
 *Location: Maryland; United States*
 
-- **Win Rate**: 0.775 (Rank: 13)
+- **Win Rate**: 0.736 (Rank: 19)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
@@ -223,80 +308,10 @@
 ---
 
 
-## Team [1381P](/1381P.md): Perditor
-*Location: Nevada, United States*
-
-- **Win Rate**: 0.769 (Rank: 14)
-
-### Regional Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| Excellence Award (VRC/VEXU/VAIRC) | Nevada VEX V5 Robotics Competition State Championship: High School | Regional |
-
----
-
-
-## Team [210Z](/210Z.md): Eclipse
-*Location: Alberta, Canada*
-
-- **Win Rate**: 0.764 (Rank: 15)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| Build Award (VRC/VEXU/VAIRC) | Rumble In the Rockies VEX V5 Robotics Competition Signature Event: High School | Signature |
-| Innovate Award (VRC/VEXU/VAIRC) | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
-| SF | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
-
----
-
-
-## Team [6293X](/6293X.md): X-ECUTE
-*Location: Florida, United States*
-
-- **Win Rate**: 0.758 (Rank: 17)
-
-### Regional Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| Tournament Champions (VRC/VEXU/VAIRC) | South Florida V5RC Regional Championship - High School Division | Regional |
-
----
-
-
-## Team [7192F](/7192F.md): The Masked Bandits
-*Location: Minnesota, United States*
-
-- **Win Rate**: 0.738 (Rank: 19)
-
-### Regional Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| Excellence Award (VRC/VEXU/VAIRC) | MN VEX V5 Robotics State Championship - High School: V5RC High School | Regional |
-
----
-
-
-## Team [1011X](/1011X.md): Ten Ton Robotics
-*Location: British Columbia, Canada*
-
-- **Win Rate**: 0.729 (Rank: 21)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| SF | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature |
-
----
-
-
 ## Team [99040E](/99040E.md): Botanical Bots
 *Location: Alabama; United States*
 
-- **Win Rate**: 0.724 (Rank: 24)
+- **Win Rate**: 0.729 (Rank: 22)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
@@ -306,17 +321,15 @@
 ---
 
 
-## Team [80001B](/80001B.md): Double Play
-*Location: California; United States*
+## Team [99904W](/99904W.md): Wooosh
+*Location: Indiana; United States*
 
-- **Win Rate**: 0.724 (Rank: 25)
+- **Win Rate**: 0.728 (Rank: 23)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Tournament Champions (VRC/VEXU/VAIRC) | Rumble In the Rockies VEX V5 Robotics Competition Signature Event: High School | Signature |
-| Finals | Rumble In the Rockies VEX V5 Robotics Competition Signature Event: High School | Signature |
-| QF | NorCal Silicon Valley VEX V5 Robotics Competition Signature Event: High School | Signature |
+| SF | LAUNCH VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 
@@ -324,7 +337,7 @@
 ## Team [8349U](/8349U.md): Ursus
 *Location: Kentucky, United States*
 
-- **Win Rate**: 0.721 (Rank: 26)
+- **Win Rate**: 0.719 (Rank: 25)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
@@ -335,31 +348,10 @@
 ---
 
 
-## Team [3131V](/3131V.md): Drumroll Please
-*Location: Florida, United States*
-
-- **Win Rate**: 0.714 (Rank: 27)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| Tournament Finalists (VRC/VEXU/VAIRC) | HAUNTED @ SLOSS VEX V5 Robotics Competition Signature Event: High School | Signature |
-| Finals | HAUNTED @ SLOSS VEX V5 Robotics Competition Signature Event: High School | Signature |
-| SF | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
-
-### Regional Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| Tournament Champions (VRC/VEXU/VAIRC) | 2025 North/Central Florida High School Event Region Championship: VEX V5 Robotics Competition | Regional |
-
----
-
-
 ## Team [66799G](/66799G.md): AST-onishing G
 *Location: None; Taiwan*
 
-- **Win Rate**: 0.711 (Rank: 28)
+- **Win Rate**: 0.711 (Rank: 26)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
@@ -379,7 +371,7 @@
 ## Team [9065H](/9065H.md): Phantom Robotics
 *Location: Missouri, United States*
 
-- **Win Rate**: 0.706 (Rank: 30)
+- **Win Rate**: 0.706 (Rank: 28)
 
 ### Regional Event Awards
 
@@ -390,15 +382,35 @@
 ---
 
 
-## Team [99904W](/99904W.md): Wooosh
-*Location: Indiana; United States*
+## Team [7192F](/7192F.md): The Masked Bandits
+*Location: Minnesota, United States*
 
-- **Win Rate**: 0.684 (Rank: 32)
+- **Win Rate**: 0.701 (Rank: 31)
+
+### Regional Event Awards
+
+| Award | Event | Event Type |
+|:------|:------|:-----------|
+| Excellence Award (VRC/VEXU/VAIRC) | MN VEX V5 Robotics State Championship - High School: V5RC High School | Regional |
+
+---
+
+
+## Team [603B](/603B.md): I DON'T KNOW
+*Location: New Hampshire, United States*
+
+- **Win Rate**: 0.689 (Rank: 32)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| SF | LAUNCH VEX V5 Robotics Competition Signature Event: High School | Signature |
+| Create Award (VRC/VEXU/VAIRC) | The Lobstah Bowl VEX V5 Robotics Competition Signature Event: High School | Signature |
+
+### Regional Event Awards
+
+| Award | Event | Event Type |
+|:------|:------|:-----------|
+| Tournament Champions (VRC/VEXU/VAIRC) | NH/VT 2024 VEX V5 High Stakes State Championship | Regional |
 
 ---
 
@@ -406,7 +418,7 @@
 ## Team [1229W](/1229W.md): The Wet Sprockets
 *Location: Kentucky, United States*
 
-- **Win Rate**: 0.681 (Rank: 33)
+- **Win Rate**: 0.684 (Rank: 33)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
@@ -426,7 +438,7 @@
 ## Team [35016Z](/35016Z.md): (AERO) It’ll buff
 *Location: Alabama; United States*
 
-- **Win Rate**: 0.676 (Rank: 34)
+- **Win Rate**: 0.677 (Rank: 34)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
@@ -436,21 +448,23 @@
 ---
 
 
-## Team [603B](/603B.md): I DON'T KNOW
-*Location: New Hampshire, United States*
+## Team [3131V](/3131V.md): Drumroll Please
+*Location: Florida, United States*
 
-- **Win Rate**: 0.667 (Rank: 36)
+- **Win Rate**: 0.659 (Rank: 38)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Create Award (VRC/VEXU/VAIRC) | The Lobstah Bowl VEX V5 Robotics Competition Signature Event: High School | Signature |
+| Tournament Finalists (VRC/VEXU/VAIRC) | HAUNTED @ SLOSS VEX V5 Robotics Competition Signature Event: High School | Signature |
+| Finals | HAUNTED @ SLOSS VEX V5 Robotics Competition Signature Event: High School | Signature |
+| SF | SCORE Showdown VEX V5 Robotics Competition Signature Event: Presented by Hyundai at Auburn University - High School | Signature |
 
 ### Regional Event Awards
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
-| Tournament Champions (VRC/VEXU/VAIRC) | NH/VT 2024 VEX V5 High Stakes State Championship | Regional |
+| Tournament Champions (VRC/VEXU/VAIRC) | 2025 North/Central Florida High School Event Region Championship: VEX V5 Robotics Competition | Regional |
 
 ---
 
@@ -458,13 +472,15 @@
 ## Team [839Z](/839Z.md): // Caution Tape ZOOM! //
 *Location: Ontario, Canada*
 
-- **Win Rate**: 0.660 (Rank: 38)
+- **Win Rate**: 0.654 (Rank: 40)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
 | Create Award (VRC/VEXU/VAIRC) | The Highlander Summit VEX V5 Robotics Competition Signature Event: High School | Signature |
 | Tournament Champions (VRC/VEXU/VAIRC) | The RiverBots III VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | The Highlander Summit VEX V5 Robotics Competition Signature Event: High School | Signature |
+| Finals | The RiverBots III VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 
@@ -472,12 +488,26 @@
 ## Team [12478X](/12478X.md): Bobaionics
 *Location: California, United States*
 
-- **Win Rate**: 0.657 (Rank: 40)
+- **Win Rate**: 0.652 (Rank: 41)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
 |:------|:------|:-----------|
 | QF | AFCEA Pikes Peak VEX V5 Robotics Competition Signature Event: High School | Signature |
+
+---
+
+
+## Team [6741R](/6741R.md): Redacted
+*Location: Ohio, United States*
+
+- **Win Rate**: 0.644 (Rank: 43)
+### Signature Event Awards
+
+| Award | Event | Event Type |
+|:------|:------|:-----------|
+| QF | The RiverBots III VEX V5 Robotics Competition Signature Event: High School | Signature |
+| QF | Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature |
 
 ---
 
@@ -492,34 +522,6 @@
 | Award | Event | Event Type |
 |:------|:------|:-----------|
 | Excellence Award - High School (VRC/VAIRC) | VEX Robotics Competition Turkiye National Championship | Regional |
-
----
-
-
-## Team [6741R](/6741R.md): Redacted
-*Location: Ohio, United States*
-
-- **Win Rate**: 0.627 (Rank: 49)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| QF | The RiverBots III VEX V5 Robotics Competition Signature Event: High School | Signature |
-| QF | Gateway to the West VEX V5 Robotics Competition Signature Event: High School | Signature |
-
----
-
-
-## Team [39H](/39H.md): HNS
-*Location: Michigan, United States*
-
-- **Win Rate**: 0.621 (Rank: 51)
-
-### Regional Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| Excellence Award (VRC/VEXU/VAIRC) | Consumers Energy & Kettering University Michigan HS State Champs: VEX V5 Robotics Competition High School ERC | Regional |
 
 ---
 
@@ -541,7 +543,7 @@
 ## Team [7447G](/7447G.md): The Dysfunctional
 *Location: South Carolina, United States*
 
-- **Win Rate**: 0.600 (Rank: 55)
+- **Win Rate**: 0.600 (Rank: 56)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
@@ -551,23 +553,10 @@
 ---
 
 
-## Team [16099D](/16099D.md): Overclock
-*Location: New York; United States*
-
-- **Win Rate**: 0.597 (Rank: 57)
-### Signature Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| QF | The Highlander Summit VEX V5 Robotics Competition Signature Event: High School | Signature |
-
----
-
-
 ## Team [86254B](/86254B.md): CAPMI1
 *Location: None; Hong Kong*
 
-- **Win Rate**: 0.588 (Rank: 59)
+- **Win Rate**: 0.588 (Rank: 58)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
@@ -578,10 +567,51 @@
 ---
 
 
+## Team [16099D](/16099D.md): Overclock
+*Location: New York; United States*
+
+- **Win Rate**: 0.579 (Rank: 60)
+### Signature Event Awards
+
+| Award | Event | Event Type |
+|:------|:------|:-----------|
+| QF | The Highlander Summit VEX V5 Robotics Competition Signature Event: High School | Signature |
+
+---
+
+
+## Team [39H](/39H.md): HNS
+*Location: Michigan, United States*
+
+- **Win Rate**: 0.576 (Rank: 61)
+
+### Regional Event Awards
+
+| Award | Event | Event Type |
+|:------|:------|:-----------|
+| Excellence Award (VRC/VEXU/VAIRC) | Consumers Energy & Kettering University Michigan HS State Champs: VEX V5 Robotics Competition High School ERC | Regional |
+
+---
+
+
+## Team [4378A](/4378A.md): Karmic Knights
+*Location: Texas, United States*
+
+- **Win Rate**: 0.563 (Rank: 63)
+
+### Regional Event Awards
+
+| Award | Event | Event Type |
+|:------|:------|:-----------|
+| Excellence Award (VRC/VEXU/VAIRC) | 2025 Texas Region 1 High School State Championship: VEX V5 Robotics Competition 2024-2025: High Stakes | Regional |
+
+---
+
+
 ## Team [6121A](/6121A.md): The Pioneers
 *Location: Pennsylvania, United States*
 
-- **Win Rate**: 0.522 (Rank: 67)
+- **Win Rate**: 0.521 (Rank: 68)
 ### Signature Event Awards
 
 | Award | Event | Event Type |
@@ -595,20 +625,6 @@
 | Award | Event | Event Type |
 |:------|:------|:-----------|
 | Excellence Award (VRC/VEXU/VAIRC) | HS Eastern PA State V5RC Championship at Norristown: VEX V5 Robotics Competition High Stakes | Regional |
-
----
-
-
-## Team [4378A](/4378A.md): Karmic Knights
-*Location: Texas, United States*
-
-- **Win Rate**: 0.519 (Rank: 68)
-
-### Regional Event Awards
-
-| Award | Event | Event Type |
-|:------|:------|:-----------|
-| Excellence Award (VRC/VEXU/VAIRC) | 2025 Texas Region 1 High School State Championship: VEX V5 Robotics Competition 2024-2025: High Stakes | Regional |
 
 ---
 

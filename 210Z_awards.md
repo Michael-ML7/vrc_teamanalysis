@@ -11,3 +11,5 @@
 | Rumble In the Rockies VEX V5 Robotics Competition Signature Event: High School | Signature | Build Award (VRC/VEXU/VAIRC) |  |
 | Mecha Mayhem 2025 Signature Event Presented by Alberta Innovates: High School Division | Signature | Innovate Award (VRC/VEXU/VAIRC) |  |
 | Alberta VEX V5 Robotics Competition Provincial Championships (HS): presented by Syncrude | Regional | Innovate Award (VRC/VEXU/VAIRC) |  |
+| WestMech V5RC End of Season Scrimmage | Other | Tournament Champions (VRC/VEXU/VAIRC) |  |
+| WestMech V5RC End of Season Scrimmage | Other | Innovate Award (VRC/VEXU/VAIRC) |  |
