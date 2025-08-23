@@ -1,6 +1,8 @@
 # VEX Robotics Competition Analytics Engine
 
-> Data-driven strategy development for VEX Robotics Competition through predictive modeling and match analysis. This tool was instrumental in our team's qualification for the **VEX Robotics World Championship 2025**.
+> Michael Lam, Team 86254, Hong Kong
+
+Data-driven strategy development for VEX Robotics Competition through predictive modeling and match analysis. This tool was instrumental in our team's qualification for the **VEX Robotics World Championship 2025**.
 
 ## 🎯 Project Overview
 
@@ -58,3 +60,4 @@ Access analytical reports through the following endpoints:
 ## 📝 Application Note
 
 This project demonstrates the practical application of data science and machine learning in competitive robotics, showcasing how algorithmic analysis can translate into real-world strategic advantages. The tools developed were directly used in our journey to qualify for and compete at the **VEX Robotics World Championship 2025**.
+
