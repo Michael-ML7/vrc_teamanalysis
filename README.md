@@ -11,7 +11,7 @@ Data-driven strategy development for VEX Robotics Competition (HS) through predi
 - [📊 Key Features & Methodology](#-key-features--methodology)
   - [📈 Strength Differential Predictive Analytics](#-strength-differential-predictive-analytics)
   - [🏆 Team Performance Analysis (Sample: Team 86254B)](#-team-performance-analysis-sample-team-86254b)
-  - [📈 Normalised data for our team](#-normalised-data-for-our-team)
+  - [📈 Normalized data for our team](#-normalized-data-for-our-team)
 - [🚀 Usage](#-usage)
 - [📈 Model Performance](#-model-performance)
 - [🛠 Technical Implementation](#-technical-implementation)
@@ -134,3 +134,4 @@ Access analytical reports through the following endpoints:
 ## 📝 Application Note
 
 This project demonstrates the practical application of data science and mathematical modelling in competitive robotics, showcasing how algorithmic analysis can translate into real-world strategic advantages. The tools developed were directly used in our journey to compete at the **VEX Robotics World Championship 2025** in Dallas.
+
