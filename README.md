@@ -4,7 +4,7 @@
 
 Data-driven strategy development for VEX Robotics Competition (HS) through predictive modeling and match analysis. This tool was instrumental in our team's preparation for the **VEX Robotics World Championship 2025** (High Stakes, 2425).
 
-Repository and code: [https://github.com/Michael-ML7/vrc_teamanalysis]
+[Repository and code](https://github.com/Michael-ML7/vrc_teamanalysis)
 
 ---
 
@@ -136,5 +136,6 @@ Access analytical reports through the following endpoints:
 ## 📝 Application Note
 
 This project demonstrates the practical application of data science and mathematical modelling in competitive robotics, showcasing how algorithmic analysis can translate into real-world strategic advantages. The tools developed were directly used in our journey to compete at the **VEX Robotics World Championship 2025** in Dallas.
+
 
 
