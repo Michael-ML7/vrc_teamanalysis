@@ -59,7 +59,7 @@ General Model: [inno_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanaly
 
 #### Example Predictions
 
-| Match | Red Score | Blue Score | Red Alliance | Blue Alliance | General Model | *Internal Model |
+| Match | Red Score | Blue Score | Red Alliance | Blue Alliance | General Model (relative to Red alliance) | *Internal Model (Relative to our alliance) |
 |-------|-----------|------------|--------------|---------------|---------------|-----------------|
 | Qualifier #41 | 27 | 44 | 719S, 12478X | 86254B, 3131V | **–0.775** | +0.445 |
 | Qualifier #57 | 38 | 21 | 86254B, 19122B | 14241A, 3333W | **+0.252** | +0.163 |
