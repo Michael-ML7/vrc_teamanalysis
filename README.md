@@ -61,6 +61,7 @@ General Model: [inno_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanaly
 - **Negative value** → Favors Blue / opponent alliance
 
 ### Example Predictions
+
 | Match | Red Score | Blue Score | Red Alliance | Blue Alliance | General Model | *Internal Model |
 |-------|-----------|------------|--------------|---------------|---------------|-----------------|
 | Qualifier #41 | 27 | 44 | 719S, 12478X | 86254B, 3131V | **–0.775** | +0.445 |
