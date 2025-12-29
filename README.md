@@ -59,8 +59,8 @@ General Model: [inno_matches_prediction_model.ipynb](https://github.com/Michael-
 
 | Match | Red Alliance | Blue Alliance | General Model (relative to Red alliance) | **Internal Model (relative to our alliance)* | Red Score | Blue Score |
 |-------|-----------|------------|--------------|---------------|---------------|-----------------|
-| Qualifier #41 | 719S, 12478X | 86254B, 3131V | **–0.775** | *+0.445* | 27 | 44 |
-| Qualifier #57 | 86254B, 19122B | 14241A, 3333W | **+0.252** | *+0.163* | 38 | 21 |
+| Qualifier #41 | 719S, 12478X | **86254B**, 3131V | **–0.775** | *+0.445* | 27 | 44 |
+| Qualifier #57 | **86254B**, 19122B | 14241A, 3333W | **+0.252** | *+0.163* | 38 | 21 |
 
 ### 🏆 2. Team Performance Analysis (Sample: Team 86254B)
 General info for each team from KPIs calculated. Generate rankings. Summarises major awards and how the team qualified for World Championship.
