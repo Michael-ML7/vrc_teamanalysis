@@ -36,12 +36,12 @@ The system processes all recorded match data from all teams (recorded on [robote
 
 ## 📊 Key Features & Methodology
 
-Main: 19 Weighted KPIs are calculated for each team's every single match played in the High Stakes season. Matches of higher level of importance (regional / signature; qualifications / eliminations) are associated with larger weights. [Code: main.py](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/main.py), Recorded in [innov_kpi_summary.csv](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/innov_kpi_summary.csv)
+Using API requests from [robotevents.com/api](https://www.robotevents.com/api/v2), every single match played by every team in the High Stakes season is recorded. 19 Weighted KPIs and each team's respective ranking are calculated for each team. Matches of higher level of importance (regional / signature; qualifications / eliminations) are associated with larger weights. [Code: main.py](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/main.py), Recorded in [innov_kpi_summary.csv](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/innov_kpi_summary.csv)
 
 ### 📈 1. Strength Differential Predictive Analytics
-Math model predicting match strength difference. Internal model differs from general model by normalizing relative to our alliance for improved strategic accuracy.
+Math model predicting match strength difference. **Internal model differs from general model by normalizing relative to our alliance for improved strategic accuracy.*
 
-General Model: [inno_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/inno_matches.ipynb); *Internal Model: [us_86254_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/us_86254_matches.ipynb)
+General Model: [inno_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/inno_matches_prediction_model.ipynb); **Internal Model*: [us_86254_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/us_86254_matches.ipynb)
 
 #### Approach
 1. **Normalization**: 7 KPIs are selected, scale each to [0,1] range using division-wide min-max values
@@ -49,7 +49,7 @@ General Model: [inno_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanaly
 3. **Predicted winner**: Alliance with greater area on the radar diagram
 4. **Strength Calculation**: Predict outcomes based on comparative radar area
    - General Model: `Strength Differential = AreaRed - AreaBlue`
-   - *Internal Model: `Normalized Differential = (AreaWinner - AreaLoser) / AreaOurAlliance`
+   - **Internal Model*: `Normalized Differential = (AreaWinner - AreaLoser) / AreaOurAlliance`
 
 #### Interpretation
 - **Large magnitude** → Predicted decisive outcome
@@ -58,10 +58,10 @@ General Model: [inno_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanaly
 
 #### Example Predictions
 
-| Match | Red Score | Blue Score | Red Alliance | Blue Alliance | General Model (relative to Red alliance) | *Internal Model (Relative to our alliance) |
+| Match | Red Score | Blue Score | Red Alliance | Blue Alliance | General Model (relative to Red alliance) | **Internal Model (Relative to our alliance)* |
 |-------|-----------|------------|--------------|---------------|---------------|-----------------|
-| Qualifier #41 | 27 | 44 | 719S, 12478X | 86254B, 3131V | **–0.775** | +0.445 |
-| Qualifier #57 | 38 | 21 | 86254B, 19122B | 14241A, 3333W | **+0.252** | +0.163 |
+| Qualifier #41 | 27 | 44 | 719S, 12478X | 86254B, 3131V | **–0.775** | *+0.445* |
+| Qualifier #57 | 38 | 21 | 86254B, 19122B | 14241A, 3333W | **+0.252** | *+0.163* |
 
 ### 🏆 2. Team Performance Analysis (Sample: Team 86254B)
 General info for each team from KPIs calculated. Generate rankings. Summarises major awards and how the team qualified for World Championship.
