@@ -42,23 +42,27 @@ Weighted KPIs are calculated for each team's every single match played in the Hi
 Simple math model predicting match strength difference.
 
 [Code: inno_matches.ipynb (on Github)](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/inno_matches.ipynb)
-[Code: (our own relative strength predictor) us_86254_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/us_86254_matches.ipynb)
+
+[Code: (internal relative strength predictor) us_86254_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/us_86254_matches.ipynb)
 
 #### Methodology:
 1. **Simple normalization** of each weighted KPI into range [0,1] by simply dividing by the max and min value across the entire division
 2. **Plot a radar diagram** for both alliances in each match
 3. **Predicted winner** is the alliance with greater area on the radar diagram
 4. **Strength Differential (inno_matches.md)** calculated by `AreaDiff`
-5. **Strength Differential (our team internal)** calculated by `AreaDiff / Area_our_alliance`, to give predicted swing **relative** to ours to improve accuracy in identifying key matches
+5. **Normalized Strength Differential (our team internal)** calculated by `AreaDiff / AreaOurAlliance`, to give predicted swing **relative** to ours to improve accuracy in identifying key matches. More positive -> more likely we will win, vice versa.
 
 *A larger amplitude means that one alliance is likely to win with ease, small amplitude predicts that the match is close, positive values are in favour of the red alliance*
 
-**Example:** A negative large number ➡️ Blue is very likely to win (they actually won)
+**Example 1:** Row 1, 3 (inno_matches.md, general model): A larger negative number ➡️ Blue is more likely to win (they actually won)
+**Example 2:** Row 2, 4 (team interal, normalized to our alliance): A larger positive number ➡️ our alliance is more likely to win
 
 | Match Name | Red Score | Blue Score | Red Team 1 | Red Team 2 | Blue Team 1 | Blue Team 2 | Predicive Model Output |
 |------------|------------|------------|------------|------------|-------------|-------------|------------------------|
 | Qualifier #41 | 27 | 44 | 719S | 12478X | 86254B | 3131V | **-0.7749136729456845** |
+| | | | | | | internal: | 0.4448810357262004 |
 | Qualifier #57 | 38 | 21 | 86254B | 19122B | 14241A | 3333W | **0.251512263083544** |
+| | | | | | | internal: | 0.1633142019062389 |
 
 ---
 
@@ -84,15 +88,6 @@ General info. Calculated KPIs from raw match data for each team. Generate rankin
    Excellence Award / Tournament Champion / Regional Award, etc. are listed
 
 ---
-
-### 🏆 Noramlized data for our team
-> Code & output can be found in [us_86254_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/us_86254_matches.ipynb)
-
-More positive -> more likely we will win
-More negative -> more likely we will lose
-
-**Strength Differential** calculated by `AreaDiff / AreaOurAlliance`
-
 
 ## 🚀 Usage
 
