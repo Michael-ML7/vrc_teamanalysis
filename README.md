@@ -53,9 +53,10 @@ Simple math model predicting match strength difference.
 
 **Example:** A negative large number ➡️ Blue is very likely to win (they actually won)
 
-| Match Name | Start Date | Red Team 1 | Red Team 2 | Blue Team 1 | Blue Team 2 | Predicive Model Output |
-|------------|------------|------------|------------|-------------|-------------|------------------------|
-| Qualifier #1 | 2025-05-06 | 43272A | 23805S | 83149B | 16099D | **-1.092937720705726** |
+| Match Name | Red Score | Blue Score | Red Team 1 | Red Team 2 | Blue Team 1 | Blue Team 2 | Predicive Model Output |
+|------------|------------|------------|------------|------------|-------------|-------------|------------------------|
+| Qualifier #41 | 27 | 44 | 719S | 12478X | 86254B | 3131V | **-0.7749136729456845** |
+| Qualifier #57 | 38 | 21 | 86254B | 19122B | 14241A | 3333W | **0.251512263083544** |
 
 ---
 
