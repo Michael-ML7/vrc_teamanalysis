@@ -55,7 +55,7 @@ Simple math model predicting match strength difference.
 *A larger amplitude means that one alliance is likely to win with ease, small amplitude predicts that the match is close, positive values are in favour of the red alliance*
 
 **Example 1:** Row 1, 3 (inno_matches.md, general model): A larger negative number ➡️ Blue is more likely to win (they actually won)
-**Example 2:** Row 2, 4 (team interal, normalized to our alliance): A larger positive number ➡️ our alliance is more likely to win
+**Example 2:** Row 2, 4 (team interal, normalized to our alliance): A larger positive number ➡️ *our alliance* is more likely to win
 
 | Match Name | Red Score | Blue Score | Red Team 1 | Red Team 2 | Blue Team 1 | Blue Team 2 | Predicive Model Output |
 |------------|------------|------------|------------|------------|-------------|-------------|------------------------|
