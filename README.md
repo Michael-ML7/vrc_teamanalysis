@@ -39,17 +39,15 @@ The system processes all recorded match data from all teams (recorded on [robote
 Weighted KPIs are calculated for each team's every single match played in the High Stakes season. Matches of higher level of importance (regional / signature; qualifications / eliminations) are associated with larger weights.
 
 ### 📈 Strength Differential Predictive Analytics
-Simple math model predicting match strength difference.
+Math model predicting match strength difference. Internal model differs from general model by normalizing relative to our alliance for improved strategic accuracy.
 
-General Model: [inno_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/inno_matches.ipynb)
-
-*Internal Model: [us_86254_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/us_86254_matches.ipynb)
+General Model: [inno_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/inno_matches.ipynb); *Internal Model: [us_86254_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/us_86254_matches.ipynb)
 
 #### Approach
 1. **KPI Calculation**: Compute weighted performance metrics for every match, prioritizing high-stakes events
 2. **Normalization**: Scale each KPI to [0,1] range using division-wide min-max values
 3. **Radar Analysis**: Visualize alliance capabilities across 7 dimensions
-4. **Predicted winner** is the alliance with greater area on the radar diagram
+4. **Predicted winner**: Alliance with greater area on the radar diagram
 5. **Strength Calculation**: Predict outcomes based on comparative radar area
    - General Model: `Strength Differential = AreaRed - AreaBlue`
    - *Internal Model: `Normalized Differential = (AreaWinner - AreaLoser) / AreaOurAlliance`
@@ -57,19 +55,14 @@ General Model: [inno_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanaly
 #### Interpretation
 - **Large magnitude** → Predicted decisive outcome
 - **Small magnitude** → Predicted close match
-- **Positive value** → Favors (general) Red / (internal) our alliance
-- **Negative value** → Favors Blue / opponent alliance
+- **Positive value** → Favors (general) Red / (internal) our alliance, vice versa
 
-### Example Predictions
+#### Example Predictions
 
 | Match | Red Score | Blue Score | Red Alliance | Blue Alliance | General Model | *Internal Model |
 |-------|-----------|------------|--------------|---------------|---------------|-----------------|
 | Qualifier #41 | 27 | 44 | 719S, 12478X | 86254B, 3131V | **–0.775** | +0.445 |
 | Qualifier #57 | 38 | 21 | 86254B, 19122B | 14241A, 3333W | **+0.252** | +0.163 |
-
-*Normalized relative to our alliance for improved strategic accuracy
-
----
 
 ### 🏆 Team Performance Analysis (Sample: Team 86254B)
 General info. Calculated KPIs from raw match data for each team. Generate rankings. Summarises major awards and how the team qualified for World Championship.
