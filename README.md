@@ -36,12 +36,12 @@ The system processes all recorded match data from all teams (recorded on [robote
 
 ## 📊 Key Features & Methodology
 
-Through [robotevents.com/api](https://www.robotevents.com/api/v2), every single match played by every team in the High Stakes season is recorded. 19 Weighted KPIs and each team's respective ranking are calculated for each team. Matches of higher level of importance (regional / signature; qualifications / eliminations) are associated with larger weights. [Code: main.py](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/main.py), Recorded in [innov_kpi_summary.csv](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/innov_kpi_summary.csv)
+Through [robotevents.com/api](https://www.robotevents.com/api/v2), every single match played by every team in the High Stakes season is recorded. 19 Weighted KPIs and each team's respective ranking are calculated for each team. Matches of higher level of importance (regional / signature; qualifications / eliminations) are associated with larger weights. Code: [main.py](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/main.py), recorded in [innov_kpi_summary.csv](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/innov_kpi_summary.csv)
 
 ### 📈 1. Strength Differential Predictive Analytics
-Math model predicting match strength difference. **Internal model differs from general model by normalizing relative to our alliance for improved strategic accuracy.*
+Math model predicting match strength difference. **Internal model differs from general model by normalizing relative to our alliance for improved strategic accuracy.*, prediction outcome at (general model)[/inno_matches](https://michael-ml7.github.io/vrc_teamanalysis/inno_matches) and (internal model)[us_86254_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/us_86254_matches.ipynb)
 
-General Model: [inno_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/inno_matches_prediction_model.ipynb); **Internal Model*: [us_86254_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/us_86254_matches.ipynb)
+General Model: [inno_matches_prediction_model.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/inno_matches_prediction_model.ipynb); **Internal Model*: [us_86254_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/us_86254_matches.ipynb)
 
 #### Approach
 1. **Normalization**: 7 KPIs are selected, scale each to [0,1] range using division-wide min-max values
