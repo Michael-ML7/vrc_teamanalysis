@@ -41,28 +41,32 @@ Weighted KPIs are calculated for each team's every single match played in the Hi
 ### 📈 Strength Differential Predictive Analytics
 Simple math model predicting match strength difference.
 
-[Code: inno_matches.ipynb (on Github)](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/inno_matches.ipynb)
+General Model: [inno_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/inno_matches.ipynb)
 
-[Code: (internal relative strength predictor) us_86254_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/us_86254_matches.ipynb)
+*Internal Model: [us_86254_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/us_86254_matches.ipynb)
 
-#### Methodology:
-1. **Simple normalization** of each weighted KPI into range [0,1] by simply dividing by the max and min value across the entire division
-2. **Plot a radar diagram** for both alliances in each match
-3. **Predicted winner** is the alliance with greater area on the radar diagram
-4. **Strength Differential (inno_matches.md)** calculated by `AreaDiff`
-5. **Normalized Strength Differential (our team internal)** calculated by `AreaDiff / AreaOurAlliance`, to give predicted swing **relative** to ours to improve accuracy in identifying key matches. More positive -> more likely we will win, vice versa.
+#### Approach
+1. **KPI Calculation**: Compute weighted performance metrics for every match, prioritizing high-stakes events
+2. **Normalization**: Scale each KPI to [0,1] range using division-wide min-max values
+3. **Radar Analysis**: Visualize alliance capabilities across 7 dimensions
+4. **Predicted winner** is the alliance with greater area on the radar diagram
+5. **Strength Calculation**: Predict outcomes based on comparative radar area
+   - General Model: `Strength Differential = AreaRed - AreaBlue`
+   - *Internal Model: `Normalized Differential = (AreaWinner - AreaLoser) / AreaOurAlliance`
 
-*A larger amplitude means that one alliance is likely to win with ease, small amplitude predicts that the match is close, positive values are in favour of the red alliance*
+#### Interpretation
+- **Large magnitude** → Predicted decisive outcome
+- **Small magnitude** → Predicted close match
+- **Positive value** → Favors (general) Red / (internal) our alliance
+- **Negative value** → Favors Blue / opponent alliance
 
-**Example 1:** Row 1, 3 (inno_matches.md, general model): A larger negative number ➡️ Blue is more likely to win (they actually won)
-**Example 2:** Row 2, 4 (team interal, normalized to our alliance): A larger positive number ➡️ *our alliance* is more likely to win
+### Example Predictions
+| Match | Red Score | Blue Score | Red Alliance | Blue Alliance | General Model | *Internal Model |
+|-------|-----------|------------|--------------|---------------|---------------|-----------------|
+| Qualifier #41 | 27 | 44 | 719S, 12478X | 86254B, 3131V | **–0.775** | +0.445 |
+| Qualifier #57 | 38 | 21 | 86254B, 19122B | 14241A, 3333W | **+0.252** | +0.163 |
 
-| Match Name | Red Score | Blue Score | Red Team 1 | Red Team 2 | Blue Team 1 | Blue Team 2 | Predicive Model Output |
-|------------|------------|------------|------------|------------|-------------|-------------|------------------------|
-| Qualifier #41 | 27 | 44 | 719S | 12478X | 86254B | 3131V | **-0.7749136729456845** |
-| | | | | | | internal: | 0.4448810357262004 |
-| Qualifier #57 | 38 | 21 | 86254B | 19122B | 14241A | 3333W | **0.251512263083544** |
-| | | | | | | internal: | 0.1633142019062389 |
+*Normalized relative to our alliance for improved strategic accuracy
 
 ---
 
@@ -134,7 +138,3 @@ Access analytical reports through the following endpoints:
 ## 📝 Application Note
 
 This project demonstrates the practical application of data science and mathematical modelling in competitive robotics, showcasing how algorithmic analysis can translate into real-world strategic advantages. The tools developed were directly used in our journey to compete at the **VEX Robotics World Championship 2025** in Dallas.
-
-
-
-
