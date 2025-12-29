@@ -41,13 +41,15 @@ Weighted KPIs are calculated for each team's every single match played in the Hi
 ### 📈 Strength Differential Predictive Analytics
 Simple math model predicting match strength difference.
 
-[Code (on Github)](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/inno_matches.ipynb)
+[Code: inno_matches.ipynb (on Github)](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/inno_matches.ipynb)
+[Code: (our own relative strength predictor) us_86254_matches.ipynb](https://github.com/Michael-ML7/vrc_teamanalysis/blob/main/us_86254_matches.ipynb)
 
 #### Methodology:
 1. **Simple normalization** of each weighted KPI into range [0,1] by simply dividing by the max and min value across the entire division
 2. **Plot a radar diagram** for both alliances in each match
 3. **Predicted winner** is the alliance with greater area on the radar diagram
-4. **Strength Differential** calculated by `AreaDiff / AreaWinner`
+4. **Strength Differential (inno_matches.md)** calculated by `AreaDiff`
+5. **Strength Differential (our team internal)** calculated by `AreaDiff / Area_our_alliance`, to give predicted swing **relative** to ours to improve accuracy in identifying key matches
 
 *A larger amplitude means that one alliance is likely to win with ease, small amplitude predicts that the match is close, positive values are in favour of the red alliance*
 
